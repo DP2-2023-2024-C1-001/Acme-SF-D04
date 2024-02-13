@@ -1,0 +1,24 @@
+# LICENSE.txt
+
+Copyright (C) 2012-2024 Rafael Corchuelo.
+
+
+
+In accordance with the traditional objective of furthering education and research,
+the copyright owner affirms its policy to allow non-commercial utilization and redistribution
+of this software within the scope of educational activities and research endeavors pertaining
+to the domain of software development. It has undergone meticulous testing within reasonable 
+constraints; however, absolute error-free operation or universal suitability for any particular 
+purposes cannot be guaranteed. Expressly, the copyright owner disclaims any warranties or 
+representations, whether express or implied, regarding the functionality, reliability, or 
+performance of the software.
+
+Moreover, the copyright owner absolves itself of any liabilities, including but not limited 
+to indirect, incidental, or consequential damages arising from the use or inability to use this 
+software. This comprehensive disclaimer covers all conceivable scenarios in which the software 
+may be utilized, ensuring that the copyright owner is indemnified against any legal or financial
+ramifications that may arise from its utilization within academic or research contexts.
+
+By utilizing or redistributing this software, users acknowledge and agree to adhere to the terms 
+and conditions outlined herein.
+
