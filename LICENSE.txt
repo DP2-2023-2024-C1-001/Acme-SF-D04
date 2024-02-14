@@ -2,23 +2,35 @@
 
 Copyright (C) 2012-2024 Rafael Corchuelo.
 
+In keeping with the traditional purpose of furthering education and research, it is
+the policy of the copyright owner to permit non-commercial use and redistribution of
+this software. It has been tested carefully, but it is not guaranteed for any particular
+purposes.  The copyright owner does not offer any warranties or representations, nor do
+they accept any liabilities with respect to them.
 
+Academic Software License
 
-In accordance with the traditional objective of furthering education and research,
-the copyright owner affirms its policy to allow non-commercial utilization and redistribution
-of this software within the scope of educational activities and research endeavors pertaining
-to the domain of software development. It has undergone meticulous testing within reasonable 
-constraints; however, absolute error-free operation or universal suitability for any particular 
-purposes cannot be guaranteed. Expressly, the copyright owner disclaims any warranties or 
-representations, whether express or implied, regarding the functionality, reliability, or 
-performance of the software.
+This software, along with its source code, documentation, and any other associated materials,
+is protected by the following license:
 
-Moreover, the copyright owner absolves itself of any liabilities, including but not limited 
-to indirect, incidental, or consequential damages arising from the use or inability to use this 
-software. This comprehensive disclaimer covers all conceivable scenarios in which the software 
-may be utilized, ensuring that the copyright owner is indemnified against any legal or financial
-ramifications that may arise from its utilization within academic or research contexts.
+1. No Plagiarism Allowed: It is strictly prohibited to plagiarize this software in whole or in
+part. Plagiarism is defined as the reproduction, copying, or unauthorized use of any aspect of 
+this software without proper attribution.
 
-By utilizing or redistributing this software, users acknowledge and agree to adhere to the terms 
-and conditions outlined herein.
+2. Proper Use: Users wishing to use, modify, or distribute this software must do so in accordance 
+with the terms and conditions set forth in this license.
+
+3. Attribution: Any use or distribution of this software must include proper attribution to the 
+original author, clearly indicating the source of the software and providing a link to the original
+ version if available.
+
+4. No Warranty: This software is provided "as is," without warranty of any kind, express or implied. 
+The author assumes no responsibility for the use of this software or any damages resulting from its use.
+
+5. Applicable Law: This license shall be governed and construed in accordance with the laws of the 
+relevant country or jurisdiction.
+
+By using this software, you agree to the terms and conditions of this license. If you do not agree to 
+these terms, do not use or access this software.
+
 
