@@ -19,7 +19,13 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
+
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-angneraca" action="https://www.tesla.com/es_es"/>
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link.pedsandom" action="https://youtube.com/"/>
+			<acme:menu-suboption code="master.menu.anonymous.guille" action="https://en.realbetisbalompie.es/"/>
+			<acme:menu-suboption code="master.menu.anonymous.manu" action="https://github.com/"/>
+			<acme:menu-suboption code="master.menu.anonymous.josemaria" action="https://en.realbetisbalompie.es/"/>
+
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">

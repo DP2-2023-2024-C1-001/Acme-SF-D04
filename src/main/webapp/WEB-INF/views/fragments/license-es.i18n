@@ -16,4 +16,30 @@ master.license.text = \
 	"JSESSIONID" para identificar su sesión de trabajo, "remember" para mantener \
 	su información de autentificación, "language" para almacenar sus preferencias de \
 	lenguage, "XSRF-TOKEN" para tratar ataques CSRF, y "returnStack" para saber dónde \
-	volver al pulsar algunos botones.
+	volver al pulsar algunos botones.\
+	
+	Licencia de Software Académico\
+
+	Este software, junto con su código fuente, documentación y cualquier otro material \
+	asociado, está protegido por la siguiente licencia:\
+
+	1. No se permite el plagio: Queda estrictamente prohibido plagiar este software en\
+	 su totalidad o en parte. El plagio se define como la reproducción, copia o \
+	 utilización no autorizada de cualquier aspecto de este software sin la debida atribución.\
+
+	2. Uso adecuado: Los usuarios que deseen utilizar, modificar o distribuir este software\
+	 deben hacerlo de acuerdo con los términos y condiciones establecidos en esta licencia.\
+
+	3. Atribución: Cualquier uso o distribución de este software debe incluir una atribución\
+	 adecuada al autor original, indicando claramente la fuente del software y proporcionando\
+	 un enlace a la versión original si está disponible.\
+
+	4. Sin garantía: Este software se proporciona "tal cual", sin garantía de ningún tipo,\
+	 expresa o implícita. El autor no asume ninguna responsabilidad por el uso de este software\
+	  ni por los posibles daños derivados de su uso.\
+
+	5. Ley aplicable: Esta licencia se regirá e interpretará de acuerdo con las leyes del país o\
+	 jurisdicción correspondiente.\
+
+	Al utilizar este software, usted acepta los términos y condiciones de esta licencia. Si no\
+	está de acuerdo con estos términos, no utilice ni acceda a este software.\
