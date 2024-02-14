@@ -20,6 +20,8 @@ master.menu.sign-out = Salir
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.manu = 47265720F: Velez Lopez, Manuel
+master.menu.anonymous.guille = 45813076C: Gomez Romero, Guillermo
+master.menu.anonymous.josemaria = 29588315B: Baquero Rodriguez, Jose Maria
 
 
 # master.menu.administrator ###################################################
@@ -35,7 +37,7 @@ master.menu.administrator.shut-down = Parar el sistema
 
 master.menu.provider = Proveedor
 master.menu.provider.favourite-link = Enlace favorito
-master.menu.anonymous.guille = 45813076C: Gomez Romero, Guillermo
+
 
 # master.menu.consumer ##########################################################
 

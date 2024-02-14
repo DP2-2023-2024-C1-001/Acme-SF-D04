@@ -8,20 +8,33 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-This is a starter project.  It is intended to be a core learning asset for the students
-who have enrolled the Design and Testing subject of the Software Engineering curriculum of the 
-University of Seville.  This project helps them start working on their new information system 
-projects.
+Project Description
 
-this is our project of Design and Testing subject  whose developers are the following:
+The main objective of this project is to design, develop, and deploy a comprehensive contract 
+management system to facilitate efficient administration of agreements between parties involved 
+in project development. The system focuses on providing robust tools for storing, managing, and 
+analyzing contracts, as well as tracking their evolution over time.
+
+Developers
+ 
  - Ángel Neria Acal (angneraca@alum.us.es)
  - Manuel Vélez López (manvellop2@alum.us.es)
  - Pedro Pablo Santos Domínguez (pedsandom@alum.us.es)
  - José María Baquero Rodríguez (josbaqrod@alum.us.es) 
  - Guillermo Gómez Romero (guigomrom@alum.us.es)
  
-The team id is C1-001 and our reviewer is José González Enríquez.
+Reviewer
+ 
+ - José González Enríquez.
 
+Group 
+
+- C1-001
+
+Additional Notes
+
+ - Special attention will be given to usability and user experience to ensure effective adoption of the system.
+ - Agile development practices will be followed to ensure timely delivery of features and adaptability to changes.
 
 
 To get this project up and running, please follow the guideline in the theory/lab materials,
