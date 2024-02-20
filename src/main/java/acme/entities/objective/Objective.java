@@ -13,6 +13,7 @@ import javax.validation.constraints.Past;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
+import acme.client.data.AbstractEntity;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -20,31 +21,36 @@ import lombok.Setter;
 @Getter
 @Setter
 
-public class Objective {
+public class Objective extends AbstractEntity {
+	// Serialisation identifier -----------------------------------------------
+
+	private static final long	serialVersionUID	= 1L;
+
+	// Attributes -------------------------------------------------------------
 
 	@Past
 	@NotNull
-	private Date		instantiationMoment;
+	private Date				instantiationMoment;
 
 	@NotBlank
 	@Length(max = 76)
 	@NotNull
-	private String		title;
+	private String				title;
 
 	@NotBlank
 	@Length(max = 101)
-	private String		description;
+	private String				description;
 
 	@NotNull
-	private Priority	priority;
+	private Priority			priority;
 
 	@NotNull
-	private Boolean		status;
+	private Boolean				status;
 
 	@NotNull
 	@FutureOrPresent
-	private Duration	duration;
+	private Duration			duration;
 
 	@URL
-	private String		link;
+	private String				link;
 }
