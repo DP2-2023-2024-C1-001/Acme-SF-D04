@@ -1,11 +1,11 @@
 
 package acme.entities.objective;
 
-import java.time.Duration;
 import java.util.Date;
 
 import javax.persistence.Entity;
-import javax.validation.constraints.FutureOrPresent;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
@@ -28,29 +28,29 @@ public class Objective extends AbstractEntity {
 
 	// Attributes -------------------------------------------------------------
 
+	@Temporal(TemporalType.TIMESTAMP)
 	@Past
 	@NotNull
 	private Date				instantiationMoment;
 
 	@NotBlank
-	@Length(max = 76)
-	@NotNull
+	@Length(max = 75)
 	private String				title;
 
 	@NotBlank
-	@Length(max = 101)
+	@Length(max = 100)
 	private String				description;
 
 	@NotNull
 	private Priority			priority;
 
 	@NotNull
-	private Boolean				status;
+	private boolean				status;
 
 	@NotNull
-	@FutureOrPresent
-	private Duration			duration;
+	private Date				duration;
 
 	@URL
 	private String				link;
+
 }
