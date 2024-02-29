@@ -39,12 +39,6 @@ public class Notice extends AbstractEntity {
 	private String				title;
 
 	@NotBlank
-	@Length(max = 75)
-	//	@Pattern(regexp = "<username> - <surname, name>")
-	//  @Pattern(regexp = "^[\\w.-]+ - [\\w\\s,.-]+$")
-	private String				author;
-
-	@NotBlank
 	@Length(max = 100)
 	private String				message;
 
@@ -53,5 +47,11 @@ public class Notice extends AbstractEntity {
 
 	@URL
 	private String				link;
+
+	// Derived attributes -----------------------------------------------------
+
+	@NotBlank
+	@Length(max = 75)
+	public String				author;
 
 }
