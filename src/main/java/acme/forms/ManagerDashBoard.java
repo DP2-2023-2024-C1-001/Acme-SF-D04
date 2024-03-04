@@ -13,7 +13,7 @@ public class ManagerDashBoard extends AbstractForm {
 
 	// Attributes -------------------------------------------------------------
 
-	Map<Priority, Integer>		totalLecturesNumberByPriority;
+	Map<Priority, Integer>		totalUserStoriesNumberByPriority;
 
 	Double						averageAmountOfUserStory;
 	Double						deviationAmountOfUserStory;
