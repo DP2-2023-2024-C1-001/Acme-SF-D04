@@ -4,6 +4,7 @@ package acme.forms;
 import java.util.Map;
 
 import acme.client.data.AbstractForm;
+import acme.entities.userStory.Priority;
 import lombok.Getter;
 import lombok.Setter;
 
