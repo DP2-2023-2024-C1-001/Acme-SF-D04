@@ -1,0 +1,24 @@
+key,instantiation-moment,title,description,priority,status,initial-period,final-period,link
+objective-00,2022/07/24 00:00,mejorar implementación,hay que refactorizar el código,LOW,true,2022/07/25 00:00,2022/07/25 01:00,http://www.ejemplo.com/
+objective-01,2022/07/29 10:00,mejorar implementación,hay que refactorizar el código,LOW,true,2022/07/25 00:00,2022/07/25 01:00,http://www.ejemplo.com/
+objective-02,2022/07/28 20:00,mejorar implementación,hay que refactorizar el código,LOW,true,2022/07/25 00:00,2022/07/25 01:00,http://www.ejemplo.com/
+objective-03,1900/07/24 11:00,mejorar implementación,hay que refactorizar el código,LOW,true,2022/07/25 00:00,2022/07/25 01:00,http://www.ejemplo.com/
+objective-04,2000/07/24 09:54,mejorar implementación,hay que refactorizar el código,LOW,true,2022/07/25 00:00,2022/07/25 01:00,http://www.ejemplo.com/
+objective-05,2022/07/24 00:00,m,hay que refactorizar el código,LOW,true,2022/07/25 00:00,2022/07/25 01:00,http://www.ejemplo.com/
+objective-06,2022/07/24 00:00,me,hay que refactorizar el código,LOW,true,2022/07/25 00:00,2022/07/25 01:00,http://www.ejemplo.com/
+objective-07,2022/07/24 00:00,Optimiza la ejecución para mayor eficiencia. Mejora la ejecución máxima ya,hay que refactorizar el código,LOW,true,2022/07/25 00:00,2022/07/25 01:00,http://www.ejemplo.com/
+objective-08,2022/07/24 00:00,Optimiza la ejecución para mayor eficiencia. Mejora la ejecución máxima y,hay que refactorizar el código,LOW,true,2022/07/25 00:00,2022/07/25 01:00,http://www.ejemplo.com/
+objective-09,2022/07/24 00:00,улучшить реализацию,hay que refactorizar el código,LOW,true,2022/07/25 00:00,2022/07/25 01:00,http://www.ejemplo.com/
+objective-10,2022/07/24 00:00,mejorar implementación,h,LOW,true,2022/07/25 00:00,2022/07/25 01:00,http://www.ejemplo.com/
+objective-11,2022/07/24 00:00,mejorar implementación,ha,LOW,true,2022/07/25 00:00,2022/07/25 01:00,http://www.ejemplo.com/
+objective-12,2022/07/24 00:00,mejorar implementación,Optimiza la implementación para aumentar las eficiencia del proceso de trabajo. Mejóralo por favor.,LOW,true,2022/07/25 00:00,2022/07/25 01:00,http://www.ejemplo.com/
+objective-13,2022/07/24 00:00,mejorar implementación,Optimiza la implementación para aumentar las eficiencia del proceso de trabajo. Mejóralo por favor,LOW,true,2022/07/25 00:00,2022/07/25 01:00,http://www.ejemplo.com/
+objective-14,2022/07/24 00:00,mejorar implementación,улучшить реализацию,LOW,true,2022/07/25 00:00,2022/07/25 01:00,http://www.ejemplo.com/
+objective-15,2022/07/24 00:00,mejorar implementación,hay que refactorizar el código,MEDIUM,true,2022/07/25 00:00,2022/07/25 01:00,http://www.ejemplo.com/
+objective-16,2022/07/24 00:00,mejorar implementación,hay que refactorizar el código,HIGH,true,2022/07/25 00:00,2022/07/25 01:00,http://www.ejemplo.com/
+objective-17,2022/07/24 00:00,mejorar implementación,hay que refactorizar el código,LOW,false,2022/07/25 00:00,2022/07/25 01:00,http://www.ejemplo.com/
+objective-18,2022/07/24 00:00,mejorar implementación,hay que refactorizar el código,LOW,true,2022/07/30 00:00,2022/07/30 01:00,http://www.ejemplo.com/
+objective-19,2022/07/24 00:00,mejorar implementación,hay que refactorizar el código,LOW,true,2028/07/30 00:00,2028/07/30 01:00,http://www.ejemplo.com/
+objective-20,2022/07/24 00:00,mejorar implementación,hay que refactorizar el código,LOW,true,2022/07/24 00:01,2022/07/24 01:00,http://www.ejemplo.com/
+objective-21,2022/07/24 00:00,mejorar implementación,hay que refactorizar el código,LOW,true,2022/07/25 00:00,2022/07/25 01:00,
+objective-22,2022/07/24 00:00,mejorar implementación,hay que refactorizar el código,LOW,true,2022/07/25 00:00,2022/07/25 01:00,http://www.пример.com/
