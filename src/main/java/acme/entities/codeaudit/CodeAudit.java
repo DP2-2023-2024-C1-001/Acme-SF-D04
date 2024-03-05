@@ -29,7 +29,7 @@ public class CodeAudit extends AbstractEntity {
 
 	// Attributes -------------------------------------------------------------
 	@Column(unique = true)
-	@Pattern(regexp = "[A-Z]{1,3}-[0-9]{3}")
+	@Pattern(regexp = "AU-[0-9]{4}-[0-9]{3}")
 	@NotBlank
 	private String				code;
 
@@ -38,7 +38,7 @@ public class CodeAudit extends AbstractEntity {
 	@NotNull
 	private Date				execution;
 
-	@NotBlank
+	@NotNull
 	private Type				type;
 
 	@NotBlank
