@@ -1,0 +1,15 @@
+key,code,creation-moment,details,difficult-level,update-moment,link,total-time
+training-module-01,ABC-123,2022/07/25 00:00,"Nuestro entrenamiento en Desarrollo Web Full Stack, con una duración de 10 semanas y disponible tan",Basic,2022/07/25 00:00,http://www.ejemploimagen.com,30
+training-module-02,A-123,2022/07/25 00:00,"Nuestro entrenamiento en Desarrollo Web Full Stack, con una duración de 10 semanas y disponible tan",Basic,2022/07/25 00:00,http://www.ejemploimagen.com, 30
+training-module-03,AB-123,2022/07/25 00:00,"Nuestro entrenamiento en Desarrollo Web Full Stack, con una duración de 10 semanas y disponible tan",Basic,2022/07/25 00:00,http://www.ejemploimagen.com,30
+training-module-04,AB-000,2022/07/25 00:00,"Nuestro entrenamiento en Desarrollo Web Full Stack, con una duración de 10 semanas y disponible ta",Basic,2022/07/25 00:00,http://www.ejemploimagen.com,30 
+training-module-05,AB-001,2022/07/25 00:00,"Nu",Basic,2022/07/25 00:00,http://www.ejemploimagen.com,30 
+training-module-06,AB-002,2022/07/25 00:00,"N",Basic,2022/07/25 00:00,http://www.ejemploimagen.com,30
+training-module-07,A-003,2022/07/25 00:00,"当社のフルスタック Web 開発トレーニングは 10 週間続き、最短で受講可能です。",Basic,2022/07/25 00:00,http://www.ejemploimagen.com, 30
+training-module-08,A-004,2022/07/25 00:00,"Nuestro entrenamiento en Desarrollo Web Full Stack, con una duración de 10 semanas y disponible tan",Intermediate,2022/07/25 00:00,http://www.ejemploimagen.com, 30
+training-module-09,A-005,2022/07/25 00:00,"Nuestro entrenamiento en Desarrollo Web Full Stack, con una duración de 10 semanas y disponible tan",Advanced,2022/07/25 00:00,http://www.ejemploimagen.com, 30     
+training-module-10,A-006,2022/07/25 00:00,"Nuestro entrenamiento en Desarrollo Web Full Stack, con una duración de 10 semanas y disponible tan",Basic,,http://www.ejemploimagen.com, 30   
+training-module-11,A-007,2022/07/25 00:00,"Nuestro entrenamiento en Desarrollo Web Full Stack, con una duración de 10 semanas y disponible tan",Basic,1990/07/25 00:00,http://www.ejemploimagen.com, 30   
+training-module-12,A-008,2022/07/25 00:00,"Nuestro entrenamiento en Desarrollo Web Full Stack, con una duración de 10 semanas y disponible tan",Basic,2022/07/25 00:00,, 30 
+training-module-13,A-009,2022/07/25 00:00,"Nuestro entrenamiento en Desarrollo Web Full Stack, con una duración de 10 semanas y disponible tan",Basic,2022/07/25 00:00,http://www.ejemploimagen.com, 01   
+training-module-14,A-010,2022/07/25 00:00,"Nuestro entrenamiento en Desarrollo Web Full Stack, con una duración de 10 semanas y disponible tan",Basic,2022/07/25 00:00,http://www.ejemploimagen.com, 100                                                                                                                                                                                                                                                                                                                                                                                                                    

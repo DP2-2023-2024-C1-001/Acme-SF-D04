@@ -5,3 +5,11 @@ user-account-provider-01,true,"UserIdentity{name: 'Laurel', surname: 'Provider',
 user-account-provider-02,true,"UserIdentity{name: 'Martina', surname: 'коза თხა', email: 'martina@acme.com'}",provider2,provider2
 user-account-manager-01,true,"UserIdentity{name: 'Luisa', surname: 'Japon', email: 'luisa@acme.com'}",manager1,manager1
 user-account-manager-02,true,"UserIdentity{name: 'Guillermo', surname: 'សញ្ញាបត្រ', email: 'guillermo@acme.com'}",manager2,manager2
+user-account-developer-01,true,"UserIdentity{name: 'Developer', surname: 'developer1', email: 'developer1@acme.com'}",developer1,developer1
+user-account-developer-02,true,"UserIdentity{name: 'Developer', surname: 'developer2', email: 'developer2@acme.com'}",developer2,developer2
+user-account-administrator-02,true,"UserIdentity{name: 'Administrator', surname: 'administrator1', email: 'administrator1@acme.com'}",administrator1,administrator1
+user-account-administrator-03,true,"UserIdentity{name: 'Administrator', surname: 'administrator2', email: 'administrator2@acme.com'}",administrator2,administrator2
+user-account-sponsor-01,true,"UserIdentity{name: 'Sponsor1', surname: 'sponsor1', email: 'sponsor1@acme.com'}",sponsor1,sponsor1
+user-account-sponsor-02,true,"UserIdentity{name: 'Sponsor2', surname: 'sponsor2', email: 'sponsor2@acme.com'}",sponsor2,sponsor2
+
+

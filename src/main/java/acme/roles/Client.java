@@ -1,28 +1,23 @@
 
-package acme.entities.trainingmodule;
-
-import java.util.Date;
+package acme.roles;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
-import acme.client.data.AbstractEntity;
+import acme.client.data.AbstractRole;
+import acme.roles.enums.ClientType;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-public class TrainingModule extends AbstractEntity {
+public class Client extends AbstractRole {
 
 	// Serialisation identifier -----------------------------------------------
 
@@ -30,35 +25,25 @@ public class TrainingModule extends AbstractEntity {
 
 	// Attributes -------------------------------------------------------------
 
-	@Pattern(regexp = "[A-Z]{1,3}-[0-9]{3}")
-	@NotBlank
 	@Column(unique = true)
-	private String				code;
-
-	@Past
-	@NotNull
-	@Temporal(TemporalType.TIMESTAMP)
-	private Date				creationMoment;
+	@Pattern(regexp = "CLI-[0-9]{4}")
+	@NotBlank
+	private String				identification;
 
 	@NotBlank
-	@Length(max = 100)
-	private String				details;
+	@Length(max = 75)
+	private String				companyName;
 
-	@NotNull
-	private Difficult			difficultLevel;
+	@NotBlank
+	private String				email;
 
-	@Past
-	//Despues de creationMoment
-	private Date				updateMoment;
+	@NotBlank
+	private ClientType			type;
 
 	@URL
 	private String				link;
 
-	@NotNull
-	private int					totalTime;
-
 	// Derived attributes -----------------------------------------------------
 
 	// Relationships ----------------------------------------------------------
-
 }

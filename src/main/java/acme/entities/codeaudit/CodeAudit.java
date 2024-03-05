@@ -1,5 +1,5 @@
 
-package acme.entities.invoice;
+package acme.entities.codeaudit;
 
 import java.util.Date;
 
@@ -8,83 +8,59 @@ import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.persistence.Transient;
 import javax.validation.Valid;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Positive;
 
+import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
 import acme.client.data.AbstractEntity;
-import acme.entities.sponsorship.Sponsorship;
+import acme.entities.auditrecord.AuditRecord;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-public class Invoice extends AbstractEntity {
-
+public class CodeAudit extends AbstractEntity {
 	// Serialisation identifier -----------------------------------------------
 
 	private static final long	serialVersionUID	= 1L;
 
 	// Attributes -------------------------------------------------------------
-
-	@Pattern(regexp = "IN-[0-9]{4}-[0-9]{4}")
-	@NotBlank
 	@Column(unique = true)
+	@Pattern(regexp = "[A-Z]{1,3}-[0-9]{3}")
+	@NotBlank
 	private String				code;
 
+	@Temporal(TemporalType.TIMESTAMP)
 	@Past
 	@NotNull
-	@Temporal(TemporalType.TIMESTAMP)
-	private Date				registrationTime;
+	private Date				execution;
 
-	// at least one month ahead the registration time
-	@Past
-	@NotNull
-	@Temporal(TemporalType.TIMESTAMP)
-	private Date				dueDate;
+	@NotBlank
+	private Type				type;
 
-	@Positive
-	@NotNull
-	private double				quantity;
+	@NotBlank
+	@Length(max = 100)
+	private String				correctiveActions;
 
-	@Min(0)
-	@Max(100)
 	@NotNull
-	private double				tax;
+	private Mark				mark;
 
 	@URL
 	private String				link;
 
 	// Derived attributes -----------------------------------------------------
 
-
-	@Transient
-	public double totalAmount() {
-		double result;
-		double amount;
-
-		amount = this.quantity * this.tax / 100;
-
-		result = this.quantity + amount;
-
-		return result;
-	}
-
 	// Relationships ----------------------------------------------------------
 
-
-	@NotNull
-	@Valid
 	@ManyToOne(optional = false)
-	private Sponsorship sponsorship;
+	@Valid
+	@NotNull
+	private AuditRecord			auditRecord;
 
 }
