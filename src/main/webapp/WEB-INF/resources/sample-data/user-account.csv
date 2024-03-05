@@ -11,4 +11,3 @@ user-account-client-01,true,"UserIdentity{name: 'Client1', surname: 'client1', e
 user-account-client-02,true,"UserIdentity{name: 'Client2', surname: 'client2', email: 'client2@acme.com'}",client2,client2
 user-account-sponsor-01,true,"UserIdentity{name: 'Sponsor1', surname: 'sponsor1', email: 'sponsor1@acme.com'}",sponsor1,sponsor1
 user-account-sponsor-02,true,"UserIdentity{name: 'Sponsor2', surname: 'sponsor2', email: 'sponsor2@acme.com'}",sponsor2,sponsor2
-
