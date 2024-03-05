@@ -6,6 +6,7 @@ import javax.persistence.ManyToOne;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
+import acme.client.data.AbstractEntity;
 import acme.entities.userStory.UserStory;
 import lombok.Getter;
 import lombok.Setter;
@@ -13,7 +14,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class UserStoryProject {
+public class UserStoryProject extends AbstractEntity {
 
 	// Serialisation identifier -----------------------------------------------
 
