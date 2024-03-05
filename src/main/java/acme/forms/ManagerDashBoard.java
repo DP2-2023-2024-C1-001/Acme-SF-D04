@@ -4,7 +4,11 @@ package acme.forms;
 import java.util.Map;
 
 import acme.client.data.AbstractForm;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class ManagerDashBoard extends AbstractForm {
 
 	// Serialisation identifier -----------------------------------------------
