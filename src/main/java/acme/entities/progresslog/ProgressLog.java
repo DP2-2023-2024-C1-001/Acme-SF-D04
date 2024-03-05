@@ -26,7 +26,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class ProgessLog extends AbstractEntity {
+public class ProgressLog extends AbstractEntity {
 
 	// Serialisation identifier -----------------------------------------------
 
