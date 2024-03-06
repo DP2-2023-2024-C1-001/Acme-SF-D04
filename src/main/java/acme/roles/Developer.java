@@ -36,6 +36,7 @@ public class Developer extends AbstractRole {
 	private String				skill;
 
 	@Email
+	@NotBlank
 	private String				email;
 
 	@URL
