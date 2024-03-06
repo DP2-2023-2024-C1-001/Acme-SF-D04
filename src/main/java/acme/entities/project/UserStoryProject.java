@@ -25,7 +25,7 @@ public class UserStoryProject extends AbstractEntity {
 	@NotNull
 	@Valid
 	@ManyToOne
-	private Project				projetc;
+	private Project				project;
 
 	@NotNull
 	@Valid
