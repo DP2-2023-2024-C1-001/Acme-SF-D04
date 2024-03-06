@@ -1,3 +1,3 @@
-key,key:userAccount,degree,overview,certifications 
-manager-01,user-account-manager-01,"Ingeniero Informatico","Soy una persona con muchas habilidades","Programador Java, Programador Python"
-manager-02,user-account-manager-02,"ئه‌ندازیاری كۆمپیوته‌ر", "من کەسێکم خاوەنی چەندین لێهاتوویی", "پرۆگرامەری جاڤا، پرۆگرامەری پایتۆن"
+key,key:userAccount,degree,overview,certifications,link
+manager-01,user-account-manager-01,Ingeniero Informatico,Soy una persona con muchas habilidades,ProgramadorJava,http://www.ejemplo.com/
+manager-02,user-account-manager-02,Matematico,Tengo experiencia de 10 años en el sector software,ProgramadorAcme,http://www.ejemplo.com/

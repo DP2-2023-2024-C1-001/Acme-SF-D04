@@ -15,4 +15,3 @@ user-account-sponsor-01,true,"UserIdentity{name: 'Sponsor1', surname: 'sponsor1'
 user-account-sponsor-02,true,"UserIdentity{name: 'Sponsor2', surname: 'sponsor2', email: 'sponsor2@acme.com'}",sponsor2,sponsor2
 user-account-auditor-01,true,"UserIdentity{name: 'Auditor', surname: 'auditor1', email: 'auditor1@acme.com'}",auditor1,auditor1
 user-account-auditor-02,true,"UserIdentity{name: 'Auditor', surname: 'auditor2', email: 'auditor2@acme.com'}",auditor2,auditor2
-
