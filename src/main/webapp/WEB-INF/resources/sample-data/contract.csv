@@ -1,28 +1,28 @@
-key,code,instantiation-moment,provider-name,customer-name,goals,budget
-contract-00,AAA-000,2022/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98"
-contract-01,A-999,2022/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98"
-contract-02,AA-060,2022/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98"
-contract-03,AAA-001,2022/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98"
-contract-04,AAA-002,2022/07/29 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98"
-contract-05,AAA-003,2000/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98"
-contract-06,AAA-004,900/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98"
-contract-07,AAA-005,2022/07/24 00:00, A, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98"
-contract-08,AAA-006,2022/07/24 00:00, Ac, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98"
-contract-09,AAA-007,2022/07/24 00:00,Supermegaexclusivoproveedorinternacionaldeproductosindustrialesytécni, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98"
-contract-10,AAA-008,2022/07/24 00:00,Supermegaexclusivoproveedorinternacionaldeproductosindustrialesytécn, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98"
-contract-11,AAA-009,2022/07/24 00:00,पुरवणदाराक मेळटा, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98"
-contract-12,AAA-010,2022/07/24 00:00, Acme Studios, A, Generar proyecto de la asignatura,"EUR 15,000.98"
-contract-13,AAA-020,2022/07/24 00:00, Acme Studios, Ac, Generar proyecto de la asignatura,"EUR 15,000.98"
-contract-14,AAA-030,2022/07/24 00:00, Acme Studios,Supermegaexclusivocustomersinternacionaldeproductosindustrialesytécni, Generar proyecto de la asignatura,"EUR 15,000.98"
-contract-15,AAA-040,2022/07/24 00:00, Acme Studios,Supermegaexclusivocustomersinternacionaldeproductosindustrialesytécn, Generar proyecto de la asignatura,"EUR 15,000.98"
-contract-16,AAA-050,2022/07/24 00:00, Acme Studios,पुरवणदाराक, Generar proyecto de la asignatura,"EUR 15,000.98"
-contract-17,AAA-060,2022/07/24 00:00, Acme Studios, Acme-SD,G,"EUR 15,000.98"
-contract-18,AAA-070,2022/07/24 00:00, Acme Studios, Acme-SD,Ge,"EUR 15,000.98"
-contract-19,AAA-080,2022/07/24 00:00, Acme Studios, Acme-SD,Alcanzar una reducción del 20% en el consumo de energía en nuestras instalaciones en los próximo,"EUR 15,000.98"
-contract-20,AAA-090,2022/07/24 00:00, Acme Studios, Acme-SD,Alcanzar una reducción del 20% en el consumo de energía en nuestras instalaciones en los próxim,"EUR 15,000.98"
-contract-21,AAA-100,2022/07/24 00:00, Acme Studios, Acme-SD,मेळटा,"EUR 15,000.98"
-contract-22,AAA-200,2022/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"EUR 1,000,000.00"
-contract-23,AAA-300,2022/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"USD -1,000,000.00"
-contract-24,AAA-400,2022/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"GBP 999,999.99"
-contract-25,AAA-500,2022/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"GBP -999,999.99"
-contract-26,AAA-600,2022/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"GBP 0.00"
+key,code,instantiation-moment,provider-name,customer-name,goals,budget,key:project,key:client
+contract-00,AAA-000,2022/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98",project-00,client-01
+contract-01,A-999,2022/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98",project-00,client-01
+contract-02,AA-060,2022/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98",project-00,client-01
+contract-03,AAA-001,2022/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98",project-00,client-01
+contract-04,AAA-002,2022/07/29 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98",project-00,client-01
+contract-05,AAA-003,2000/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98",project-01,client-01
+contract-06,AAA-004,900/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98",project-01,client-01
+contract-07,AAA-005,2022/07/24 00:00, A, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98",project-01,client-01
+contract-08,AAA-006,2022/07/24 00:00, Ac, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98",project-01,client-01
+contract-09,AAA-007,2022/07/24 00:00,Supermegaexclusivoproveedorinternacionaldeproductosindustrialesytécni, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98",project-01,client-01
+contract-10,AAA-008,2022/07/24 00:00,Supermegaexclusivoproveedorinternacionaldeproductosindustrialesytécn, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98",project-02,client-01
+contract-11,AAA-009,2022/07/24 00:00,पुरवणदाराक मेळटा, Acme-SD, Generar proyecto de la asignatura,"EUR 15,000.98",project-02,client-01
+contract-12,AAA-010,2022/07/24 00:00, Acme Studios, A, Generar proyecto de la asignatura,"EUR 15,000.98",project-02,client-02
+contract-13,AAA-020,2022/07/24 00:00, Acme Studios, Ac, Generar proyecto de la asignatura,"EUR 15,000.98",project-02,client-02
+contract-14,AAA-030,2022/07/24 00:00, Acme Studios,Supermegaexclusivocustomersinternacionaldeproductosindustrialesytécni, Generar proyecto de la asignatura,"EUR 15,000.98",project-02,client-02
+contract-15,AAA-040,2022/07/24 00:00, Acme Studios,Supermegaexclusivocustomersinternacionaldeproductosindustrialesytécn, Generar proyecto de la asignatura,"EUR 15,000.98",project-03,client-02
+contract-16,AAA-050,2022/07/24 00:00, Acme Studios,पुरवणदाराक, Generar proyecto de la asignatura,"EUR 15,000.98",project-03,client-02
+contract-17,AAA-060,2022/07/24 00:00, Acme Studios, Acme-SD,G,"EUR 15,000.98",project-03,client-02
+contract-18,AAA-070,2022/07/24 00:00, Acme Studios, Acme-SD,Ge,"EUR 15,000.98",project-03,client-02
+contract-19,AAA-080,2022/07/24 00:00, Acme Studios, Acme-SD,Alcanzar una reducción del 20% en el consumo de energía en nuestras instalaciones en los próximo,"EUR 15,000.98",project-03,client-02
+contract-20,AAA-090,2022/07/24 00:00, Acme Studios, Acme-SD,Alcanzar una reducción del 20% en el consumo de energía en nuestras instalaciones en los próxim,"EUR 15,000.98",project-04,client-02
+contract-21,AAA-100,2022/07/24 00:00, Acme Studios, Acme-SD,मेळटा,"EUR 15,000.98",project-04,client-02
+contract-22,AAA-200,2022/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"EUR 1,000,000.00",project-04,client-02
+contract-23,AAA-300,2022/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"USD -1,000,000.00",project-04,client-02
+contract-24,AAA-400,2022/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"GBP 999,999.99",project-04,client-02
+contract-25,AAA-500,2022/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"GBP -999,999.99",project-04,client-02
+contract-26,AAA-600,2022/07/24 00:00, Acme Studios, Acme-SD, Generar proyecto de la asignatura,"GBP 0.00",project-04,client-02
