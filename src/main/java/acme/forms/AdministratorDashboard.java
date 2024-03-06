@@ -15,20 +15,20 @@ public class AdministratorDashboard extends AbstractForm {
 
 	// Attributes -------------------------------------------------------------
 
-	Integer						totalNumberOfPrincipalsWithEachRole;
-	Double						ratioOfNoticesWithEmailAndLink;
-	Double						ratioOfCriticalObjectives;
-	Double						ratioOfNonCriticalObjectives;
+	int							totalNumberOfPrincipalsWithEachRole;
+	double						ratioOfNoticesWithEmailAndLink;
+	double						ratioOfCriticalObjectives;
+	double						ratioOfNonCriticalObjectives;
 
-	Double						averageOfTheValueInTheRisks;
-	Double						deviationOfTheValueInTheRisks;
-	Double						minimumOfTheValueInTheRisks;
-	Double						maximumOfTheValueInTheRisks;
+	double						averageOfTheValueInTheRisks;
+	double						deviationOfTheValueInTheRisks;
+	double						minimumOfTheValueInTheRisks;
+	double						maximumOfTheValueInTheRisks;
 
-	Double						averageOfTheNumberOfClaimsPostedOverTheLast10Weeks;
-	Double						deviationOfTheNumberOfClaimsPostedOverTheLast10Weeks;
-	Double						minimumOfTheNumberOfClaimsPostedOverTheLast10Weeks;
-	Double						maximumOfTheNumberOfClaimsPostedOverTheLast10Weeks;
+	double						averageOfTheNumberOfClaimsPostedOverTheLast10Weeks;
+	double						deviationOfTheNumberOfClaimsPostedOverTheLast10Weeks;
+	double						minimumOfTheNumberOfClaimsPostedOverTheLast10Weeks;
+	double						maximumOfTheNumberOfClaimsPostedOverTheLast10Weeks;
 
 	// Derived attributes -----------------------------------------------------
 

@@ -3,6 +3,7 @@ package acme.entities.systemconfiguration;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import acme.client.data.AbstractEntity;
 import lombok.Getter;
@@ -22,6 +23,6 @@ public class SystemConfiguration extends AbstractEntity {
 	@NotBlank
 	public String				acceptedCurrencies;
 
-	@NotBlank
-	public String				systemCurrency;
+	@NotNull
+	public Currency				systemCurrency;
 }
