@@ -1,0 +1,21 @@
+key,code,period-start,period-end,mark,link
+audit-record-00,AHS-049,2003/06/23 00:00,2003/06/23 00:47,B,
+audit-record-01,A-000,2022/07/24 07:39,2022/07/24 07:47,A_PLUS,
+audit-record-02,A-999,2021/01/10 13:00,2021/01/10 13:59,C,https://auditrecordexample.com/not-found
+audit-record-03,Z-000,1990/10/03 20:30,1990/10/03 21:15,B,https://auditrecordarchive.io/nonexistent-page
+audit-record-04,Z-999,2022/07/24 00:00,2022/07/24 00:47,F,
+audit-record-05,R-049,2012/07/24 12:00,2012/07/24 12:37,A,https://auditrecordcentral.org/invalid-link
+audit-record-06,AA-000,2023/09/06 17:12,2023/09/06 17:48,A,
+audit-record-07,AA-999,2022/07/24 00:00,2022/07/24 00:47,F_MINUS,https://myauditrecordstore.net/404-error
+audit-record-08,ZZ-000,2022/07/24 00:00,2022/07/24 00:47,B,
+audit-record-09,ZZ-999,2022/07/24 00:00,2022/07/24 00:47,A,https://auditrecordtracker.com/dead-link
+audit-record-10,YF-437,2022/07/24 00:00,2022/07/24 00:47,C,
+audit-record-11,AAA-000,2022/07/24 00:00,2022/07/24 00:47,C,https://auditrecordvault.net/missing-content
+audit-record-12,AAA-999,2022/07/24 00:00,2022/07/24 00:47,B,
+audit-record-13,ZZZ-000,2022/07/24 00:00,2022/07/24 00:47,F_MINUS,
+audit-record-14,ZZZ-999,2022/07/24 00:00,2022/07/24 00:47,A_PLUS,
+audit-record-15,GKL-568,2022/07/24 00:00,2022/07/24 00:47,A,
+audit-record-16,AHA-098,2022/07/24 00:00,2022/07/24 00:47,C,
+audit-record-17,YYU-898,2022/07/24 00:00,2022/07/24 00:47,B,
+audit-record-18,ASS-327,2022/07/24 00:00,2022/07/24 00:47,F_MINUS,
+audit-record-19,VJF-777,2022/07/24 00:00,2022/07/24 00:47,B,
