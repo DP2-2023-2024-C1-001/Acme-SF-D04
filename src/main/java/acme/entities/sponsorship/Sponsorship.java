@@ -10,7 +10,6 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.Email;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
@@ -57,7 +56,6 @@ public class Sponsorship extends AbstractEntity {
 	private Date				finalDate;
 	//--------------------------------
 
-	@Min(0)
 	@NotNull
 	private Money				amount;
 
