@@ -20,7 +20,7 @@ public class AdministratorDashboard extends AbstractForm {
 	int							totalNumberOfPrincipalsWithRoleClient;
 	int							totalNumberOfPrincipalsWithRoleConsumer;
 	int							totalNumberOfPrincipalsWithRoleDeveloper;
-	int							totalNumberOfPrincipalsWithRoleManger;
+	int							totalNumberOfPrincipalsWithRoleManager;
 	int							totalNumberOfPrincipalsWithRoleProvider;
 	int							totalNumberOfPrincipalsWithRoleSponsor;
 
