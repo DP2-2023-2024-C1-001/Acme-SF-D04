@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -18,7 +19,8 @@ import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
 import acme.client.data.AbstractEntity;
-import acme.entities.auditrecord.AuditRecord;
+import acme.entities.project.Project;
+import acme.roles.Auditor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -32,7 +34,7 @@ public class CodeAudit extends AbstractEntity {
 
 	// Attributes -------------------------------------------------------------
 	@Column(unique = true)
-	@Pattern(regexp = "AU-[0-9]{4}-[0-9]{3}")
+	@Pattern(regexp = "[A-Z]{1,3}-[0-9]{3}")
 	@NotBlank
 	private String				code;
 
@@ -42,25 +44,30 @@ public class CodeAudit extends AbstractEntity {
 	private Date				execution;
 
 	@NotNull
-	private Type				type;
+	private CodeAuditType		type;
 
 	@NotBlank
 	@Length(max = 100)
 	private String				correctiveActions;
-
-	@NotNull
-	private Mark				mark;
 
 	@URL
 	private String				link;
 
 	// Derived attributes -----------------------------------------------------
 
+	@Transient
+	private String				mark;
+
 	// Relationships ----------------------------------------------------------
 
 	@ManyToOne(optional = false)
 	@Valid
 	@NotNull
-	private AuditRecord			auditRecord;
+	private Auditor				auditor;
+
+	@ManyToOne(optional = false)
+	@Valid
+	@NotNull
+	private Project				project;
 
 }
