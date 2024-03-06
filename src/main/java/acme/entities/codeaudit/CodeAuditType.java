@@ -1,7 +1,7 @@
 
 package acme.entities.codeaudit;
 
-public enum Type {
+public enum CodeAuditType {
 	STATIC, DYNAMIC;
 
 }
