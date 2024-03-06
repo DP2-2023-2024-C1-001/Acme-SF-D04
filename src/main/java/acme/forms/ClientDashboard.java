@@ -15,15 +15,15 @@ public class ClientDashboard extends AbstractForm {
 
 	// Attributes -------------------------------------------------------------
 
-	Integer						totalNumberOfProgressLogsWithCompletenessRateBelow25Percent;
-	Integer						totalNumberOfProgressLogsWithCompletenessRateBetween25And50Percent;
-	Integer						totalNumberOfProgressLogsWithCompletenessRateBetween50And75Percent;
-	Integer						totalNumberOfProgressLogsWithCompletenessRateAbove75Percent;
+	int							totalNumberOfProgressLogsWithCompletenessRateBelow25Percent;
+	int							totalNumberOfProgressLogsWithCompletenessRateBetween25And50Percent;
+	int							totalNumberOfProgressLogsWithCompletenessRateBetween50And75Percent;
+	int							totalNumberOfProgressLogsWithCompletenessRateAbove75Percent;
 
-	Double						averageBudgetOfContracts;
-	Double						deviationBudgetOfContracts;
-	Double						minimumBudgetOfContracts;
-	Double						maximumBudgetOfContracts;
+	double						averageBudgetOfContracts;
+	double						deviationBudgetOfContracts;
+	double						minimumBudgetOfContracts;
+	double						maximumBudgetOfContracts;
 
 	// Derived attributes -----------------------------------------------------
 
