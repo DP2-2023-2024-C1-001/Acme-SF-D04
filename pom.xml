@@ -21,11 +21,11 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	
-	<name>Acme-SF</name>
+	<name>Acme-SF-D02</name>
 
 	<description>This is the implementation of Design and Testing project</description>
 	
-	<artifactId>D02</artifactId>
+	<artifactId>Acme-SF</artifactId>
 	
 	<groupId>Acme</groupId>
 	
