@@ -1,0 +1,21 @@
+key,code,execution,type,corrective-actions,mark,link,key:audit-record
+code-audit-00,AU-0000-049,2003/06/23 00:00,STATIC,Implementar una revisión de procedimientos para prevenir futuros errores.,B,,audit-record-00
+code-audit-01,AU-0000-000,2022/07/24 07:39,DYNAMIC,Capacitar al personal en el uso adecuado de herramientas dinámicas.,A_PLUS,,audit-record-01
+code-audit-02,AU-9999-999,2021/01/10 13:00,DYNAMIC,Realizar una revisión de seguridad física en el sitio.,C,https://auditrecordexample.com/not-found,audit-record-02
+code-audit-03,AU-9999-000,1990/10/03 20:30,DYNAMIC,Realizar una auditoría de cumplimiento regulatorio.,B,https://auditrecordarchive.io/nonexistent-page,audit-record-03
+code-audit-04,AU-0000-999,2022/07/24 00:00,STATIC,Revisar y mejorar el sistema de gestión de calidad wdddddddddd.,F,,audit-record-04
+code-audit-05,AU-9900-049,2012/07/24 12:00,STATIC,Implementar un sistema de gestión de calidad certificado.,A,https://auditrecordcentral.org/invalid-link,audit-record-05
+code-audit-06,AU-0099-000,2021/09/06 17:12,DYNAMIC,Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.,A,,audit-record-06
+code-audit-07,AU-4545-999,2022/07/24 00:00,STATIC,Realizar una auditoría interna para identificar deficiencias.,F_MINUS,https://myauditrecordstore.net/404-error,audit-record-07
+code-audit-08,AU-5385-000,2022/07/24 00:00,DYNAMIC,Implementar controles adicionales para protección de datos.,B,,audit-record-00
+code-audit-09,AU-0204-999,2022/07/24 00:00,STATIC,Realizar una revisión de seguridad física en el sitio.,A,https://auditrecordtracker.com/dead-link,audit-record-00
+code-audit-10,AU-0000-437,2022/07/24 00:00,DYNAMIC,Modificar los procedimientos para garantizar la trazabilidad.,C,,audit-record-08
+code-audit-11,AU-2348-000,2022/07/24 00:00,DYNAMIC,Implementar una revisión de procedimientos para prevenir futuros errores.,C,https://auditrecordvault.net/missing-content,audit-record-09
+code-audit-12,AU-9989-999,2022/07/24 00:00,DYNAMIC,Realizar capacitación adicional sobre manejo de datos.,B,,audit-record-10
+code-audit-13,AU-4827-000,2022/07/24 00:00,DYNAMIC,Revisar y mejorar los protocolos de comunicación interna.,F_MINUS,,audit-record-11
+code-audit-14,AU-2839-999,2022/07/24 00:00,STATIC,Implementar un sistema de gestión de calidad certificado.,A_PLUS,,audit-record-12
+code-audit-15,AU-0329-568,2022/07/24 00:00,DYNAMIC,Realizar una revisión de seguridad física en el sitio.,A,,audit-record-13
+code-audit-16,AU-2340-098,2022/07/24 00:00,STATIC,Modificar los procedimientos para garantizar la trazabilidad.,C,,audit-record-14
+code-audit-17,AU-2384-898,2022/07/24 00:00,STATIC,Realizar una revisión exhaustiva de registros y documentación.,B,,audit-record-15
+code-audit-18,AU-2483-327,2022/07/24 00:00,DYNAMIC,Implementar controles adicionales para protección de datos.,F_MINUS,,audit-record-16
+code-audit-19,AU-3284-777,2022/07/24 00:00,STATIC,Realizar una auditoría de cumplimiento regulatorio.,B,,audit-record-17

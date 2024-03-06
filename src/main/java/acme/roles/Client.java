@@ -4,6 +4,7 @@ package acme.roles;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Length;
@@ -37,7 +38,7 @@ public class Client extends AbstractRole {
 	@NotBlank
 	private String				email;
 
-	@NotBlank
+	@NotNull
 	private ClientType			type;
 
 	@URL
