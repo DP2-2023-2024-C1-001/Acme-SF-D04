@@ -3,6 +3,7 @@ package acme.entities.userStory;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
@@ -32,7 +33,7 @@ public class UserStory extends AbstractEntity {
 
 	@NotBlank
 	@Length(max = 100)
-	private String				UserStorydescription;
+	private String				description;
 
 	@Positive
 	private int					estimatedCost;
@@ -41,6 +42,7 @@ public class UserStory extends AbstractEntity {
 	@Length(max = 100)
 	private String				acceptanceCriteria;
 
+	@NotNull
 	private Priority			priority;
 
 	@URL
@@ -49,6 +51,7 @@ public class UserStory extends AbstractEntity {
 	// RelationShips ----------------------------------------------------------
 
 	@NotNull
+	@Valid
 	@ManyToOne
 	private Manager				manager;
 
