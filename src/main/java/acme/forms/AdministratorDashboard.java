@@ -15,7 +15,15 @@ public class AdministratorDashboard extends AbstractForm {
 
 	// Attributes -------------------------------------------------------------
 
-	int							totalNumberOfPrincipalsWithEachRole;
+	int							totalNumberOfPrincipalsWithRoleAdministrator;
+	int							totalNumberOfPrincipalsWithRoleAuditor;
+	int							totalNumberOfPrincipalsWithRoleClient;
+	int							totalNumberOfPrincipalsWithRoleConsumer;
+	int							totalNumberOfPrincipalsWithRoleDeveloper;
+	int							totalNumberOfPrincipalsWithRoleManger;
+	int							totalNumberOfPrincipalsWithRoleProvider;
+	int							totalNumberOfPrincipalsWithRoleSponsor;
+
 	double						ratioOfNoticesWithEmailAndLink;
 	double						ratioOfCriticalObjectives;
 	double						ratioOfNonCriticalObjectives;
@@ -27,8 +35,8 @@ public class AdministratorDashboard extends AbstractForm {
 
 	double						averageOfTheNumberOfClaimsPostedOverTheLast10Weeks;
 	double						deviationOfTheNumberOfClaimsPostedOverTheLast10Weeks;
-	double						minimumOfTheNumberOfClaimsPostedOverTheLast10Weeks;
-	double						maximumOfTheNumberOfClaimsPostedOverTheLast10Weeks;
+	int							minimumOfTheNumberOfClaimsPostedOverTheLast10Weeks;
+	int							maximumOfTheNumberOfClaimsPostedOverTheLast10Weeks;
 
 	// Derived attributes -----------------------------------------------------
 
