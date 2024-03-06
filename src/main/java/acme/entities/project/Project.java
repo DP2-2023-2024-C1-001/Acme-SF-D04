@@ -3,7 +3,8 @@ package acme.entities.project;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.validation.constraints.Min;
+import javax.persistence.ManyToOne;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -13,6 +14,7 @@ import org.hibernate.validator.constraints.URL;
 
 import acme.client.data.AbstractEntity;
 import acme.client.data.datatypes.Money;
+import acme.roles.Manager;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -40,19 +42,19 @@ public class Project extends AbstractEntity {
 	@Length(max = 100)
 	private String				projectAbstract;
 
-	private String				indicator;
+	private boolean				indicator;
 
 	@NotNull
-	@Min(0)
 	private Money				cost;
 
 	@URL
 	private String				link;
 
-	// Derived attributes -----------------------------------------------------
+	// RelationShips ----------------------------------------------------------
 
+	@NotNull
+	@Valid
+	@ManyToOne
+	private Manager				manager;
 
-	private Boolean hasFatalError() {
-		return !(this.indicator != null && !this.indicator.isEmpty());
-	}
 }

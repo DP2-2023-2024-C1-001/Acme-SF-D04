@@ -20,13 +20,13 @@ public class ManagerDashBoard extends AbstractForm {
 
 	Map<Priority, Integer>		totalUserStoriesNumberByPriority;
 
-	Double						averageAmountOfUserStory;
-	Double						deviationAmountOfUserStory;
-	Double						minimumAmountOfUserStory;
-	Double						maximumAmountOfUserStory;
+	double						averageAmountOfUserStory;
+	double						deviationAmountOfUserStory;
+	double						minimumAmountOfUserStory;
+	double						maximumAmountOfUserStory;
 
-	Double						averageAmountOfProject;
-	Double						deviationAmountOfProject;
-	Double						minimumAmountOfProject;
-	Double						maximumAmountOfProject;
+	double						averageAmountOfProject;
+	double						deviationAmountOfProject;
+	double						minimumAmountOfProject;
+	double						maximumAmountOfProject;
 }
