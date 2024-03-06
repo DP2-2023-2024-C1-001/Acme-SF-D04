@@ -1,7 +1,7 @@
 
 package acme.entities.sponsorship;
 
-public enum Type {
+public enum SponsorType {
 	FINANCIAL, IN_KIND;
 
 }
