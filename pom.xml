@@ -25,11 +25,11 @@
 
 	<description>This is the implementation of Design and Testing project</description>
 	
-	<artifactId>Acme-SF-D02</artifactId>
+	<artifactId>Acme-SF</artifactId>
 	
 	<groupId>Acme</groupId>
 	
-	<version>24.1.0</version>
+	<version>D02</version>
 	
 	<packaging>war</packaging>
 	
