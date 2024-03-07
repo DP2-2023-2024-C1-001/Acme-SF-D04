@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>200</y>
+      <w>280</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+TrainingModule
+--
++ code:String{Unique, NotBlank, Pattern("C-[0-9]{4}")}
++ creationMoment:Date{Temporal(TimeStamp),Past}
++ details:String{NotBlank, Length(max = 100)}
++ difficultLevel:Difficult
++ updateMoment:Date{Temporal(TimeStamp)}
++ link:String{URL}
++ / totalTime:int
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>912</x>
+      <y>480</y>
+      <w>336</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+TrainingSession
+--
++ code:String{Unique, NotBlank, Pattern("TS-[A-Z]{1,3}-[0-9]{3}")}
++ initialPeriod:Date{Temporal(TimeStamp)}
++ finalPeriod:Date{Temporal(TimeStamp)}
++ location:String{NotBlank, Length(max = 75)}
++ instructor:String{NotBlank, Length(max = 75)}
++ contactEmail:String{NotBlank, Email}
++ link:String{URL}
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>96</y>
+      <w>168</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+Difficult
+--
++ BASIC
++ INTERMEDIATE
++ ADVANCED
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>232</x>
+      <y>560</y>
+      <w>272</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Developer
+--
++ degree:String{NotBlank, Length(max = 75)}
++ specialisation:String{NotBlank, Length(max = 100)}
++ skill:String{NotBlank, Length(max = 100)}
++ email:String{NotBlank, Email}
++ link:String{URL}
+
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>560</y>
+      <w>272</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Project
+--
++ code: String {NotBlank, Unique, Pattern("[A-Z]{3}-[0-9]{4}")}
++ title: String {NotBlank, Length(max = 75)}
++ projectAbstract: String {NotBlank, Length(max = 100)}
++ indicator: boolean 
++ cost: Money {NotNull}
++ link: String {URL}
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>136</x>
+      <y>264</y>
+      <w>200</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>updateMoment debe ser posterior a 
+creationMomentDate
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>328</x>
+      <y>280</y>
+      <w>144</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>128</x>
+      <y>344</y>
+      <w>208</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>TotalTime se calculará sumando todos
+los periodos de TrainingSession
+asociados
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>328</x>
+      <y>312</y>
+      <w>152</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;80.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1296</x>
+      <y>520</y>
+      <w>208</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>El periodo debe comenzar una semana 
+antes que el creationMoment 
+de TrainingModule
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1288</x>
+      <y>632</y>
+      <w>208</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>El periodo debe durar al menos
+una semana
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1096</x>
+      <y>624</y>
+      <w>208</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>240.0;50.0;10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>912</x>
+      <y>312</y>
+      <w>272</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Form&gt;&gt;
+developerDashboard
+--
++ totalNumberOfTrainingModulesWithUpdateMoment:int
++ totalNumberOfTrainingSessionsWithLink:int
++ averageTimeOfTrainingModules:double
++ deviationTimeOfTrainigModules:double
++ minimumTimeOfTrainingModules:int
++ maximumTimeOfTrainingModules:int
+
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>968</x>
+      <y>232</y>
+      <w>168</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+serializable
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1048</x>
+      <y>272</y>
+      <w>24</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>368</x>
+      <y>344</y>
+      <w>176</w>
+      <h>232</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+sonDesarrolladosPor
+m2=1
+m1=1..n</panel_attributes>
+    <additional_attributes>180.0;10.0;180.0;130.0;10.0;130.0;10.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>624</x>
+      <y>344</y>
+      <w>80</w>
+      <h>232</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+perteneceA
+m2=1
+m1=1..n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1240</x>
+      <y>528</y>
+      <w>72</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>696</x>
+      <y>344</y>
+      <w>232</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
+m1=1..n</panel_attributes>
+    <additional_attributes>270.0;210.0;10.0;210.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>624</x>
+      <y>352</y>
+      <w>16</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>type=termination</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>504</x>
+      <y>352</y>
+      <w>16</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>type=termination</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>896</x>
+      <y>504</y>
+      <w>16</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>type=termination</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
