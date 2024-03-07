@@ -26,7 +26,7 @@ bg=MAGENTA</panel_attributes>
       <x>600</x>
       <y>290</y>
       <w>360</w>
-      <h>170</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Project
@@ -37,7 +37,6 @@ Project
 + indicator: boolean 
 + cost: Money {NotNull}
 + link: String {URL}
-+ published: boolean
 bg=GREEN</panel_attributes>
     <additional_attributes/>
   </element>
@@ -46,7 +45,7 @@ bg=GREEN</panel_attributes>
     <coordinates>
       <x>1090</x>
       <y>290</y>
-      <w>360</w>
+      <w>390</w>
       <h>150</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
@@ -101,14 +100,14 @@ creates &gt;</panel_attributes>
 ManagerDashboard
 --
 + totalUserStoriesNumberByPriority: Map&lt;Priority,int&gt;
-+ avgUserStoryEstimatedCost: double
-+ devUserStoryEstimatedCost: double
-+ minUserStoryEstimatedCost: double
-+ maxUserStoryEstimatedCost: double
-+ avgProjectCost: double
-+ devProjectCost: double
-+ minProjectCost: double
-+ maxProjectCost: double
++ averageAmountOfUserStory: double
++ deviationAmountOfUserStory: double
++ minimumAmountOfUserStory: double
++ maximumAmountOfUserStory: double
++ averageAmountOfProject: double
++ deviationAmountOfProject: double
++ minimumAmountOfProject: double
++ maximumAmountOfProject: double
 bg=RED</panel_attributes>
     <additional_attributes/>
   </element>
@@ -147,23 +146,23 @@ customelement=
     <id>Relation</id>
     <coordinates>
       <x>800</x>
-      <y>450</y>
+      <y>430</y>
       <w>70</w>
-      <h>190</h>
+      <h>210</h>
     </coordinates>
     <panel_attributes>lt=&lt;..</panel_attributes>
-    <additional_attributes>50.0;10.0;50.0;170.0;10.0;170.0</additional_attributes>
+    <additional_attributes>50.0;10.0;50.0;190.0;10.0;190.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>740</x>
-      <y>450</y>
+      <y>430</y>
       <w>30</w>
-      <h>80</h>
+      <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;..</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
