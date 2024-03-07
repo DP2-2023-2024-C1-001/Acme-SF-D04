@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <help_text>
+</help_text>
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>455</x>
+      <y>371</y>
+      <w>280</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>bg=green
+&lt;&lt;Entity&gt;&gt;
+Contract
+--
++ code: String {Unique, NotBlank, Pattern("[A-Z]{1,3}-[0-9]{3}")}
++ instantiationMoment: Date {Past, Temporal(TIMESTAMP)}
++ providerName: String {NotBlank, Length(max=75)}
++ customerName: String {NotBlank, Length(max=75)}
++ goals: String {NotBlank, Length(max=100)}
++ budget: Money {Valid}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>301</x>
+      <y>427</y>
+      <w>112</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>budget debe ser menor 
+o igual que el precio 
+del proyecto asociado
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>406</x>
+      <y>448</y>
+      <w>70</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>343</x>
+      <y>161</y>
+      <w>280</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Project
+--
++ code: String {NotBlank, Unique, Pattern("[A-Z]{3}-[0-9]{4}")}
++ title: String {NotBlank, Length(max = 75)}
++ projectAbstract: String {NotBlank, Length(max = 100)}
++ indicator: boolean 
++ cost: Money {NotNull}
++ link: String {URL}
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>476</x>
+      <y>252</y>
+      <w>140</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>lt=x-&gt;
+m1=1..*
+m2=1
+pertenece a ^</panel_attributes>
+    <additional_attributes>170.0;170.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>651</x>
+      <y>161</y>
+      <w>287</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Client
+--
++ identification: String {NotBlank, Unique, Pattern("CLI-[0-9]{4}")}
++ companyName: String {NotBlank, Length(max = 75)}
++ email: String {NotBlank, Email}
++ type: ClientType 
++ link: String {URL}
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>623</x>
+      <y>245</y>
+      <w>154</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=x-&gt;
+m1=1..*
+m2=1
+firmado por ^</panel_attributes>
+    <additional_attributes>10.0;180.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>966</x>
+      <y>161</y>
+      <w>91</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+ClientType
+--
++ INDIVIDUAL
++ COMPANY
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>567</y>
+      <w>322</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+ProgressLog
+--
++ code: String {NotBlank, Unique, Pattern("PG-[A-Z]{1,2}-[0-9]{4}")}
++ completeness: double {Min(0), Max(100), Digits(integer=3, fraction=2)}
++ comment: String {NotBlank, Length(max=100)}
++ registrationMoment: Date {Past, Temporal(TIMESTAMP)} 
++ responsiblePerson: String {NotBlank, Length(max=75)}
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>588</x>
+      <y>469</y>
+      <w>35</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-x
+m2=1..*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>847</x>
+      <y>420</y>
+      <w>378</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Form&gt;&gt;
+ClientDashboard
+--
++ totalNumberOfProgressLogsWithCompletenessRateBelow25Percent: int
++ totalNumberOfProgressLogsWithCompletenessRateBetween25And50Percent: int
++ totalNumberOfProgressLogsWithCompletenessRateBetween50And75Percent: int
++ totalNumberOfProgressLogsWithCompletenessRateAbove75Percent: int
++ averageBudgetOfContracts: double
++ deviationBudgetOfContracts: double
++ minimumBudgetOfContracts: double
++ maximumBudgetOfContracts: double
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>987</x>
+      <y>322</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Serializable
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1029</x>
+      <y>350</y>
+      <w>21</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+</diagram>
