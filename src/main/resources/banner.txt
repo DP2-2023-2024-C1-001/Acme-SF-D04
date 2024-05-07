@@ -7,6 +7,6 @@
 o88o     o8888o `Y8bod8P' o888o o888o o888o `Y8bod8P'      8""88888P'  o888o       
 
 Application:          ${acme.application.versioned-name}
-Application endpoint: http://localhost:${server.port}${server.servlet.contextPath}
+Application endpoint: http://localhost:${server.port}${server.servlet.context-path}${server.servlet.initial-query}
 Database endpoint:    ${spring.datasource.url}
 Powered by:           Spring Boot ${spring-boot.version}, ${acme.framework.display-name} ${acme.framework.version}
