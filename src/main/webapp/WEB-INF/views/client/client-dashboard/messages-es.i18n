@@ -1,0 +1,27 @@
+# messages-en.i18n
+#
+# Copyright (C) 2012-2024 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+client.client-dashboard.form.title = Dashboard de clientes
+
+client.client-dashboard.form.title.progress-log-indicators = Indicadores de los registros de progreso
+client.client-dashboard.form.title.budget-indicators = Indicadores de presupuestos de contrato
+
+
+client.client-dashboard.form.label.progress-log-below-25 = Número de registros de progreso con una tasa de completitud inferior al 25% 
+client.client-dashboard.form.label.progress-log-between-25-50 = Número de registros de progreso con una tasa de completitud entre el 25% y el 50% 
+client.client-dashboard.form.label.progress-log-between-50-75 = Número de registros de progreso con una tasa de completitud entre el 50% y el 75%
+client.client-dashboard.form.label.progress-log-above-75 = Número de registros de progreso con una tasa de completitud superior al 75% 
+
+
+client.client-dashboard.form.label.average-budget = Media del presupuesto de un contrato
+client.client-dashboard.form.label.deviation-budget = Desviación típica del presupuesto de un contrato
+client.client-dashboard.form.label.minimum-budget = Mínimo presupuesto de un contrato
+client.client-dashboard.form.label.maximum-budget = Máximo presupuesto de un contrato
+

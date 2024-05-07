@@ -1,0 +1,16 @@
+manager.user-story-project.list.title = Listado de relaciones Historias de Usuario - Proyecto
+manager.user-story-project.form.title = Detalles de relación Historias de Usuario - Proyecto
+
+manager.user-story-project.list.label.project-title = Título de proyecto
+manager.user-story-project.list.label.user-story-title = Título de historias de usuario
+
+manager.user-story-project.form.label.project-title = Título de proyecto
+manager.user-story-project.form.label.user-story-title = Título de historias de usuario
+
+manager.user-story-project.list.button.create = Crear
+
+manager.user-story-project.form.button.delete = Eliminar
+
+manager.user-story-project.form.error.published-project = Un proyecto publicado no puede ser modificado
+manager.user-story-project.form.error.existing-user-story-project = Esta asignacion ya existe
+manager.user-story-project.form.error.delete-assignment-published-project = Un proyecto publicado no puede ser modificado

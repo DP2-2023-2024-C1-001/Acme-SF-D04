@@ -1,0 +1,27 @@
+manager.project.list.title= Listado de tus proyectos
+manager.project.form.title= Detalles de proyectos
+
+manager.project.list.label.code = Código
+manager.project.list.label.title = Título
+manager.project.list.label.cost = Coste
+manager.project.list.label.draftMode = Borrador
+
+manager.project.form.label.code = Código:
+manager.project.form.label.title = Título:
+manager.project.form.label.projectAbstract = Resumen de proyecto:
+manager.project.label.indicator = Indicación (errores críticos)
+manager.project.form.label.cost = Coste:
+manager.project.form.label.link = Enlace:
+manager.project.form.button.user-stories-list = Ver historias de usuario
+
+manager.project.list.button.create = Crear
+manager.project.form.button.delete = Eliminar
+manager.project.form.button.update = Actualizar
+manager.project.form.button.publish = Publicar
+
+manager.project.form.error.duplicated-code = Ya existe un proyecto con ese codigo
+manager.project.form.error.negativeCost = El coste no puede ser negativo
+manager.project.form.error.currency = Introduzca una divisa valida
+manager.project.form.error.not-enough-user-stories = Para publicar un projecto debe tener al menos una historia de usuario
+manager.project.form.error.hasFatalError = Para publicar un proyecto no debe tener errores fatales
+manager.project.form.error.not-all-user-stories-published =  Para publicar un proyecto sus historias de usuarios deben de estar publicadas

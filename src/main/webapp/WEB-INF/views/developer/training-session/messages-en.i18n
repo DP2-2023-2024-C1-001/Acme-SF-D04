@@ -1,0 +1,43 @@
+# messages-en.i18n
+#
+# Copyright (C) 2012-2024 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+developer.training-session.form.title = Training Session form
+developer.training-session.list.title = Listing of Training Sessions
+
+
+developer.training-session.form.label.code = Code
+developer.training-session.form.label.initialPeriod = Initial Period
+developer.training-session.form.label.finalPeriod = Final Period
+developer.training-session.form.label.location = Location
+developer.training-session.form.label.instructor = Instructor
+developer.training-session.form.label.contactEmail = Email
+developer.training-session.form.label.link = link
+
+developer.training-session.list.button.create = Create 
+
+
+developer.training-session.list.label.code = Code
+developer.training-session.list.label.initialPeriod = Initial Period
+developer.training-session.list.label.finalPeriod = Final Period
+developer.training-session.list.label.location = Location
+developer.training-session.list.label.instructor = Instructor
+
+
+developer.training-session.form.button.create = Create 
+developer.training-session.form.button.delete = Delete
+developer.training-session.form.button.update = Update
+
+
+developer.training-session.form.button.publish = Publish
+
+developer.training-session.form.error.duplicated = Code cannot be duplicated
+developer.training-session.form.error.too-close-to-training-module-creation-moment = at least one week ahead the training module creation moment
+developer.training-session.form.error.too-close-period = at least one week long
+

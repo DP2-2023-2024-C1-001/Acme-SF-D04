@@ -1,0 +1,45 @@
+# messages-es.i18n
+#
+# Copyright (C) 2012-2024 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+sponsor.sponsorship.form.title = Detalles de patrcinio
+sponsor.sponsorship.list.title = Lista de patrocinios
+sponsor.sponsorship.form.button.invoices = Lista de facturas
+
+sponsor.sponsorship.form.label.code = Código:
+sponsor.sponsorship.form.label.moment = Momento de inicio:
+sponsor.sponsorship.form.label.amount = Cantidad:
+sponsor.sponsorship.form.label.type = Tipo de patrocinio:
+sponsor.sponsorship.form.label.email = Email (Opcional):
+sponsor.sponsorship.form.label.link = Link (Opcional):
+sponsor.sponsorship.form.label.duration = Duración:
+sponsor.sponsorship.form.label.project = Proyecto:
+sponsor.sponsorship.form.label.initialDate= Fecha Inicio:
+sponsor.sponsorship.form.label.finalDate = Fecha Final:
+sponsor.sponsorship.form.label.published = Published:
+
+sponsor.sponsorship.form.button.create = Crear
+sponsor.sponsorship.form.button.update = Actualizar
+sponsor.sponsorship.form.button.delete = Eliminar
+sponsor.sponsorship.form.button.publish = Publicar
+
+sponsor.sponsorship.form.error.duplicated = Este código ya está en uso
+sponsor.sponsorship.form.error.too-close-date = Después del momento de la fecah de inicio, al menos un mes de duración
+sponsor.sponsorship.form.error.negativeAmount = La cantidad no puede ser negativa
+sponsor.sponsorship.form.error.currency = No se puede crear el patrocinio porque la unidad monetaria especificada no coincide con la del proyecto.
+sponsor.sponsorship.form.error.amount = La suma del importe total de todas sus facturas publicadas debe ser igual al importe del patrocinio
+sponsor.sponsorship.form.error.date-before-moment = Debe ser posterior al momento
+
+
+
+sponsor.sponsorship.list.label.code = Código
+sponsor.sponsorship.list.label.moment = Momento de inicio
+sponsor.sponsorship.list.label.type = Tipo de patrocinio
+sponsor.sponsorship.list.label.duration = Duración
+sponsor.sponsorship.list.button.create = Crear

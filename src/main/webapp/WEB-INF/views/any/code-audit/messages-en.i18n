@@ -1,0 +1,27 @@
+# messages-en.i18n
+#
+# Copyright (C) 2012-2024 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+any.code-audit.form.title = Code audit form
+any.code-audit.list.title = Listing of code audit
+
+any.code-audit.form.label.code = Code:
+any.code-audit.form.label.execution = Execution:
+any.code-audit.form.label.type = Code Audit Type:
+any.code-audit.form.label.correctiveActions = Corrective Actions:
+any.code-audit.form.label.link = Link:
+any.code-audit.form.label.project = Project:
+
+any.code-audit.form.button.auditRecords = List Audit Records
+
+
+any.code-audit.list.label.code = Code
+any.code-audit.list.label.execution = Execution
+any.code-audit.list.label.type = Code Audit Type
+any.code-audit.list.label.correctiveActions = Corrective Actions

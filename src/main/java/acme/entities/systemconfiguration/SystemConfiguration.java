@@ -24,5 +24,5 @@ public class SystemConfiguration extends AbstractEntity {
 	public String				acceptedCurrencies;
 
 	@NotNull
-	public Currency				systemCurrency;
+	public String				systemCurrency;
 }

@@ -1,21 +1,21 @@
-key,code,execution,type,corrective-actions,link,key:auditor,key:project
-code-audit-00,AHS-049,2003/06/23 00:00,STATIC,Implementar una revisión de procedimientos para prevenir futuros errores.,,auditor-00,project-00
-code-audit-01,A-000,2022/07/24 07:39,DYNAMIC,Capacitar al personal en el uso adecuado de herramientas dinámicas.,,auditor-07,project-03
-code-audit-02,A-999,2021/01/10 13:00,DYNAMIC,Realizar una revisión de seguridad física en el sitio.,https://auditrecordexample.com/not-found,auditor-05,project-06
-code-audit-03,Z-000,1990/10/03 20:30,DYNAMIC,Realizar una auditoría de cumplimiento regulatorio.,https://auditrecordarchive.io/nonexistent-page,auditor-02,project-04
-code-audit-04,Z-999,2022/07/24 00:00,STATIC,Revisar y mejorar el sistema de gestión de calidad wdddddddddd.,,auditor-00,project-09
-code-audit-05,R-049,2012/07/24 12:00,STATIC,E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.,https://auditrecordcentral.org/invalid-link,auditor-09,project-05
-code-audit-06,AA-000,2021/09/06 17:12,DYNAMIC,Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.,,auditor-01,project-01
-code-audit-07,AA-999,2022/07/24 00:00,STATIC,Realizar una auditoría interna para identificar deficiencias.,https://myauditrecordstore.net/404-error,auditor-02,project-08
-code-audit-08,ZZ-000,2022/07/24 00:00,DYNAMIC,Implementar controles adicionales para protección de datos.,,auditor-08,project-04
-code-audit-09,ZZ-999,2022/07/24 00:00,STATIC,Realizar una revisión de seguridad física en el sitio.,https://auditrecordtracker.com/dead-link,auditor-07,project-03
-code-audit-10,YF-437,2022/07/24 00:00,DYNAMIC,Modificar los procedimientos para garantizar la trazabilidad.,,auditor-06,project-05
-code-audit-11,AAA-000,2022/07/24 00:00,DYNAMIC,Εφαρμογή αναθεώρησης των διαδικασιών για την αποφυγή μελλοντικών σφαλμάτων.,https://auditrecordvault.net/missing-content,auditor-03,project-09
-code-audit-12,AAA-999,2022/07/24 00:00,DYNAMIC,Realizar capacitación adicional sobre manejo de datos.,,auditor-04,project-00
-code-audit-13,ZZZ-000,2022/07/24 00:00,DYNAMIC,Revisar y mejorar los protocolos de comunicación interna.,,auditor-03,project-02
-code-audit-14,ZZZ-999,2022/07/24 00:00,STATIC,Implementar un sistema de gestión de calidad certificado.,,auditor-03,project-03
-code-audit-15,GKL-568,2022/07/24 00:00,DYNAMIC,Realizar una revisión de seguridad física en el sitio.,,auditor-09,project-01
-code-audit-16,AHA-098,2022/07/24 00:00,STATIC,Modificar los procedimientos para garantizar la trazabilidad.,,auditor-02,project-08
-code-audit-17,YYU-898,2022/07/24 00:00,STATIC,Realizar una revisión exhaustiva de registros y documentación.,,auditor-08,project-03
-code-audit-18,ASS-327,2022/07/24 00:00,DYNAMIC,Implementar controles adicionales para protección de datos.,,auditor-02,project-02
-code-audit-19,VJF-777,2022/07/24 00:00,STATIC,Realizar una auditoría de cumplimiento regulatorio.,,auditor-01,project-00
+key,code,execution,type,corrective-actions,link,key:auditor,key:project,published
+code-audit-00,AHS-049,2003/06/23 00:00,STATIC,Implementar una revisión de procedimientos para prevenir futuros errores.,,auditor-02,project-00,false
+code-audit-01,A-000,2022/07/24 07:39,DYNAMIC,Capacitar al personal en el uso adecuado de herramientas dinámicas.,,auditor-01,project-03,false
+code-audit-02,A-999,2021/01/10 13:00,DYNAMIC,Realizar una revisión de seguridad física en el sitio.,https://auditrecordexample.com/not-found,auditor-01,project-06,false
+code-audit-03,Z-000,1990/10/03 20:30,DYNAMIC,Realizar una auditoría de cumplimiento regulatorio.,https://auditrecordarchive.io/nonexistent-page,auditor-02,project-04,false
+code-audit-04,Z-999,2022/07/24 00:00,STATIC,Revisar y mejorar el sistema de gestión de calidad wdddddddddd.,,auditor-02,project-09,false
+code-audit-05,R-049,2012/07/24 12:00,STATIC,E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.,https://auditrecordcentral.org/invalid-link,auditor-01,project-05,false
+code-audit-06,AA-000,2021/09/06 17:12,DYNAMIC,Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.,,auditor-01,project-01,false
+code-audit-07,AA-999,2022/07/24 00:00,STATIC,Realizar una auditoría interna para identificar deficiencias.,https://myauditrecordstore.net/404-error,auditor-02,project-08,false
+code-audit-08,ZZ-000,2022/07/24 00:00,DYNAMIC,Implementar controles adicionales para protección de datos.,,auditor-02,project-04,false
+code-audit-09,ZZ-999,2022/07/24 00:00,STATIC,Realizar una revisión de seguridad física en el sitio.,https://auditrecordtracker.com/dead-link,auditor-01,project-03,false
+code-audit-10,YF-437,2022/07/24 00:00,DYNAMIC,Modificar los procedimientos para garantizar la trazabilidad.,,auditor-02,project-05,false
+code-audit-11,AAA-000,2022/07/24 00:00,DYNAMIC,Εφαρμογή αναθεώρησης των διαδικασιών για την αποφυγή μελλοντικών σφαλμάτων.,https://auditrecordvault.net/missing-content,auditor-02,project-09,false
+code-audit-12,AAA-999,2022/07/24 00:00,DYNAMIC,Realizar capacitación adicional sobre manejo de datos.,,auditor-01,project-00,false
+code-audit-13,ZZZ-000,2022/07/24 00:00,DYNAMIC,Revisar y mejorar los protocolos de comunicación interna.,,auditor-02,project-02,false
+code-audit-14,ZZZ-999,2022/07/24 00:00,STATIC,Implementar un sistema de gestión de calidad certificado.,,auditor-01,project-03,false
+code-audit-15,GKL-568,2022/07/24 00:00,DYNAMIC,Realizar una revisión de seguridad física en el sitio.,,auditor-01,project-01,false
+code-audit-16,AHA-098,2022/07/24 00:00,STATIC,Modificar los procedimientos para garantizar la trazabilidad.,,auditor-02,project-08,false
+code-audit-17,YYU-898,2022/07/24 00:00,STATIC,Realizar una revisión exhaustiva de registros y documentación.,,auditor-01,project-03,false
+code-audit-18,ASS-327,2022/07/24 00:00,DYNAMIC,Implementar controles adicionales para protección de datos.,,auditor-02,project-02,false
+code-audit-19,VJF-777,2022/07/24 00:00,STATIC,Realizar una auditoría de cumplimiento regulatorio.,,auditor-01,project-00,false

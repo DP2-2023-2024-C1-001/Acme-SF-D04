@@ -1,0 +1,20 @@
+manager.manager-dashboard.form.title = Dashboard de manager
+
+manager.manager-dashboard.form.title.user-story-indicators = Indicadores de historias de usuarios 
+
+manager.manager-dashboard.form.label.user-story-must = Número de historias de usuarios con prioridad must
+manager.manager-dashboard.form.label.user-story-should = Número de historias de usuarios con prioridad should 
+manager.manager-dashboard.form.label.user-story-could = Número de historias de usuarios con prioridad could
+manager.manager-dashboard.form.label.user-story-wont = Número de historias de usuarios con prioridad wont
+
+manager.manager-dashboard.form.label.user-story-avg-cost = Coste medio de una historia de usuario
+manager.manager-dashboard.form.label.user-story-dev-cost = Desviación típica del coste de una historia de usuario	 
+manager.manager-dashboard.form.label.user-story-min-cost = Coste mínimo de una historia de usuario
+manager.manager-dashboard.form.label.user-story-max-cost = Coste máximo de una historia de usuario
+
+manager.manager-dashboard.form.title.project-indicators = Indicadores de proyectos
+
+manager.manager-dashboard.form.label.project-avg-cost = Coste medio de un proyecto
+manager.manager-dashboard.form.label.project-dev-cost = Desviación típica de un proyecto
+manager.manager-dashboard.form.label.project-min-cost = Coste mínimo de un proyecto
+manager.manager-dashboard.form.label.project-max-cost = Coste máximo de un proyecto

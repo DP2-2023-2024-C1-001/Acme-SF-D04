@@ -1,0 +1,21 @@
+manager.user-story.list.title = Listado de historias de usuario
+manager.user-story.form.title = Detalles de historia de usuario
+
+manager.user-story.list.label.title = Título
+manager.user-story.list.label.estimatedCost = Coste estimado
+manager.user-story.list.label.priority = Prioridad
+manager.user-story.list.label.draftMode = Borrador
+
+manager.user-story.form.label.title = Título:
+manager.user-story.form.label.description = Descripción:
+manager.user-story.form.label.estimatedCost = Coste estimado:
+manager.user-story.form.label.acceptanceCriteria = Criterio de aceptación:
+manager.user-story.form.label.priority = Prioridad:
+manager.user-story.form.label.link = Enlace:
+
+manager.user-story.list.button.create = Crear
+manager.user-story.form.button.update = Actualizar
+manager.user-story.form.button.delete = Eliminar
+manager.user-story.form.button.publish = Publicar
+
+manager.user-story.form.error.negativeTime = El coste debe ser mayor que 0

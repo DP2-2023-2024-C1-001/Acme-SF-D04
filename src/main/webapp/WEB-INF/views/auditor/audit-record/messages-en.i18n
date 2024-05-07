@@ -1,0 +1,31 @@
+# messages-en.i18n
+#
+# Copyright (C) 2012-2024 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+auditor.audit-record.form.title = Audit Record form
+auditor.audit-record.list.title = Listing of Audit Record
+
+auditor.audit-record.form.label.code = Code:
+auditor.audit-record.form.label.periodStart = Period start:
+auditor.audit-record.form.label.periodEnd = Period end:
+auditor.audit-record.form.label.mark = Mark:
+auditor.audit-record.form.label.link = Link:
+
+
+auditor.audit-record.form.button.create = Create
+auditor.audit-record.form.button.update = Update
+auditor.audit-record.form.button.delete = Delete
+auditor.audit-record.form.button.publish = Publish
+
+auditor.audit-record.list.label.code = Code
+auditor.audit-record.list.label.mark = Mark
+
+auditor.audit-record.form.error.duplicated = This code is taken
+auditor.audit-record.form.error.invalidFinalPeriod = Period end must finish at least one hour after the period start
+auditor.audit-record.form.error.mark = Mark must be A+, A, B, C, F or F-

@@ -1,0 +1,31 @@
+# messages-en.i18n
+#
+# Copyright (C) 2012-2024 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.notice.form.title = Notice form
+authenticated.notice.list.title = Listing of notices
+
+authenticated.notice.form.label.instantiationMoment = Instantiation Moment:
+authenticated.notice.form.label.title = Title:
+authenticated.notice.form.label.message = Message:
+authenticated.notice.form.label.emailAddress = Email Address(Optional):
+authenticated.notice.form.label.link = Link(Optional):
+authenticated.notice.form.label.author = Author: 
+
+authenticated.notice.form.button.create = Create
+authenticated.notice.form.label.confirmation = Confirm
+
+authenticated.notice.form.error.author = The author must be computed as follows: “〈username〉 - 〈surname, name〉”, where “〈username〉” denotes the username of the principal who has posted the notice and “〈surname, name〉” denotes his or her full name
+authenticated.notice.form.error.confirmation = You must confirm the action
+
+authenticated.notice.list.label.instantiationMoment = Instantiation Moment
+authenticated.notice.list.label.title = Title
+authenticated.notice.list.label.author = Author
+
+authenticated.notice.list.button.create = Create

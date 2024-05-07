@@ -1,0 +1,27 @@
+manager.project.list.title = Listing of your projects
+manager.project.form.title = Project form
+
+manager.project.list.label.code = Code
+manager.project.list.label.title = Title
+manager.project.list.label.cost = Cost
+manager.project.list.label.draftMode = Draft
+
+manager.project.form.label.code = Code:
+manager.project.form.label.title = Title:
+manager.project.form.label.projectAbstract = Project Abstract:
+manager.project.label.indicator = Indication (critical errors)
+manager.project.form.label.cost = Cost:
+manager.project.form.label.link = Link:
+manager.project.form.button.user-stories-list = List user stories
+
+manager.project.list.button.create = Create
+manager.project.form.button.delete = Delete
+manager.project.form.button.update = Update
+manager.project.form.button.publish = Publish
+
+manager.project.form.error.duplicated-code = There is already a project with that code
+manager.project.form.error.negativeCost = The cost cannot be negative
+manager.project.form.error.currency = Enter a valid currency
+manager.project.form.error.not-enough-user-stories = To publish a project you must have at least one user story
+manager.project.form.error.hasFatalError =To publish a project it must not have fatal errors
+manager.project.form.error.not-all-user-stories-published =  To publish a project, its user stories must be published

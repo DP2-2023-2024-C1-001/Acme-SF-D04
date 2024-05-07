@@ -1,0 +1,45 @@
+# messages-en.i18n
+#
+# Copyright (C) 2012-2024 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+client.contract.form.title = Detalles del contrato
+client.contract.list.title = Lista de contratos
+
+client.contract.form.label.code = Código:
+client.contract.form.label.instantiationMoment = Momento de instanciación:
+client.contract.form.label.providerName = Nombre del proveedor:
+client.contract.form.label.customerName = Nombre del cliente:
+client.contract.form.label.goals = Metas:
+client.contract.form.label.budget = Presupuesto:
+client.contract.form.label.project = Proyecto:
+client.contract.form.label.published= Publicado:
+client.contract.form.button.progressLogs = Lista los Registros de Progreso
+client.contract.form.button.create = Crear
+client.contract.form.button.update = Actualizar
+client.contract.form.button.delete = Eliminar
+client.contract.form.button.publish = Publicar
+
+
+
+client.contract.form.error.duplicated = Este código ya existe
+client.contract.form.error.negativeBudget = El presupuesto no debe ser negativo
+client.contract.form.error.currency = El proyecto se ha creado con una moneda distinta
+client.contract.form.error.budget = La suma de todos los presupuestos no puede superar el coste del proyecto correspondiente
+
+
+
+
+
+
+
+client.contract.list.label.code = Código
+client.contract.list.label.instantiationMoment = Momento de instanciación
+client.contract.list.label.providerName = Nombre del proveedor
+client.contract.list.label.customerName = Nombre del cliente
+client.contract.list.button.create = Crear

@@ -1,0 +1,40 @@
+# messages-es.i18n
+#
+# Copyright (C) 2012-2024 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+sponsor.invoice.form.title = Detalles de la factura
+sponsor.invoice.list.title = Listado de facturas
+
+
+sponsor.invoice.form.label.code = Code:
+sponsor.invoice.form.label.registrationTime = Fecha de registro:
+sponsor.invoice.form.label.dueDate = Fecha de vencimiento:
+sponsor.invoice.form.label.quantity = Cantidad:
+sponsor.invoice.form.label.tax = Impuesto:
+sponsor.invoice.form.label.totalAmount = Cantidad total:
+sponsor.invoice.form.label.link = Link:
+
+sponsor.invoice.form.button.create = Crear
+sponsor.invoice.form.button.update = Actualizar
+sponsor.invoice.form.button.delete = Eliminar
+sponsor.invoice.form.button.publish = Publicar
+
+sponsor.invoice.form.error.duplicated = Este código ya está en uso
+sponsor.invoice.form.error.too-close = Al menos un mes antes de la fecha de registro
+sponsor.invoice.form.error.invalid-tax = El impuesto debe estar entre 0 y 100
+sponsor.invoice.form.error.currency = El sistema no puede aceptar esa moneda
+sponsor.invoice.form.error.negativeQuantity = La cantidad no puede ser negativa
+sponsor.invoice.form.error.sponsorship-amount = Cantidad total del patrocinio excedida
+
+
+sponsor.invoice.list.label.code = Code
+sponsor.invoice.list.label.registrationTime = Fecha de registro
+sponsor.invoice.list.label.dueDate = Fecha de vencimiento
+sponsor.invoice.list.label.totalAmount = Cantidad total
+sponsor.invoice.list.button.create = Crear

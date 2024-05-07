@@ -65,6 +65,8 @@ public class Invoice extends AbstractEntity {
 	@URL
 	private String				link;
 
+	private boolean				published;
+
 	// Derived attributes -----------------------------------------------------
 
 
@@ -72,11 +74,15 @@ public class Invoice extends AbstractEntity {
 	public Money totalAmount() {
 		double result;
 		double adicion;
-		Money res = this.quantity;
+		Money res = new Money();
 
 		adicion = this.quantity.getAmount() * this.tax / 100;
 		result = this.quantity.getAmount() + adicion;
+
+		result = Math.round(result * 100.0) / 100.0;
+
 		res.setAmount(result);
+		res.setCurrency(this.quantity.getCurrency());
 
 		return res;
 	}

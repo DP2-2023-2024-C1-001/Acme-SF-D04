@@ -60,6 +60,8 @@ public class Contract extends AbstractEntity {
 	@Valid
 	private Money				budget;
 
+	private boolean				published;
+
 	// Derived attributes -----------------------------------------------------
 
 	// Relationships ----------------------------------------------------------

@@ -15,17 +15,40 @@ master.menu.sign-up = Registrarse
 master.menu.sign-in = Entrar
 master.menu.sign-out = Salir
 
+
+# master.menu.authenticated #######################################################
+
+master.menu.authenticated = Autenticado
+master.menu.authenticated.list-all-objectives = Lista de objetivos
+master.menu.authenticated.list-all-risks = Listado de riesgos
+master.menu.authenticated.list-recent-notices = Lista las noticias recientes
+
+# master.menu.any #######################################################
+
+master.menu.any = Cualquiera
+master.menu.any.list-all-claims = Lista de reclamaciones
+master.menu.any.projects = Listado de proyectos
+master.menu.any.list-published-contracts = Lista de contratos publicados
+master.menu.any.list-published-training-modules = Lista de módulos de entrenamiento
+master.menu.any.list-published-code-audits = Lista de auditorías de código publicadas
+
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anónimo
-
-
 master.menu.anonymous.favourite-link-angneraca = 47265252E: Neria Acal, Ángel
 master.menu.anonymous.favourite-link.pedsandom = 46265496F: Santos Dominguez, Pedro Pablo
 master.menu.anonymous.manu = 47265720F: Velez Lopez, Manuel
 master.menu.anonymous.guille = 45813076C: Gomez Romero, Guillermo
 master.menu.anonymous.josemaria = 29588315B: Baquero Rodriguez, Jose Maria
 
+
+
+
+# master.menu.developer ###################################################
+
+master.menu.developer = Desarrollador
+master.menu.developer.training-module = Lista de Módulos de Entrenamiento
+master.menu.developer.dashboard = Dashboard con datos de módulos de entrenamiento
 
 
 
@@ -37,6 +60,40 @@ master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.populate-initial = Poblar BD (inicial)
 master.menu.administrator.populate-sample = Poblar BD (ejemplos)
 master.menu.administrator.shut-down = Parar el sistema
+master.menu.administrator.banner = Listado de Banners
+
+master.menu.administrator.objective = Listado de Objetivos
+
+master.menu.administrator.risk = Listado de Riesgos
+
+master.menu.administrator.system-configuration = Mostrar Configuración del sistema
+
+# master.menu.client ###################################################
+
+master.menu.client = Cliente
+master.menu.client.contracts = Lista de mis Contratos
+master.menu.client.dashboard = Dashboards con datos de contratos
+
+
+# master.menu.manager #########################################################
+
+master.menu.manager = Manager
+master.menu.manager.projects = Listado de proyectos
+master.menu.list.user-story = Listado de historias de usuario
+master.menu.list.user-story-project = Listado de asignaciones
+master.menu.manager.dashboard = Dashboards con datos de proyectos
+
+# master.menu.sponsor ###################################################
+
+master.menu.sponsor = Patrocinador
+master.menu.sponsor.sponsorships = Lista de mis patrocinios
+master.menu.sponsor.dashboard = Dashboard con datos de patrocinios
+
+# master.menu.auditor ###################################################
+
+master.menu.auditor = Auditor
+master.menu.auditor.codeaudits = Lista de mis auditorías de código
+master.menu.auditor.dashboard = Dashboard de auditor
 
 # master.menu.provider ########################################################
 
@@ -57,3 +114,14 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
+master.menu.user-account.become-client = Hazte cliente
+master.menu.user-account.client = Datos de cliente
+master.menu.user-account.become-manager = Hazte manager
+master.menu.user-account.manager = Datos de manager
+master.menu.user-account.become-developer = Hazte desarrollador
+master.menu.user-account.developer = Datos de desarrollador 
+master.menu.user-account.become-sponsor = Hazte patrocinador
+master.menu.user-account.sponsor = Datos de patrocinador
+
+master.menu.user-account.become-auditor = Hazte auditor
+master.menu.user-account.auditor = Datos de auditor

@@ -1,0 +1,26 @@
+# messages-en.i18n
+#
+# Copyright (C) 2012-2024 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+
+auditor.auditor-dashboard.form.title = Auditor dashboard
+
+
+auditor.auditor-dashboard.form.title.code-audit-indicators = Code audits indicators
+
+auditor.auditor-dashboard.form.label.code-audit-numbers-static =  Total number of code audit with type static 
+auditor.auditor-dashboard.form.label.code-audit-numbers-dynamic = Total number of code audit with type dynamic 
+auditor.auditor-dashboard.form.label.audit-record-avg = Average number of audit record
+auditor.auditor-dashboard.form.label.audit-record-deviation = Deviation number of audit record
+auditor.auditor-dashboard.form.label.audit-record-min = Minimum number of audit records
+auditor.auditor-dashboard.form.label.audit-record-max = Maximum number of audit records
+auditor.auditor-dashboard.form.label.audit-record-time-avg = Average time of audit record
+auditor.auditor-dashboard.form.label.audit-record-time-deviation = Deviation time of audit record
+auditor.auditor-dashboard.form.label.audit-record-time-min =  Minimum time of audit records
+auditor.auditor-dashboard.form.label.audit-record-time-max = Maximum time of audit records

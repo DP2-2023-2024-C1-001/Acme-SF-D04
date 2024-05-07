@@ -1,11 +1,3 @@
 key,key:userAccount,firm,professional-id,certifications,link
-auditor-00,user-account-auditor-01,XYZ Consulting Services,PRO12345,"ISO 9001 ISO 14001",https://example.com
 auditor-01,user-account-auditor-01,ABC Audit & Assurance,AUD5678777777777777777,"CISA CPA",https://example.com
-auditor-02,user-account-auditor-01,AB,A,"CISA CPA",https://example.com
-auditor-03,user-account-auditor-01,ABCccccccccccccccccccccccccccccc,Aedweif8,"CISA CPA",https://example.com
-auditor-04,user-account-auditor-01,ABC Audit & Assurancecccccccccccccccccccccc,78,"CISA CPA",https://example.com
-auditor-05,user-account-auditor-02,ABC Audit & Assurance   ,A,"CISA CPA",https://example.com
-auditor-06,user-account-auditor-02,A,AUD5678,"CISA CPA",https://example.com
-auditor-07,user-account-auditor-02,ABC Audit & Assurance,AUD5678,"CISA CPAuuuuuuuuuuuuuuuuuuuuuuuu",https://example.com
-auditor-08,user-account-auditor-02,ABC Audit & Assurance,AUD5678,"A",https://example.com
-auditor-09,user-account-auditor-02,ABC Audit & Assurance,AUD5678,"CPAaaaaaaaaaaaaaaaa",https://example.com
+auditor-02,user-account-auditor-02,ABC Audit & Assurance,AUD5678,"CPAaaaaaaaaaaaaaaaa",https://example.com

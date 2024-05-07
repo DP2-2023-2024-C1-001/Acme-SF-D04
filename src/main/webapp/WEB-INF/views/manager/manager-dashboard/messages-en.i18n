@@ -1,0 +1,20 @@
+manager.manager-dashboard.form.title = Manager dashboard
+
+manager.manager-dashboard.form.title.user-story-indicators = User Story indicators
+
+manager.manager-dashboard.form.label.user-story-must = Total number of user stories with priority must
+manager.manager-dashboard.form.label.user-story-should = Total number of user stories with priority should 
+manager.manager-dashboard.form.label.user-story-could = Total number of user stories with priority could
+manager.manager-dashboard.form.label.user-story-wont = Total number of user stories with priority wont
+
+manager.manager-dashboard.form.label.user-story-avg-cost = Average cost of user stories
+manager.manager-dashboard.form.label.user-story-dev-cost = Deviation cost of user stories
+manager.manager-dashboard.form.label.user-story-min-cost = Minimum cost of user stories
+manager.manager-dashboard.form.label.user-story-max-cost = Maximum cost of user stories
+
+manager.manager-dashboard.form.title.project-indicators = Projects indicators
+
+manager.manager-dashboard.form.label.project-avg-cost = Average cost of projects
+manager.manager-dashboard.form.label.project-dev-cost = Deviation cost of projects
+manager.manager-dashboard.form.label.project-min-cost = Minimum cost of projects
+manager.manager-dashboard.form.label.project-max-cost = Maximum cost of projects

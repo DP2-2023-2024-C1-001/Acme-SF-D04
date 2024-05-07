@@ -1,0 +1,32 @@
+# messages-en.i18n
+#
+# Copyright (C) 2012-2024 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+auditor.audit-record.form.title = Formulario de registro de auditoría
+auditor.audit-record.list.title = Listado de registros de auditoría
+
+auditor.audit-record.form.label.code = Código:
+auditor.audit-record.form.label.periodStart = Inicio del periodo:
+auditor.audit-record.form.label.periodEnd = Final del periodo:
+auditor.audit-record.form.label.mark = Calificación:
+auditor.audit-record.form.label.link = Link:
+auditor.audit-record.form.label.published = Publicado
+
+
+auditor.audit-record.form.button.create = Crear
+auditor.audit-record.form.button.update = Editar
+auditor.audit-record.form.button.delete = Borrar
+auditor.audit-record.form.button.publish = Publicar
+
+auditor.audit-record.list.label.code = Código
+auditor.audit-record.list.label.mark = Calificación
+
+auditor.audit-record.form.error.duplicated = Este código ya esta en uso
+auditor.audit-record.form.error.invalidFinalPeriod = El final del periodo debe terminar al menos una hora despues del comienzo del periodo
+auditor.audit-record.form.error.mark = La calificación debe ser A+, A, B, C, F o F-

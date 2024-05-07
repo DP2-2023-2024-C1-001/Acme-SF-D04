@@ -1,0 +1,26 @@
+# messages-en.i18n
+#
+# Copyright (C) 2012-2024 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+
+auditor.auditor-dashboard.form.title = Dashboard de auditores
+
+
+auditor.auditor-dashboard.form.title.code-audit-indicators = Indicadores de auditorías de código
+
+auditor.auditor-dashboard.form.label.code-audit-numbers-static =  Numero total de auditorias de codigo con tipo static 
+auditor.auditor-dashboard.form.label.code-audit-numbers-dynamic = Numero total de auditorias de codigo con tipo dynamic  
+auditor.auditor-dashboard.form.label.audit-record-avg = Media de registros de auditoría
+auditor.auditor-dashboard.form.label.audit-record-deviation = Desviación típica del numero de registros de auditoría
+auditor.auditor-dashboard.form.label.audit-record-min = Mínimo de registros de auditoría
+auditor.auditor-dashboard.form.label.audit-record-max = Máximo de registros de auditoría
+auditor.auditor-dashboard.form.label.audit-record-time-avg = Media del tiempo de registros de auditoría
+auditor.auditor-dashboard.form.label.audit-record-time-deviation = Desviación típica del tiempo de registros de auditoría
+auditor.auditor-dashboard.form.label.audit-record-time-min =  Mínimo tiempo de registros de auditoría
+auditor.auditor-dashboard.form.label.audit-record-time-max = Máximo tiempo de registros de auditoría

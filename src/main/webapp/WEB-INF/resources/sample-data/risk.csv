@@ -1,18 +1,18 @@
 key,reference,identification-date,impact,probability,description,link
-risk-00,C-000,2022/07/24 00:00,22.3,25.0,descripción de prueba,http://www.ejemplo.com
-risk-01,C-999,2022/07/24 00:00,22.3,25.0,descripción de prueba,http://www.ejemplo.com
-risk-02,C-666,2022/07/24 00:00,22.3,25.0,descripción de prueba,http://www.ejemplo.com
-risk-03,C-001,2022/07/29 00:00,22.3,25.0,descripción de prueba,http://www.ejemplo.com
-risk-04,C-002,1980/07/29 00:00,22.3,25.0,descripción de prueba,http://www.ejemplo.com
-risk-05,C-003,2022/06/21 00:00,22.3,25.0,descripción de prueba,http://www.ejemplo.com
-risk-06,C-004,2022/06/21 00:00,0.0,25.0,descripción de prueba,http://www.ejemplo.com
-risk-07,C-005,2022/06/21 00:00,1.0,25.0,descripción de prueba,http://www.ejemplo.com
-risk-08,C-006,2022/06/21 00:00,200.23,25.0,descripción de prueba,http://www.ejemplo.com
-risk-09,C-007,2022/06/21 00:00,200.23,2.0,descripción de prueba,http://www.ejemplo.com
-risk-10,C-008,2022/06/21 00:00,200.23,100.0,descripción de prueba,http://www.ejemplo.com
-risk-11,C-009,2022/07/24 00:00,22.3,25.0,El sistema enfrenta una vulnerabilidad significativa ante ataques de denegación de servicio distrib,http://www.ejemplo.com
-risk-12,C-010,2022/07/24 00:00,22.3,25.0,El sistema enfrenta una vulnerabilidad significativa ante ataques de denegación de servicio distribu,http://www.ejemplo.com
-risk-13,C-011,2022/07/24 00:00,22.3,25.0,E,http://www.ejemplo.com
-risk-14,C-012,2022/07/24 00:00,22.3,25.0,このシステムは、分散型サービス拒否攻撃に対して重大な脆弱性に直面しています。,http://www.ejemplo.com
-risk-15,C-013,2022/07/24 00:00,22.3,25.0,descripción de prueba,
-risk-16,C-014,2022/07/24 00:00,22.3,25.0,descripción de prueba,http://例.com
+risk-00,R-000,2022/07/24 00:00,22.3,25.0,descripción de prueba,http://www.ejemplo.com
+risk-01,R-999,2022/07/24 00:00,22.3,25.0,descripción de prueba,http://www.ejemplo.com
+risk-02,R-666,2022/07/24 00:00,22.3,25.0,descripción de prueba,http://www.ejemplo.com
+risk-03,R-001,2022/07/29 00:00,22.3,25.0,descripción de prueba,http://www.ejemplo.com
+risk-04,R-002,1980/07/29 00:00,22.3,25.0,descripción de prueba,http://www.ejemplo.com
+risk-05,R-003,2022/06/21 00:00,22.3,25.0,descripción de prueba,http://www.ejemplo.com
+risk-06,R-004,2022/06/21 00:00,0.0,25.0,descripción de prueba,http://www.ejemplo.com
+risk-07,R-005,2022/06/21 00:00,1.0,25.0,descripción de prueba,http://www.ejemplo.com
+risk-08,R-006,2022/06/21 00:00,200.23,25.0,descripción de prueba,http://www.ejemplo.com
+risk-09,R-007,2022/06/21 00:00,200.23,2.0,descripción de prueba,http://www.ejemplo.com
+risk-10,R-008,2022/06/21 00:00,200.23,100.0,descripción de prueba,http://www.ejemplo.com
+risk-11,R-009,2022/07/24 00:00,22.3,25.0,El sistema enfrenta una vulnerabilidad significativa ante ataques de denegación de servicio distrib,http://www.ejemplo.com
+risk-12,R-010,2022/07/24 00:00,22.3,25.0,El sistema enfrenta una vulnerabilidad significativa ante ataques de denegación de servicio distribu,http://www.ejemplo.com
+risk-13,R-011,2022/07/24 00:00,22.3,25.0,E,http://www.ejemplo.com
+risk-14,R-012,2022/07/24 00:00,22.3,25.0,このシステムは、分散型サービス拒否攻撃に対して重大な脆弱性に直面しています。,http://www.ejemplo.com
+risk-15,R-013,2022/07/24 00:00,22.3,25.0,descripción de prueba,
+risk-16,R-014,2022/07/24 00:00,22.3,25.0,descripción de prueba,http://例.com
