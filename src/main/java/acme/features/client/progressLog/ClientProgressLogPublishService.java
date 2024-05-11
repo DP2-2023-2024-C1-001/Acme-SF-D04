@@ -1,10 +1,13 @@
 
 package acme.features.client.progressLog;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.data.models.Dataset;
+import acme.client.helpers.MomentHelper;
 import acme.client.services.AbstractService;
 import acme.entities.contract.Contract;
 import acme.entities.progresslog.ProgressLog;
@@ -66,19 +69,26 @@ public class ClientProgressLogPublishService extends AbstractService<Client, Pro
 
 		}
 
-		if (!super.getBuffer().getErrors().hasErrors("completeness")) {
-			Double actualCompleteness;
-			Double totalCompleteness;
-			Contract contract;
-			ProgressLog progressLog;
-			contract = this.repository.findOneContractByProgressLogId(object.getId());
-			actualCompleteness = this.repository.findActualCompletenessForAContract(contract.getId());
-			if (actualCompleteness == null)
-				actualCompleteness = 0.;
-			progressLog = this.repository.findOneProgressLogById(object.getId());
-			totalCompleteness = actualCompleteness + object.getCompleteness();
-			super.state(totalCompleteness <= 100.00, "completeness", "client.progress-log.form.error.completeness");
+		if (!super.getBuffer().getErrors().hasErrors("registrationMoment")) {
+			Date minimumDate;
+			ProgressLog lastRegistered;
+			lastRegistered = this.repository.findLastPublishedProgressLog(object.getContract().getId());
+			if (lastRegistered == null)
+				minimumDate = object.getContract().getInstantiationMoment();
+			else
+				minimumDate = lastRegistered.getRegistrationMoment();
+			super.state(MomentHelper.isAfter(object.getRegistrationMoment(), minimumDate), "registrationMoment", "client.progress-log.form.error.invalidDate");
 
+		}
+
+		if (!super.getBuffer().getErrors().hasErrors("completeness")) {
+			Double minimumCompleteness;
+			ProgressLog lastRegistered;
+			lastRegistered = this.repository.findLastPublishedProgressLog(object.getContract().getId());
+			if (lastRegistered != null) {
+				minimumCompleteness = lastRegistered.getCompleteness();
+				super.state(object.getCompleteness() > minimumCompleteness, "completeness", "client.progress-log.form.error.completeness");
+			}
 		}
 
 	}

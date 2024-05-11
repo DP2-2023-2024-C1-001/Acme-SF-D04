@@ -26,10 +26,13 @@ client.progress-log.form.button.publish = Publicar
 
 
 client.progress-log.form.error.duplicated = El código ya existe
-client.progress-log.form.error.completeness = La completitud total del contrato debe ser inferior o igual a 100
+client.progress-log.form.error.completeness = La completitud debe ser mayor o igual que 0 o mayor que la completitud del último registro de progreso publicado y menor o igual a 100
+client.progress-log.form.error.invalidDate = El momento de registro debe ser posterior al momento de registro del contrato y posterior al momento de registro del último registro de progreso publicado
 
 
 
 client.progress-log.list.label.code = Código
 client.progress-log.list.label.registrationMoment = Momento de Registro
+client.progress-log.list.label.completeness = Completitud
+client.progress-log.list.label.published = Publicado
 client.progress-log.list.button.create = Crear
