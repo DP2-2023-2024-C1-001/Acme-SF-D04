@@ -31,6 +31,7 @@ sponsor.invoice.form.error.invalid-tax = The tax must be between 0 and 100
 sponsor.invoice.form.error.currency = The system cannot accept that currency
 sponsor.invoice.form.error.negativeQuantity = The quantity cannot be negative
 sponsor.invoice.form.error.sponsorship-amount = Total sponsorship amount exceeded
+sponsor.invoice.form.error.date-before-moment = The registration date must be after the sponsorship moment
 
 sponsor.invoice.list.label.code = Code
 sponsor.invoice.list.label.registrationTime = Registration Time

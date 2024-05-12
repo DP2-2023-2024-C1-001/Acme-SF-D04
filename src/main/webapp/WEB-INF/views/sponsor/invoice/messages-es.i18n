@@ -26,11 +26,12 @@ sponsor.invoice.form.button.delete = Eliminar
 sponsor.invoice.form.button.publish = Publicar
 
 sponsor.invoice.form.error.duplicated = Este código ya está en uso
-sponsor.invoice.form.error.too-close = Al menos un mes antes de la fecha de registro
+sponsor.invoice.form.error.too-close = Al menos un mes después de la fecha de registro
 sponsor.invoice.form.error.invalid-tax = El impuesto debe estar entre 0 y 100
 sponsor.invoice.form.error.currency = El sistema no puede aceptar esa moneda
 sponsor.invoice.form.error.negativeQuantity = La cantidad no puede ser negativa
 sponsor.invoice.form.error.sponsorship-amount = Cantidad total del patrocinio excedida
+sponsor.invoice.form.error.date-before-moment = La fecha de registro debe ser posterior al momento de registro del patrocinio
 
 
 sponsor.invoice.list.label.code = Code

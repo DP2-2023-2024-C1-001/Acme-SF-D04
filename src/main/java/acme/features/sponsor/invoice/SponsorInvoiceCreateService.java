@@ -81,6 +81,9 @@ public class SponsorInvoiceCreateService extends AbstractService<Sponsor, Invoic
 
 		}
 
+		if (!super.getBuffer().getErrors().hasErrors("registrationTime") && object.getSponsorship() != null)
+			super.state(MomentHelper.isBefore(object.getSponsorship().getMoment(), object.getRegistrationTime()), "registrationTime", "sponsor.invoice.form.error.date-before-moment");
+
 		if (!super.getBuffer().getErrors().hasErrors("quantity") && object.getSponsorship() != null) {
 			Double quantity;
 			quantity = object.getQuantity().getAmount();
