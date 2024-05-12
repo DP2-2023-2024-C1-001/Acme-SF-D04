@@ -9,22 +9,22 @@ import acme.client.repositories.AbstractRepository;
 @Repository
 public interface DeveloperDashboardRepository extends AbstractRepository {
 
-	@Query("select count(tm) from TrainingModule tm where tm.developer.id = :developerId AND tm.updateMoment != null")
+	@Query("select count(tm) from TrainingModule tm where tm.developer.id = :developerId AND tm.updateMoment != null AND tm.published = true")
 	Integer totalNumberOfTrainingModulesWithUpdateMoment(int developerId);
 
-	@Query("select count(ts) from TrainingSession ts where ts.trainingModule.developer.id = :developerId AND ts.link is not null and ts.link not like ''")
+	@Query("select count(ts) from TrainingSession ts where ts.trainingModule.developer.id = :developerId AND ts.link is not null and ts.published = true and ts.link not like ''")
 	Integer totalNumberOfTrainingSessionsWithLink(int developerId);
 
-	@Query("select avg(tm.totalTime) from TrainingModule tm where tm.developer.id = :developerId")
+	@Query("select avg(tm.totalTime) from TrainingModule tm where tm.developer.id = :developerId AND tm.published = true")
 	Double averageTimeOfTrainingModules(int developerId);
 
-	@Query("select stddev(tm.totalTime) from TrainingModule tm where tm.developer.id = :developerId")
+	@Query("select stddev(tm.totalTime) from TrainingModule tm where tm.developer.id = :developerId AND tm.published = true")
 	Double deviationTimeOfTrainigModules(int developerId);
 
-	@Query("select min(tm.totalTime) from TrainingModule tm where tm.developer.id = :developerId")
-	Integer minimumTimeOfTrainingModules(int developerId);
+	@Query("select min(tm.totalTime) from TrainingModule tm where tm.developer.id = :developerId AND tm.published = true")
+	Double minimumTimeOfTrainingModules(int developerId);
 
-	@Query("select max(tm.totalTime) from TrainingModule tm where tm.developer.id = :developerId")
-	Integer maximumTimeOfTrainingModules(int developerId);
+	@Query("select max(tm.totalTime) from TrainingModule tm where tm.developer.id = :developerId AND tm.published = true")
+	Double maximumTimeOfTrainingModules(int developerId);
 
 }

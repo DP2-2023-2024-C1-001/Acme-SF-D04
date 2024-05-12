@@ -37,8 +37,8 @@ public class DeveloperDashboardShowService extends AbstractService<Developer, De
 
 		Double averageTimeOfTrainingModules;
 		Double deviationTimeOfTrainigModules;
-		Integer minimumTimeOfTrainingModules;
-		Integer maximumTimeOfTrainingModules;
+		Double minimumTimeOfTrainingModules;
+		Double maximumTimeOfTrainingModules;
 
 		totalNumberOfTrainingModulesWithUpdateMoment = this.repository.totalNumberOfTrainingModulesWithUpdateMoment(super.getRequest().getPrincipal().getActiveRoleId());
 		totalNumberOfTrainingSessionsWithLink = this.repository.totalNumberOfTrainingSessionsWithLink(super.getRequest().getPrincipal().getActiveRoleId());
