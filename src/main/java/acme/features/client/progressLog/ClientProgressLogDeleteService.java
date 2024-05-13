@@ -31,7 +31,7 @@ public class ClientProgressLogDeleteService extends AbstractService<Client, Prog
 		progressLogId = super.getRequest().getData("id", int.class);
 		contract = this.repository.findOneContractByProgressLogId(progressLogId);
 		progressLog = this.repository.findOneProgressLogById(progressLogId);
-		status = contract != null && progressLog != null && !progressLog.isPublished() && super.getRequest().getPrincipal().hasRole(contract.getClient());
+		status = contract != null && contract.isPublished() && progressLog != null && !progressLog.isPublished() && super.getRequest().getPrincipal().hasRole(contract.getClient());
 
 		super.getResponse().setAuthorised(status);
 	}

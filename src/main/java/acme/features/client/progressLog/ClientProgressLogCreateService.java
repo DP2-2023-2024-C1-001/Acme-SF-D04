@@ -1,10 +1,13 @@
 
 package acme.features.client.progressLog;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.data.models.Dataset;
+import acme.client.helpers.MomentHelper;
 import acme.client.services.AbstractService;
 import acme.entities.contract.Contract;
 import acme.entities.progresslog.ProgressLog;
@@ -29,7 +32,7 @@ public class ClientProgressLogCreateService extends AbstractService<Client, Prog
 
 		masterId = super.getRequest().getData("masterId", int.class);
 		contract = this.repository.findOneContractById(masterId);
-		status = contract != null && super.getRequest().getPrincipal().hasRole(contract.getClient());
+		status = contract != null && contract.isPublished() && super.getRequest().getPrincipal().hasRole(contract.getClient());
 
 		super.getResponse().setAuthorised(status);
 	}
@@ -69,15 +72,26 @@ public class ClientProgressLogCreateService extends AbstractService<Client, Prog
 
 		}
 
-		if (!super.getBuffer().getErrors().hasErrors("completeness")) {
-			Double actualCompleteness;
-			Double totalCompleteness;
-			actualCompleteness = this.repository.findActualCompletenessForAContract(object.getContract().getId());
-			if (actualCompleteness == null)
-				actualCompleteness = 0.;
-			totalCompleteness = actualCompleteness + object.getCompleteness();
-			super.state(totalCompleteness <= 100.00, "completeness", "client.progress-log.form.error.completeness");
+		if (!super.getBuffer().getErrors().hasErrors("registrationMoment")) {
+			Date minimumDate;
+			ProgressLog lastRegistered;
+			lastRegistered = this.repository.findLastPublishedProgressLog(object.getContract().getId());
+			if (lastRegistered == null)
+				minimumDate = object.getContract().getInstantiationMoment();
+			else
+				minimumDate = lastRegistered.getRegistrationMoment();
+			super.state(MomentHelper.isAfter(object.getRegistrationMoment(), minimumDate), "registrationMoment", "client.progress-log.form.error.invalidDate");
 
+		}
+
+		if (!super.getBuffer().getErrors().hasErrors("completeness")) {
+			Double minimumCompleteness;
+			ProgressLog lastRegistered;
+			lastRegistered = this.repository.findLastPublishedProgressLog(object.getContract().getId());
+			if (lastRegistered != null) {
+				minimumCompleteness = lastRegistered.getCompleteness();
+				super.state(object.getCompleteness() > minimumCompleteness, "completeness", "client.progress-log.form.error.completeness");
+			}
 		}
 	}
 

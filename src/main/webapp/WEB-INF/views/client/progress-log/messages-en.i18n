@@ -25,11 +25,13 @@ client.progress-log.form.button.publish = Publish
 
 
 client.progress-log.form.error.duplicated = This code is taken
-client.progress-log.form.error.completeness = The total completeness for the contract must be less or equal than 100
-
+client.progress-log.form.error.completeness = The completeness must be greater or equal than 0 or greater than the last published progress log completeness and less or equal than 100
+client.progress-log.form.error.invalidDate = The registration moment must be after the contract registration moment and after the last published progress log registration moment
 
 
 
 client.progress-log.list.label.code = Code
 client.progress-log.list.label.registrationMoment = Registration Moment
+client.progress-log.list.label.completeness = Completeness
+client.progress-log.list.label.published = Published
 client.progress-log.list.button.create = Create
