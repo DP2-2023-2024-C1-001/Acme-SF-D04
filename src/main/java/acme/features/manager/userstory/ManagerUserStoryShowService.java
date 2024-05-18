@@ -4,7 +4,6 @@ package acme.features.manager.userstory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.client.data.accounts.Principal;
 import acme.client.data.models.Dataset;
 import acme.client.services.AbstractService;
 import acme.client.views.SelectChoices;
@@ -25,11 +24,16 @@ public class ManagerUserStoryShowService extends AbstractService<Manager, UserSt
 
 	@Override
 	public void authorise() {
-		final Principal principal = super.getRequest().getPrincipal();
+		boolean status;
+		UserStory us;
+		Manager manager;
 
-		final boolean authorise = principal.hasRole(Manager.class);
+		us = this.repository.findOneUserStoryById(super.getRequest().getData("id", int.class));
+		manager = this.repository.findOneManagerById(super.getRequest().getPrincipal().getActiveRoleId());
+		status = super.getRequest().getPrincipal().hasRole(Manager.class) //
+			&& (us.getManager().equals(manager) || !us.isDraftMode());
 
-		super.getResponse().setAuthorised(authorise);
+		super.getResponse().setAuthorised(status);
 	}
 
 	@Override
