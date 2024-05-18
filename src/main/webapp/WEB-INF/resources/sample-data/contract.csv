@@ -3,7 +3,7 @@ contract-00,AAA-000,2022/07/24 00:00,Acme Studios,Acme-SD,Generar proyecto de la
 contract-01,A-999,2022/07/24 00:00,Acme Studios,Acme-SD,Generar proyecto de la asignatura,"USD 25,000.98",project-00,client-01,true
 contract-02,AA-060,2022/07/24 00:00,Acme Studios,Acme-SD,Generar proyecto de la asignatura,"USD 0.98",project-00,client-01,true
 contract-03,AAA-001,2022/07/24 00:00,Acme Studios,Acme-SD,Generar proyecto de la asignatura,"USD 5,000.98",project-00,client-01,true
-contract-04,AAA-002,2022/07/29 00:00,Acme Studios,Acme-SD,Generar proyecto de la asignatura,"USD 615,000.98",project-00,client-01,false
+contract-04,AAA-002,2022/07/29 00:00,Acme Studios,Acme-SD,Generar proyecto de la asignatura,"USD 0.98",project-00,client-01,true
 contract-05,AAA-003,2000/07/24 00:00,Acme Studios,Acme-SD,Generar proyecto de la asignatura,"EUR 15,000.98",project-01,client-01,false
 contract-06,AAA-004,900/07/24 00:00,Acme Studios,Acme-SD,Generar proyecto de la asignatura,"EUR 1,015,000.98",project-01,client-01,false
 contract-07,AAA-005,2022/07/24 00:00,A,Acme-SD,Generar proyecto de la asignatura,"EUR 15,000.98",project-01,client-01,false

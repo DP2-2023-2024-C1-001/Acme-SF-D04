@@ -30,4 +30,7 @@ public interface ClientProgressLogRepository extends AbstractRepository {
 
 	@Query("select sum(p.completeness) from ProgressLog p where p.contract.id = :contractId AND p.published = true")
 	Double findActualCompletenessForAContract(int contractId);
+
+	@Query("select p from ProgressLog p WHERE p.registrationMoment = (SELECT MAX(pl.registrationMoment) FROM ProgressLog pl WHERE pl.contract.id = :contractId  AND pl.published = true) AND p.contract.id = :contractId AND p.published = true")
+	ProgressLog findLastPublishedProgressLog(int contractId);
 }
