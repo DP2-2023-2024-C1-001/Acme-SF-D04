@@ -13,34 +13,34 @@ import acme.client.repositories.AbstractRepository;
 @Repository
 public interface SponsorDashboardRepository extends AbstractRepository {
 
-	@Query("select count(i) from Invoice i where i.sponsorship.sponsor.id = :sponsorId AND i.tax <= 21.00")
+	@Query("select count(i) from Invoice i where i.sponsorship.sponsor.id = :sponsorId AND i.tax <= 21.00 AND i.published = true")
 	Integer totalNumberOfInvoicesWithTaxLessOrEquals21Percent(int sponsorId);
 
-	@Query("select count(s) from Sponsorship s where s.sponsor.id = :sponsorId AND s.link is not null and s.link not like ''")
+	@Query("select count(s) from Sponsorship s where s.sponsor.id = :sponsorId AND s.link is not null and s.link not like '' AND s.published = true")
 	Integer totalNumberOfSponsorshipWithLink(int sponsorId);
 
-	@Query("select s.amount.currency, avg(s.amount.amount) from Sponsorship s where s.sponsor.id = :sponsorId GROUP BY s.amount.currency")
+	@Query("select s.amount.currency, avg(s.amount.amount) from Sponsorship s where s.sponsor.id = :sponsorId AND s.published = true GROUP BY s.amount.currency")
 	Collection<Object[]> averageAmountOfSponsorship(int sponsorId);
 
-	@Query("select s.amount.currency, stddev(s.amount.amount) from Sponsorship s where s.sponsor.id = :sponsorId GROUP BY s.amount.currency")
+	@Query("select s.amount.currency, stddev(s.amount.amount) from Sponsorship s where s.sponsor.id = :sponsorId AND s.published = true GROUP BY s.amount.currency")
 	Collection<Object[]> deviationAmountOfSponsorship(int sponsorId);
 
-	@Query("select s.amount.currency, min(s.amount.amount) from Sponsorship s where s.sponsor.id = :sponsorId GROUP BY s.amount.currency")
+	@Query("select s.amount.currency, min(s.amount.amount) from Sponsorship s where s.sponsor.id = :sponsorId AND s.published = true GROUP BY s.amount.currency")
 	Collection<Object[]> minimumAmountOfSponsorship(int sponsorId);
 
-	@Query("select s.amount.currency, max(s.amount.amount) from Sponsorship s where s.sponsor.id = :sponsorId GROUP BY s.amount.currency")
+	@Query("select s.amount.currency, max(s.amount.amount) from Sponsorship s where s.sponsor.id = :sponsorId AND s.published = true GROUP BY s.amount.currency")
 	Collection<Object[]> maximumAmountOfSponsorship(int sponsorId);
 
-	@Query("select i.quantity.currency, avg(i.quantity.amount) from Invoice i where i.sponsorship.sponsor.id = :sponsorId GROUP BY i.quantity.currency")
+	@Query("select i.quantity.currency, avg(i.quantity.amount) from Invoice i where i.sponsorship.sponsor.id = :sponsorId AND i.published = true GROUP BY i.quantity.currency")
 	Collection<Object[]> averageQuantityOfInvoice(int sponsorId);
 
-	@Query("select i.quantity.currency, stddev(i.quantity.amount) from Invoice i where i.sponsorship.sponsor.id = :sponsorId GROUP BY i.quantity.currency")
+	@Query("select i.quantity.currency, stddev(i.quantity.amount) from Invoice i where i.sponsorship.sponsor.id = :sponsorId AND i.published = true GROUP BY i.quantity.currency")
 	Collection<Object[]> deviationQuantityOfInvoice(int sponsorId);
 
-	@Query("select i.quantity.currency, min(i.quantity.amount) from Invoice i where i.sponsorship.sponsor.id = :sponsorId GROUP BY i.quantity.currency")
+	@Query("select i.quantity.currency, min(i.quantity.amount) from Invoice i where i.sponsorship.sponsor.id = :sponsorId AND i.published = true GROUP BY i.quantity.currency")
 	Collection<Object[]> minimumQuantityOfInvoice(int sponsorId);
 
-	@Query("select i.quantity.currency, max(i.quantity.amount) from Invoice i where i.sponsorship.sponsor.id = :sponsorId GROUP BY i.quantity.currency")
+	@Query("select i.quantity.currency, max(i.quantity.amount) from Invoice i where i.sponsorship.sponsor.id = :sponsorId AND i.published = true GROUP BY i.quantity.currency")
 	Collection<Object[]> maximumQuantityOfInvoice(int sponsorId);
 
 	@Query("select sc.systemCurrency from SystemConfiguration sc")

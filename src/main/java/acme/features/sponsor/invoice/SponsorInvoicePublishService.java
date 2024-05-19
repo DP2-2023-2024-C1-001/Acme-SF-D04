@@ -76,6 +76,8 @@ public class SponsorInvoicePublishService extends AbstractService<Sponsor, Invoi
 			minimumPeriod = MomentHelper.deltaFromMoment(object.getRegistrationTime(), 1, ChronoUnit.MONTHS);
 			super.state(MomentHelper.isAfterOrEqual(object.getDueDate(), minimumPeriod), "dueDate", "sponsor.invoice.form.error.too-close");
 		}
+		if (!super.getBuffer().getErrors().hasErrors("registrationTime") && object.getSponsorship() != null)
+			super.state(MomentHelper.isBefore(object.getSponsorship().getMoment(), object.getRegistrationTime()), "registrationTime", "sponsor.invoice.form.error.date-before-moment");
 
 		if (!super.getBuffer().getErrors().hasErrors("quantity") && object.getSponsorship() != null) {
 			Double quantity;
