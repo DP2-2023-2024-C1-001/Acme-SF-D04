@@ -48,6 +48,7 @@ public class Project extends AbstractEntity {
 	private Money				cost;
 
 	@URL
+	@Length(max = 255)
 	private String				link;
 
 	private boolean				draftMode;

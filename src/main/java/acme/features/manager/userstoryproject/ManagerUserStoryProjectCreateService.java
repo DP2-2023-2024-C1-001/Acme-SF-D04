@@ -61,9 +61,10 @@ public class ManagerUserStoryProjectCreateService extends AbstractService<Manage
 		if (!super.getBuffer().getErrors().hasErrors("project")) {
 			UserStoryProject existing;
 
-			existing = this.repository.findOneAssignationByProjectIdAndUserStoryId(project.getId(), userStory.getId());
-			super.state(existing == null, "project", "manager.user-story-project.form.error.existing-user-story-project");
-
+			if (userStory != null) {
+				existing = this.repository.findOneAssignationByProjectIdAndUserStoryId(project.getId(), userStory.getId());
+				super.state(existing == null, "*", "manager.user-story-project.form.error.existing-user-story-project");
+			}
 			super.state(project.isDraftMode(), "project", "manager.user-story-project.form.error.published-project");
 		}
 
