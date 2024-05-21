@@ -8,8 +8,11 @@
 		<jstl:when test="${acme:anyOf(_command, 'show|delete')}">
 			<acme:input-select code="manager.user-story-project.list.label.project-title" path="project" choices="${projectChoices }" readonly="true"/>
 			<acme:input-select code="manager.user-story-project.list.label.user-story-title" path="userStory" choices="${userStoryChoices }" readonly="true"/>
-			<acme:submit code="manager.user-story-project.form.button.delete" action="/manager/user-story-project/delete"/>
+			<jstl:if test="${isDraftMode==true}">
+				<acme:submit code="manager.user-story-project.form.button.delete" action="/manager/user-story-project/delete"/>
+			</jstl:if>
 		</jstl:when>
+
 		<jstl:when test="${_command == 'create'}">
 			<acme:input-select code="manager.user-story-project.list.label.project-title" path="project" choices="${projects }"/>
 			<acme:input-select code="manager.user-story-project.list.label.user-story-title" path="userStory" choices="${userStories }"/>

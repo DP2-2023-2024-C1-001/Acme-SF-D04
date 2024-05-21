@@ -56,6 +56,7 @@ public class ManagerUserStoryProjectShowService extends AbstractService<Manager,
 	public void unbind(final UserStoryProject object) {
 		assert object != null;
 
+		boolean isDraftMode;
 		int managerId;
 		Collection<Project> projects;
 		Collection<UserStory> userStories;
@@ -75,9 +76,12 @@ public class ManagerUserStoryProjectShowService extends AbstractService<Manager,
 		projectChoices = SelectChoices.from(projects, "title", object.getProject());
 		userStoryChoices = SelectChoices.from(userStoriesBuenas, "title", object.getUserStory());
 
+		isDraftMode = object.getProject().isDraftMode();
+
 		dataset = super.unbind(object, "project", "userStory");
 		dataset.put("projectChoices", projectChoices);
 		dataset.put("userStoryChoices", userStoryChoices);
+		dataset.put("isDraftMode", isDraftMode);
 
 		super.getResponse().addData(dataset);
 	}
