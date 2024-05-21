@@ -2,7 +2,6 @@
 package acme.features.manager.project;
 
 import java.util.Collection;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -63,12 +62,10 @@ public class ManagerProjectPublishService extends AbstractService<Manager, Proje
 		assert object != null;
 
 		if (!super.getBuffer().getErrors().hasErrors("code")) {
-			Optional<Project> existing;
+			final int proyectId = super.getRequest().getData("id", int.class);
+			final boolean duplicatedCode = this.repository.findAllProjects().stream().filter(e -> e.getId() != proyectId).anyMatch(e -> e.getCode().equals(object.getCode()));
 
-			existing = this.repository.findOneProjectByCode(object.getCode());
-			if (existing.isPresent())
-				super.state(existing.get() == null, "code", "manager.project.form.error.duplicated");
-
+			super.state(!duplicatedCode, "code", "manager.project.form.error.duplicated-code");
 		}
 
 		if (!super.getBuffer().getErrors().hasErrors("cost")) {
