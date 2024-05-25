@@ -85,7 +85,7 @@ public class SponsorSponsorshipCreateService extends AbstractService<Sponsor, Sp
 		if (!super.getBuffer().getErrors().hasErrors("amount") && object.getProject() != null) {
 			Double amount;
 			amount = object.getAmount().getAmount();
-			super.state(amount >= 0, "amount", "sponsor.sponsorship.form.error.negativeAmount");
+			super.state(amount > 0, "amount", "sponsor.sponsorship.form.error.negativeAmount");
 
 			super.state(object.getAmount().getCurrency().equals(object.getProject().getCost().getCurrency()), "amount", "sponsor.sponsorship.form.error.currency");
 		}
