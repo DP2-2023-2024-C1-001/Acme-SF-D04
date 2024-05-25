@@ -90,6 +90,8 @@ public class DeveloperTrainingSessionPublishService extends AbstractService<Deve
 			super.state(MomentHelper.isAfterOrEqual(object.getFinalPeriod(), minimumInitialPeriod), "finalPeriod", "developer.training-session.form.error.too-close-period");
 
 		}
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "developer.training-session.form.error.link");
 
 	}
 

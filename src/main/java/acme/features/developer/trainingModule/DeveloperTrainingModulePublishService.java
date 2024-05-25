@@ -94,6 +94,9 @@ public class DeveloperTrainingModulePublishService extends AbstractService<Devel
 			super.state(existing == null || existing.equals(object), "code", "developer.Training-Modules.form.error.duplicated");
 		}
 
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "developer.Training-Modules.form.error.link");
+
 		Collection<TrainingSession> ts;
 		ts = this.repository.findTrainingSessionsByTrainingModuleId(object.getId());
 		super.state(!ts.isEmpty(), "*", "developer.Training-Modules.form.error.no-training-session");

@@ -32,7 +32,7 @@ public class DeveloperTrainingSessionCreateService extends AbstractService<Devel
 		TrainingModule tm;
 		masterId = super.getRequest().getData("masterId", int.class);
 		tm = this.repository.findOneTrainingModuleById(masterId);
-		status = tm != null && super.getRequest().getPrincipal().hasRole(tm.getDeveloper());
+		status = tm != null && super.getRequest().getPrincipal().hasRole(tm.getDeveloper()) && !tm.isPublished();
 
 		super.getResponse().setAuthorised(status);
 	}
@@ -91,6 +91,9 @@ public class DeveloperTrainingSessionCreateService extends AbstractService<Devel
 			super.state(MomentHelper.isAfterOrEqual(object.getFinalPeriod(), minimumInitialPeriod), "finalPeriod", "developer.training-session.form.error.too-close-period");
 
 		}
+
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "developer.Training-Modules.form.error.duplicated");
 	}
 
 	@Override

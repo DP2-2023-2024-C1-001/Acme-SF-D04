@@ -18,7 +18,7 @@ developer.training-session.form.label.finalPeriod = Periodo Final
 developer.training-session.form.label.location = Ubicación
 developer.training-session.form.label.instructor = Instructor
 developer.training-session.form.label.contactEmail = Correo
-developer.training-session.form.label.link = link
+developer.training-session.form.label.link = link (opcional)
 
 developer.training-session.list.button.create = Crear 
 
@@ -40,3 +40,4 @@ developer.training-session.form.button.publish = Publicar
 developer.training-session.form.error.duplicated = Codigo debe ser único
 developer.training-session.form.error.too-close-to-training-module-creation-moment = Al menos una semana después del momento de creación del modulo de entrenamiento
 developer.training-session.form.error.too-close-period = Al menos debe durar una semana
+developer.training-session.form.error.link = La longitud del link debe estar entre 7 y 255 caracteres
