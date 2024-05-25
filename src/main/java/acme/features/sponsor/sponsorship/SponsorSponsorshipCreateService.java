@@ -89,6 +89,11 @@ public class SponsorSponsorshipCreateService extends AbstractService<Sponsor, Sp
 
 			super.state(object.getAmount().getCurrency().equals(object.getProject().getCost().getCurrency()), "amount", "sponsor.sponsorship.form.error.currency");
 		}
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "sponsor.sponsorship.form.error.link");
+
+		if (!super.getBuffer().getErrors().hasErrors("email") && object.getEmail() != null)
+			super.state(object.getEmail().length() >= 6 && object.getEmail().length() <= 254 || object.getEmail().length() == 0, "email", "sponsor.sponsorship.form.error.email");
 	}
 
 	@Override

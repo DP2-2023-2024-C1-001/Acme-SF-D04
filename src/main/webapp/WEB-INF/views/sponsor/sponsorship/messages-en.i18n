@@ -36,6 +36,8 @@ sponsor.sponsorship.form.error.negativeAmount = The amount cannot be negative
 sponsor.sponsorship.form.error.currency = Unable to create sponsorship because the specified monetary unit does not match that of the project 
 sponsor.sponsorship.form.error.amount = The sum of the total amount of all the publish invoices must be equal to the amount of the sponsorship
 sponsor.sponsorship.form.error.date-before-moment = Must be after the moment
+sponsor.sponsorship.form.error.email = The email length must be between 6 and 254 characters
+sponsor.sponsorship.form.error.link = The link length must be between 7 and 255 characters
 
 
 sponsor.sponsorship.list.label.code = Code

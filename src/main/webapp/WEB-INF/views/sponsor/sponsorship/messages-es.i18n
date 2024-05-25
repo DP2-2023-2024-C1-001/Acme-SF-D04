@@ -35,7 +35,8 @@ sponsor.sponsorship.form.error.negativeAmount = La cantidad no puede ser negativ
 sponsor.sponsorship.form.error.currency = No se puede crear el patrocinio porque la unidad monetaria especificada no coincide con la del proyecto.
 sponsor.sponsorship.form.error.amount = La suma del importe total de todas sus facturas publicadas debe ser igual al importe del patrocinio
 sponsor.sponsorship.form.error.date-before-moment = Debe ser posterior al momento
-
+sponsor.sponsorship.form.error.email = La longitud del email debe estar entre 6 y 254 caracteres
+sponsor.sponsorship.form.error.link = La longitud del link debe estar entre 7 y 255 caracteres
 
 
 sponsor.sponsorship.list.label.code = Código
