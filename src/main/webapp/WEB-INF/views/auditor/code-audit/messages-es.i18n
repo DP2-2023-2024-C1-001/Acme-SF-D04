@@ -15,6 +15,7 @@ auditor.code-audit.form.label.code = Código:
 auditor.code-audit.form.label.execution = Comienzo:
 auditor.code-audit.form.label.type = Tipo de auditoría de código:
 auditor.code-audit.form.label.correctiveActions = Acciones correctivas:
+auditor.code-audit.form.label.mark = Calificación:
 auditor.code-audit.form.label.link = Link:
 auditor.code-audit.form.label.project = Proyecto:
 
