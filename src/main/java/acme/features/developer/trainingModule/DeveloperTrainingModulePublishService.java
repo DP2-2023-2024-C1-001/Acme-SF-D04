@@ -84,7 +84,7 @@ public class DeveloperTrainingModulePublishService extends AbstractService<Devel
 	public void validate(final TrainingModule object) {
 		assert object != null;
 
-		if (!super.getBuffer().getErrors().hasErrors("updateMoment") && object.getUpdateMoment() != null)
+		if (!super.getBuffer().getErrors().hasErrors("updateMoment") && object.getUpdateMoment() != null && object.getCreationMoment() != null)
 			super.state(MomentHelper.isAfter(object.getUpdateMoment(), object.getCreationMoment()), "updateMoment", "developer.Training-Modules.form.error.invalidUpdateMoment");
 
 		if (!super.getBuffer().getErrors().hasErrors("code")) {
