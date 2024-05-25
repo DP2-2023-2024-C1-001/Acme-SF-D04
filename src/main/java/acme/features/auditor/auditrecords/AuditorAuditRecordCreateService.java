@@ -35,7 +35,7 @@ public class AuditorAuditRecordCreateService extends AbstractService<Auditor, Au
 
 		masterId = super.getRequest().getData("masterId", int.class);
 		codeAudit = this.repository.findOneCodeAuditById(masterId);
-		status = codeAudit != null && super.getRequest().getPrincipal().hasRole(codeAudit.getAuditor());
+		status = codeAudit != null && super.getRequest().getPrincipal().hasRole(codeAudit.getAuditor()) && !codeAudit.isPublished();
 
 		super.getResponse().setAuthorised(status);
 	}
