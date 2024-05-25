@@ -22,12 +22,16 @@
 	<acme:input-moment code="auditor.code-audit.form.label.execution" path="execution" />
 	<acme:input-select code="auditor.code-audit.form.label.type" path="type" choices= "${types}"/>
 	<acme:input-textarea code="auditor.code-audit.form.label.correctiveActions" path="correctiveActions"/>
+	<acme:input-textbox code="auditor.code-audit.form.label.mark" path="mark" readonly="true"/>
 	<acme:input-url code="auditor.code-audit.form.label.link" path="link"/>
 	<acme:input-select code="auditor.code-audit.form.label.project" path="project" choices= "${projects}"/>	
 	
 	
 	
 	<jstl:choose>
+	<jstl:when test="${published==true}">
+			<acme:button code="auditor.code-audit.form.button.auditRecords" action="/auditor/audit-record/list?masterId=${id}"/>
+		</jstl:when>
 		<jstl:when test="${acme:anyOf(_command, 'show|update|delete|publish') && published==false}">
 			<acme:button code="auditor.code-audit.form.button.auditRecords" action="/auditor/audit-record/list?masterId=${id}"/>
 			<acme:submit code="auditor.code-audit.form.button.publish" action="/auditor/code-audit/publish"/>

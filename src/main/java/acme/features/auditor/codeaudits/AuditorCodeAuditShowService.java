@@ -47,6 +47,9 @@ public class AuditorCodeAuditShowService extends AbstractService<Auditor, CodeAu
 
 		id = super.getRequest().getData("id", int.class);
 		object = this.repository.findOneCodeAuditById(id);
+		Collection<String> countMarks = this.repository.getCountsMark(object.getId());
+		String mode = countMarks.isEmpty() ? null : countMarks.iterator().next();
+		object.setMark(mode);
 
 		super.getBuffer().addData(object);
 	}
@@ -65,7 +68,7 @@ public class AuditorCodeAuditShowService extends AbstractService<Auditor, CodeAu
 		projects = this.repository.findAllProjects();
 		choices = SelectChoices.from(projects, "code", object.getProject());
 
-		dataset = super.unbind(object, "code", "execution", "type", "correctiveActions", "link", "published");
+		dataset = super.unbind(object, "code", "execution", "type", "correctiveActions", "mark", "link", "published");
 		dataset.put("project", choices.getSelected().getKey());
 		dataset.put("projects", choices);
 		dataset.put("types", choicesType);

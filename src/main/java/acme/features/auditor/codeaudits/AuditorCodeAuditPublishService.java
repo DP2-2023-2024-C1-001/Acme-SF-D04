@@ -78,12 +78,14 @@ public class AuditorCodeAuditPublishService extends AbstractService<Auditor, Cod
 		boolean publish = auditRecords.stream().allMatch(x -> x.isPublished() == true);
 		super.state(publish, "*", "auditor.code-audit.form.error.auditRecordsNotPublished");
 
-		Collection<String> marks = new ArrayList<>();
-		marks.add("A+");
-		marks.add("A");
-		marks.add("B");
-		marks.add("C");
-		super.state(marks.contains(object.getMark()), "*", "auditor.code-audit.form.error.mark");
+		if (!super.getBuffer().getErrors().hasErrors("mark")) {
+			Collection<String> marks = new ArrayList<>();
+			marks.add("A+");
+			marks.add("A");
+			marks.add("B");
+			marks.add("C");
+			super.state(marks.contains(object.getMark()), "mark", "auditor.code-audit.form.error.mark");
+		}
 
 		if (!super.getBuffer().getErrors().hasErrors("code")) {
 			CodeAudit existing;
@@ -117,7 +119,7 @@ public class AuditorCodeAuditPublishService extends AbstractService<Auditor, Cod
 		projects = this.repository.findAllProjects();
 		choices = SelectChoices.from(projects, "code", object.getProject());
 
-		dataset = super.unbind(object, "code", "execution", "type", "correctiveActions", "link", "published");
+		dataset = super.unbind(object, "code", "execution", "type", "correctiveActions", "mark", "link", "published");
 		dataset.put("project", choices.getSelected().getKey());
 		dataset.put("projects", choices);
 		dataset.put("types", choicesType);
