@@ -30,7 +30,7 @@ public class ManagerUserStoryProjectDeleteService extends AbstractService<Manage
 		usp = this.repository.findOneUserStoryProjectById(super.getRequest().getData("id", int.class));
 		manager = this.repository.findOneManagerById(super.getRequest().getPrincipal().getActiveRoleId());
 
-		status = super.getRequest().getPrincipal().getActiveRole() == Manager.class && usp.getProject().getManager().equals(manager);
+		status = super.getRequest().getPrincipal().getActiveRole() == Manager.class && usp.getProject().getManager().equals(manager) && usp.getProject().isDraftMode();
 		super.getResponse().setAuthorised(status);
 	}
 
