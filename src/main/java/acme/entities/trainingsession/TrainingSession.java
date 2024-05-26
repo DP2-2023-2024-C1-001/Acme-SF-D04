@@ -28,7 +28,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Table(indexes = {
-	@Index(columnList = "code"), @Index(columnList = "trainingModule_id")
+	@Index(columnList = "code"), @Index(columnList = "training_module_id")
 })
 public class TrainingSession extends AbstractEntity {
 
