@@ -70,7 +70,7 @@ public class SponsorInvoicePublishService extends AbstractService<Sponsor, Invoi
 
 		}
 
-		if (!super.getBuffer().getErrors().hasErrors("dueDate")) {
+		if (!super.getBuffer().getErrors().hasErrors("dueDate") && object.getRegistrationTime() != null) {
 			Date minimumPeriod;
 
 			minimumPeriod = MomentHelper.deltaFromMoment(object.getRegistrationTime(), 1, ChronoUnit.MONTHS);
