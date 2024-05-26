@@ -19,7 +19,7 @@ manager.project.form.button.delete = Eliminar
 manager.project.form.button.update = Actualizar
 manager.project.form.button.publish = Publicar
 
-manager.project.form.error.duplicated-code = Ya existe un proyecto con ese codigo
+manager.project.form.error.duplicated = Ya existe un proyecto con ese codigo
 manager.project.form.error.negativeCost = El coste no puede ser negativo
 manager.project.form.error.currency = Introduzca una divisa valida
 manager.project.form.error.not-enough-user-stories = Para publicar un projecto debe tener al menos una historia de usuario
