@@ -44,6 +44,9 @@ public class AuditorCodeAuditUpdateService extends AbstractService<Auditor, Code
 
 		id = super.getRequest().getData("id", int.class);
 		object = this.repository.findOneCodeAuditById(id);
+		Collection<String> countMarks = this.repository.getCountsMark(object.getId());
+		String mode = countMarks.isEmpty() ? null : countMarks.iterator().next();
+		object.setMark(mode);
 
 		super.getBuffer().addData(object);
 	}
@@ -73,6 +76,8 @@ public class AuditorCodeAuditUpdateService extends AbstractService<Auditor, Code
 			super.state(existing == null || existing.getId() == object.getId(), "code", "auditor.code-audit.form.error.duplicated");
 
 		}
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "auditor.code-audit.form.error.link");
 	}
 
 	@Override
@@ -96,7 +101,7 @@ public class AuditorCodeAuditUpdateService extends AbstractService<Auditor, Code
 		projects = this.repository.findAllProjects();
 		choices = SelectChoices.from(projects, "code", object.getProject());
 
-		dataset = super.unbind(object, "code", "execution", "type", "correctiveActions", "link", "published");
+		dataset = super.unbind(object, "code", "execution", "type", "mark", "correctiveActions", "link", "published");
 		dataset.put("project", choices.getSelected().getKey());
 		dataset.put("projects", choices);
 		dataset.put("types", choicesType);

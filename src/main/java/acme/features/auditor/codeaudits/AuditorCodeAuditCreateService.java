@@ -65,6 +65,8 @@ public class AuditorCodeAuditCreateService extends AbstractService<Auditor, Code
 			super.state(existing == null || existing.getId() == object.getId(), "code", "auditor.code-audit.form.error.duplicated");
 
 		}
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "auditor.code-audit.form.error.link");
 	}
 
 	@Override

@@ -72,6 +72,8 @@ public class AuditorAuditRecordPublishService extends AbstractService<Auditor, A
 
 		}
 
+		if (!super.getBuffer().getErrors().hasErrors("periodStart") && object.getCodeAudit() != null)
+			super.state(MomentHelper.isAfterOrEqual(object.getPeriodStart(), object.getCodeAudit().getExecution()), "periodStart", "auditor.audit-record.form.error.invalidInitialPeriod");
 		if (!super.getBuffer().getErrors().hasErrors("periodEnd") && object.getPeriodStart() != null) {
 			Date minimumPeriodEnd;
 
@@ -89,6 +91,8 @@ public class AuditorAuditRecordPublishService extends AbstractService<Auditor, A
 			super.state(marks.contains(object.getMark()), "mark", "auditor.audit-record.form.error.mark");
 
 		}
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "auditor.code-audit.form.error.link");
 	}
 
 	@Override

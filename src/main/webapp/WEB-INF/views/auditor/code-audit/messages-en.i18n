@@ -16,7 +16,7 @@ auditor.code-audit.form.label.execution = Execution:
 auditor.code-audit.form.label.type = Code Audit Type:
 auditor.code-audit.form.label.correctiveActions = Corrective Actions:
 auditor.code-audit.form.label.mark = Mark:
-auditor.code-audit.form.label.link = Link:
+auditor.code-audit.form.label.link = Link (Optional):
 auditor.code-audit.form.label.project = Project:
 
 auditor.code-audit.form.button.auditRecords = List Audit Records
@@ -39,3 +39,4 @@ auditor.code-audit.list.button.create = Create
 auditor.code-audit.form.error.duplicated = The code is taken
 auditor.code-audit.form.error.auditRecordsNotPublished = The audit records must be published
 auditor.code-audit.form.error.mark = The mode of marks must be higher than C
+auditor.code-audit.form.error.link = The link length must be between 7 and 255 characters
