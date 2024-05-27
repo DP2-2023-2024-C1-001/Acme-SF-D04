@@ -18,6 +18,7 @@ authenticated.objective.form.label.priority = Priority:
 authenticated.objective.form.label.status = Status
 authenticated.objective.form.label.initialPeriod = Initial Period: 
 authenticated.objective.form.label.finalPeriod = Final Period:
+authenticated.objective.form.label.link = Link(Optional):
 
 
 authenticated.objective.list.label.instantiationMoment = Instantiation Moment

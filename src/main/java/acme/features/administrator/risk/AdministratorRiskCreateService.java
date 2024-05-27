@@ -68,6 +68,8 @@ public class AdministratorRiskCreateService extends AbstractService<Administrato
 			super.state(100 >= probability && probability >= 0, "probability", "administrator.risk.form.error.invalid-probability");
 
 		}
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "administrator.risk.form.error.link");
 
 	}
 

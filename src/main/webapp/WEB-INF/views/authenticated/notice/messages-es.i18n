@@ -23,6 +23,8 @@ authenticated.notice.form.label.confirmation = Confirmar
 
 authenticated.notice.form.error.author = El autor debe calcularse de la siguiente manera: “〈nombre de usuario〉 - 〈apellido, nombre〉”, donde “〈nombre de usuario〉” denota el nombre de usuario del principal que ha publicado la noticia y “〈apellido, nombre〉” denota su nombre completo
 authenticated.notice.form.error.confirmation = Debes confirmar la acción
+authenticated.notice.form.error.emailAddress = La longitud del email debe estar entre 6 y 254 caracteres
+authenticated.notice.form.error.link = La longitud del link debe estar entre 7 y 255 caracteres
 
 
 authenticated.notice.list.label.instantiationMoment = Momento de instanciación

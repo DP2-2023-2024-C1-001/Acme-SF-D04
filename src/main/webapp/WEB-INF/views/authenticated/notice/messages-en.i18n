@@ -23,6 +23,9 @@ authenticated.notice.form.label.confirmation = Confirm
 
 authenticated.notice.form.error.author = The author must be computed as follows: “〈username〉 - 〈surname, name〉”, where “〈username〉” denotes the username of the principal who has posted the notice and “〈surname, name〉” denotes his or her full name
 authenticated.notice.form.error.confirmation = You must confirm the action
+authenticated.notice.form.error.emailAddress = The email length must be between 6 and 254 characters
+authenticated.notice.form.error.link = The link length must be between 7 and 255 characters
+
 
 authenticated.notice.list.label.instantiationMoment = Instantiation Moment
 authenticated.notice.list.label.title = Title

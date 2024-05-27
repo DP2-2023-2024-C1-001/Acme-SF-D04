@@ -31,5 +31,6 @@ administrator.risk.form.button.delete = Delete
 administrator.risk.form.error.invalid-probability = The probability must be between 0 and 100
 administrator.risk.form.error.negative-value = The impact cannot be negative
 administrator.risk.form.error.duplicated = This code is taken
+administrator.risk.form.error.link = The link length must be between 7 and 255 characters
 
 administrator.risk.list.button.create = Create

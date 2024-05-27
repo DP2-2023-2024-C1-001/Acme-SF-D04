@@ -26,5 +26,8 @@ any.claim.list.label.code = Code
 any.claim.list.label.instantiationMoment = Instantiation Moment
 any.claim.list.label.heading = Heading
 
+any.claim.form.error.emailAddress = The email length must be between 6 and 254 characters
+any.claim.form.error.link = The link length must be between 7 and 255 characters
+
 
 administrator.claim.form.error.duplicated = The code is taken

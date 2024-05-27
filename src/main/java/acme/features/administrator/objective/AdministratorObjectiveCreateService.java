@@ -51,7 +51,7 @@ public class AdministratorObjectiveCreateService extends AbstractService<Adminis
 	public void bind(final Objective object) {
 		assert object != null;
 
-		super.bind(object, "instantiationMoment", "title", "description", "priority", "status", "initialPeriod", "finalPeriod");
+		super.bind(object, "instantiationMoment", "title", "description", "priority", "status", "initialPeriod", "finalPeriod", "link");
 	}
 
 	@Override
@@ -68,6 +68,9 @@ public class AdministratorObjectiveCreateService extends AbstractService<Adminis
 
 		if (!super.getBuffer().getErrors().hasErrors("finalPeriod") && object.getInitialPeriod() != null)
 			super.state(MomentHelper.isAfter(object.getFinalPeriod(), object.getInitialPeriod()), "finalPeriod", "administrator.objective.form.error.invalidFinalPeriod");
+
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "administrator.objective.form.error.link");
 	}
 
 	@Override
@@ -86,7 +89,7 @@ public class AdministratorObjectiveCreateService extends AbstractService<Adminis
 
 		choicesPriority = SelectChoices.from(Priority.class, object.getPriority());
 
-		dataset = super.unbind(object, "instantiationMoment", "title", "description", "priority", "status", "initialPeriod", "finalPeriod");
+		dataset = super.unbind(object, "instantiationMoment", "title", "description", "priority", "status", "initialPeriod", "finalPeriod", "link");
 		dataset.put("priorities", choicesPriority);
 		super.getResponse().addData(dataset);
 	}

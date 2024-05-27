@@ -17,3 +17,11 @@
 
 <h1><acme:message code="master.license.title"/></h1>
 <p><acme:message code="master.license.text"/></p>
+<p><acme:message code="master.license.text2"/></p>
+<p><acme:message code="master.license.text3"/></p>
+<p><acme:message code="master.license.text4"/></p>
+<p><acme:message code="master.license.text5"/></p>
+<p><acme:message code="master.license.text6"/></p>
+<p><acme:message code="master.license.text7"/></p>
+<p><acme:message code="master.license.text8"/></p>
+<p><acme:message code="master.license.text9"/></p>
