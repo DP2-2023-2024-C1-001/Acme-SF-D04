@@ -72,7 +72,7 @@ public class SponsorInvoiceListService extends AbstractService<Sponsor, Invoice>
 
 		masterId = super.getRequest().getData("masterId", int.class);
 		sponsorship = this.repository.findSponsorshipById(masterId);
-		showCreate = super.getRequest().getPrincipal().hasRole(sponsorship.getSponsor());
+		showCreate = super.getRequest().getPrincipal().hasRole(sponsorship.getSponsor()) && !sponsorship.isPublished();
 
 		super.getResponse().addGlobal("masterId", masterId);
 		super.getResponse().addGlobal("showCreate", showCreate);

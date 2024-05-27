@@ -70,7 +70,7 @@ public class SponsorInvoicePublishService extends AbstractService<Sponsor, Invoi
 
 		}
 
-		if (!super.getBuffer().getErrors().hasErrors("dueDate")) {
+		if (!super.getBuffer().getErrors().hasErrors("dueDate") && object.getRegistrationTime() != null) {
 			Date minimumPeriod;
 
 			minimumPeriod = MomentHelper.deltaFromMoment(object.getRegistrationTime(), 1, ChronoUnit.MONTHS);
@@ -113,6 +113,8 @@ public class SponsorInvoicePublishService extends AbstractService<Sponsor, Invoi
 			super.state(100 >= tax && tax >= 0, "tax", "sponsor.invoice.form.error.invalid-tax");
 
 		}
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "sponsor.invoice.form.error.link");
 	}
 
 	@Override

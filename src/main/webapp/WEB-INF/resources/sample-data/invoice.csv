@@ -8,3 +8,15 @@ invoice-05,IN-1234-4322,2021/08/24 00:00,2021/10/22 00:00,"EUR 100.50",99,http:/
 invoice-06,IN-1234-4323,2021/08/24 00:00,2021/10/22 00:00,"EUR 100.50",100,http://www.ejemplo.com,sponsorship-06,true
 invoice-07,IN-1234-4324,2021/08/24 00:00,2021/10/22 00:00,"EUR 100.50",55,http://www.ejemplo.com,sponsorship-07,true
 invoice-08,IN-1234-4325,2021/08/24 00:00,2021/10/22 00:00,"EUR 100.50",55,,sponsorship-08,true
+invoice-09,IN-1234-4326,2021/08/24 00:00,2021/10/22 00:00,"EUR 100.50",55,http://www.ejemplo.com,sponsorship-09,false
+invoice-10,IN-1234-4327,2021/08/24 00:00,2021/10/22 00:00,"EUR 100.50",55,http://www.ejemplo.com,sponsorship-10,false
+invoice-11,IN-1234-4328,2021/08/24 00:00,2021/10/22 00:00,"EUR 100.50",55,http://www.ejemplo.com,sponsorship-11,false
+invoice-12,IN-1234-4329,2021/08/24 00:00,2021/10/22 00:00,"EUR 100.50",55,http://www.ejemplo.com,sponsorship-12,false
+invoice-13,IN-1234-4330,2021/08/24 00:00,2021/10/22 00:00,"EUR 100.50",55,http://www.ejemplo.com,sponsorship-13,false
+invoice-14,IN-1234-4331,2021/08/24 00:00,2021/10/22 00:00,"EUR 100.50",55,http://www.ejemplo.com,sponsorship-14,false
+invoice-15,IN-1234-4332,2021/08/24 00:00,2021/10/22 00:00,"EUR 100.50",55,http://www.ejemplo.com,sponsorship-15,false
+invoice-16,IN-1234-4333,2021/08/24 00:00,2021/10/22 00:00,"EUR 100.50",55,http://www.ejemplo.com,sponsorship-16,false
+invoice-17,IN-1234-4334,2021/08/24 00:00,2021/10/22 00:00,"EUR 100.50",55,http://www.ejemplo.com,sponsorship-17,false
+invoice-18,IN-1234-4335,2021/08/24 00:00,2021/10/22 00:00,"EUR 100.50",55,http://www.ejemplo.com,sponsorship-18,false
+invoice-19,IN-1234-9998,2021/08/24 00:00,2021/10/22 00:00,"EUR 100.50",1,http://www.ejemplo.com,sponsorship-04,true
+invoice-20,IN-1234-9997,2021/08/24 00:00,2021/10/22 00:00,"EUR 100.50",1,http://www.ejemplo.com,sponsorship-04,false

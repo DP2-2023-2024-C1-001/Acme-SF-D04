@@ -32,6 +32,7 @@ sponsor.invoice.form.error.currency = El sistema no puede aceptar esa moneda
 sponsor.invoice.form.error.negativeQuantity = La cantidad no puede ser negativa
 sponsor.invoice.form.error.sponsorship-amount = Cantidad total del patrocinio excedida
 sponsor.invoice.form.error.date-before-moment = La fecha de registro debe ser posterior al momento de registro del patrocinio
+sponsor.invoice.form.error.link = La longitud del link debe estar entre 7 y 255 caracteres
 
 
 sponsor.invoice.list.label.code = Code

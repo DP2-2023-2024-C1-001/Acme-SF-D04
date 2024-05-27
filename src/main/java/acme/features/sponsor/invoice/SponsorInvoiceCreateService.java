@@ -33,7 +33,7 @@ public class SponsorInvoiceCreateService extends AbstractService<Sponsor, Invoic
 
 		masterId = super.getRequest().getData("masterId", int.class);
 		sponsorship = this.repository.findSponsorshipById(masterId);
-		status = sponsorship != null && super.getRequest().getPrincipal().hasRole(sponsorship.getSponsor());
+		status = sponsorship != null && super.getRequest().getPrincipal().hasRole(sponsorship.getSponsor()) && !sponsorship.isPublished();
 
 		super.getResponse().setAuthorised(status);
 	}
@@ -119,6 +119,8 @@ public class SponsorInvoiceCreateService extends AbstractService<Sponsor, Invoic
 			super.state(100 >= tax && tax >= 0, "tax", "sponsor.invoice.form.error.invalid-tax");
 
 		}
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "sponsor.invoice.form.error.link");
 	}
 
 	@Override

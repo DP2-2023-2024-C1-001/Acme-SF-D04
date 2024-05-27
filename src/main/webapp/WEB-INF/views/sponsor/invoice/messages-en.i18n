@@ -32,6 +32,8 @@ sponsor.invoice.form.error.currency = The system cannot accept that currency
 sponsor.invoice.form.error.negativeQuantity = The quantity cannot be negative
 sponsor.invoice.form.error.sponsorship-amount = Total sponsorship amount exceeded
 sponsor.invoice.form.error.date-before-moment = The registration date must be after the sponsorship moment
+sponsor.invoice.form.error.link = The link length must be between 7 and 255 characters
+
 
 sponsor.invoice.list.label.code = Code
 sponsor.invoice.list.label.registrationTime = Registration Time
