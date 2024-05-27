@@ -58,6 +58,9 @@ public class AuthenticatedClientUpdateService extends AbstractService<Authentica
 			super.state(existing == null || object.getId() == existing.getId(), "identification", "authenticated.client.form.error.duplicated");
 
 		}
+
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "authenticated.client.form.error.link");
 	}
 
 	@Override

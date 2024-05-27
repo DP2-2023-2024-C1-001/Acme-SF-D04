@@ -17,6 +17,7 @@ authenticated.client.form.label.companyName = Company Name
 authenticated.client.form.label.identification = Identification
 
 authenticated.client.form.error.duplicated = This identification is taken
+authenticated.client.form.error.link = The link length must be between 7 and 255 characters 
 
 authenticated.client.form.button.create = Register
 authenticated.client.form.button.update = Update

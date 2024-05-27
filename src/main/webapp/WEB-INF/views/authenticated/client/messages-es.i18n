@@ -17,6 +17,7 @@ authenticated.client.form.label.companyName = Nombre de la compañía
 authenticated.client.form.label.identification = Identificación
 
 authenticated.client.form.error.duplicated = El código esta tomado
+authenticated.client.form.error.link = La longitud del link debe estar entre 7 y 255 carácteres
 
 
 authenticated.client.form.button.create = Registrar
