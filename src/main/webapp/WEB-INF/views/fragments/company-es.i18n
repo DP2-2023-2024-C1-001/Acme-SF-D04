@@ -13,7 +13,7 @@ master.company.text = \
 	Acme SF Inc. es una empresa ficticia que ofrece un proyecto diseñado \
 	por  estudiantes matriculados en el curso de Diseño y Pruebas 2 dentro del \
 	programa de Ingeniería de Software en la Universidad de Sevilla. 
-master.company.name = Acme SF, Inc.
+master.company.name = Acme SF, S.A
 master.company.address = 01 Rumba, Coria Del Rio, Sevilla
 master.company.phone = +34 954 778 551
 master.company.email = contact@acme-sf.com

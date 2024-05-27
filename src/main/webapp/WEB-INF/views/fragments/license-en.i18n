@@ -16,30 +16,31 @@ master.license.text = \
 	"JSESSIONID" to identify your work session, "remember" to let you authenticate \
 	automatically, "language" to store your language preferences, "XSRF-TOKEN" to \
 	deal with CSRF attacks, and "returnStack" to know where to return when your press \
-	some buttons.\
+	some buttons.
 	
-	Academic Software License\
+master.license.text2 = \	
+	Academic Software License
 
-	This software, along with its source code, documentation, and any other associated materials,\
-	is protected by the following license:\
+master.license.text3 = \	This software, along with its source code, documentation, and any other associated materials,\
+	is protected by the following license:
 
-	1. No Plagiarism Allowed: It is strictly prohibited to plagiarize this software in whole or in\
+master.license.text4 = \	1. No Plagiarism Allowed: It is strictly prohibited to plagiarize this software in whole or in\
 	part. Plagiarism is defined as the reproduction, copying, or unauthorized use of any aspect of \
-	this software without proper attribution.\
+	this software without proper attribution.
 
-	2. Proper Use: Users wishing to use, modify, or distribute this software must do so in accordance \
-	with the terms and conditions set forth in this license.\
+master.license.text5 = \	2. Proper Use: Users wishing to use, modify, or distribute this software must do so in accordance \
+	with the terms and conditions set forth in this license.
 
-	3. Attribution: Any use or distribution of this software must include proper attribution to the \
-	original author, clearly indicating the source of the software and providing a link to the original\
- 	version if available.\
+master.license.text6 = \	3. Attribution: Any use or distribution of this software must include proper attribution to the \
+	original author, clearly indicating the source of the software and providing a link to the original
+ 	version if available.
 
-	4. No Warranty: This software is provided "as is," without warranty of any kind, express or implied. \
-	The author assumes no responsibility for the use of this software or any damages resulting from its use.\
+master.license.text7 = \	4. No Warranty: This software is provided "as is," without warranty of any kind, express or implied. \
+	The author assumes no responsibility for the use of this software or any damages resulting from its use.
 
-	5. Applicable Law: This license shall be governed and construed in accordance with the laws of the \
-	relevant country or jurisdiction.\
+master.license.text8 = \	5. Applicable Law: This license shall be governed and construed in accordance with the laws of the \
+	relevant country or jurisdiction.
 
-	By using this software, you agree to the terms and conditions of this license. If you do not agree to \
-	these terms, do not use or access this software.\
+master.license.text9 = \	By using this software, you agree to the terms and conditions of this license. If you do not agree to \
+	these terms, do not use or access this software.
 	

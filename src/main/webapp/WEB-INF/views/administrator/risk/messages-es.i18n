@@ -22,6 +22,7 @@ administrator.risk.list.label.reference = Referencia
 administrator.risk.list.label.identificationDate = Fecha de identificación
 administrator.risk.list.label.impact = Impacto
 administrator.risk.list.label.description = Descripción
+administrator.risk.list.button.create = Crear
 
 administrator.risk.form.button.create = Crear
 administrator.risk.form.button.update = Actualizar
