@@ -14,3 +14,5 @@ manager.user-story-project.form.button.delete = Delete
 manager.user-story-project.form.error.published-project = A published project cannot be modified
 manager.user-story-project.form.error.existing-user-story-project = This assignment already exists
 manager.user-story-project.form.error.delete-assignment-published-project = A published project cannot be modified
+manager.user-story-project.form.error.not-manager = This project is not yours
+manager.user-story-project.form.error.user-story-manager-or-publish = This user story can not be assigned

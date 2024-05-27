@@ -70,8 +70,17 @@ public class ManagerUserStoryDeleteService extends AbstractService<Manager, User
 	@Override
 	public void unbind(final UserStory object) {
 		assert object != null;
+		Manager manager;
+		UserStory userStory;
+		boolean isMine;
+
+		userStory = this.repository.findOneUserStoryById(super.getRequest().getData("id", int.class));
+		manager = this.repository.findOneManagerById(super.getRequest().getPrincipal().getActiveRoleId());
+		isMine = userStory.getManager().equals(manager);
 
 		Dataset dataset = super.unbind(object, "title", "description", "estimatedCost", "acceptanceCriteria", "link", "priority", "draftMode");
+
+		dataset.put("isMine", isMine);
 
 		super.getResponse().addData(dataset);
 	}

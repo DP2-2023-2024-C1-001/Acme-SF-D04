@@ -60,7 +60,7 @@ public class ManagerProjectUpdateService extends AbstractService<Manager, Projec
 			final int proyectId = super.getRequest().getData("id", int.class);
 			final boolean duplicatedCode = this.repository.findAllProjects().stream().filter(e -> e.getId() != proyectId).anyMatch(e -> e.getCode().equals(object.getCode()));
 
-			super.state(!duplicatedCode, "code", "manager.project.form.error.duplicated-code");
+			super.state(!duplicatedCode, "code", "manager.project.form.error.duplicated");
 		}
 
 		if (!super.getBuffer().getErrors().hasErrors("cost")) {
