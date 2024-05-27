@@ -15,8 +15,8 @@ developer.training-module.form.label.code = Código:
 developer.training-module.form.label.creationMoment = Instante de Creación:
 developer.training-module.form.label.details = Detalles:
 developer.training-module.form.label.difficultLevel = Nivel de Dificultad:
-developer.training-module.form.label.updateMoment = Instante de Actualización:
-developer.training-module.form.label.link = Link: 
+developer.training-module.form.label.updateMoment = Instante de Actualización (opcional):
+developer.training-module.form.label.link = Link (opcional): 
 developer.training-module.form.label.project = Proyecto:
 
 
@@ -24,7 +24,7 @@ developer.Training-Modules.form.error.invalidUpdateMoment =  el instante de actu
 developer.Training-Modules.form.error.duplicated = el código no puede ser duplicado
 developer.Training-Modules.form.error.no-training-session = No se puede publicar si no hay ninguna sesión de entrenamiento asignada
 developer.Training-Modules.form.error.must-be-all-published = No se puede publicar si las sesiones de entrenamiento asignadas no están publicadas
-
+developer.Training-Modules.form.error.link = La longitud del link debe estar entre 7 y 255 caracteres
 
 developer.training-module.list.label.code = Código
 developer.training-module.list.label.creationMoment = Instante de Creación

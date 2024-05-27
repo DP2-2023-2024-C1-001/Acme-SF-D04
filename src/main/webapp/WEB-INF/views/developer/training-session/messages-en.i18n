@@ -18,7 +18,7 @@ developer.training-session.form.label.finalPeriod = Final Period
 developer.training-session.form.label.location = Location
 developer.training-session.form.label.instructor = Instructor
 developer.training-session.form.label.contactEmail = Email
-developer.training-session.form.label.link = link
+developer.training-session.form.label.link = link (optional)
 
 developer.training-session.list.button.create = Create 
 
@@ -40,4 +40,5 @@ developer.training-session.form.button.publish = Publish
 developer.training-session.form.error.duplicated = Code cannot be duplicated
 developer.training-session.form.error.too-close-to-training-module-creation-moment = at least one week ahead the training module creation moment
 developer.training-session.form.error.too-close-period = at least one week long
+developer.training-session.form.error.link = The link length must be between 7 and 255 characters
 

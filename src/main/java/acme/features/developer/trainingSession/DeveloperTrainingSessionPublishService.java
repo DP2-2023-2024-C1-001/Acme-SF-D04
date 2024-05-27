@@ -83,13 +83,15 @@ public class DeveloperTrainingSessionPublishService extends AbstractService<Deve
 
 		}
 
-		if (!super.getBuffer().getErrors().hasErrors("finalPeriod") && object.getInitialPeriod() != null && object.getFinalPeriod() != null) {
+		if (!super.getBuffer().getErrors().hasErrors("finalPeriod") && object.getInitialPeriod() != null) {
 			Date minimumInitialPeriod;
 
 			minimumInitialPeriod = MomentHelper.deltaFromMoment(object.getInitialPeriod(), 7, ChronoUnit.DAYS);
 			super.state(MomentHelper.isAfterOrEqual(object.getFinalPeriod(), minimumInitialPeriod), "finalPeriod", "developer.training-session.form.error.too-close-period");
 
 		}
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "developer.training-session.form.error.link");
 
 	}
 

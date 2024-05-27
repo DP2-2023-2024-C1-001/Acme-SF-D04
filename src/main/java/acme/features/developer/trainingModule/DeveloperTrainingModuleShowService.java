@@ -63,7 +63,7 @@ public class DeveloperTrainingModuleShowService extends AbstractService<Develope
 		Collection<Project> projects;
 
 		id = super.getRequest().getData("id", int.class);
-		projects = this.repository.findProjectByTrainingModuleId(id);
+		projects = this.repository.findAllProjects();
 		choices = SelectChoices.from(Difficult.class, object.getDifficultLevel());
 		projectChoices = SelectChoices.from(projects, "code", object.getProject());
 

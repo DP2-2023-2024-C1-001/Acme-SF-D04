@@ -72,6 +72,9 @@ public class DeveloperTrainingModulesCreateService extends AbstractService<Devel
 			existing = this.repository.findOneTrainingModuleByCode(object.getCode());
 			super.state(existing == null, "code", "developer.Training-Modules.form.error.duplicated");
 		}
+
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "developer.Training-Modules.form.error.link");
 	}
 
 	@Override

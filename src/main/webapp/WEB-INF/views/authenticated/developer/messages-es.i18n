@@ -20,3 +20,6 @@ authenticated.developer.form.label.link = link
 
 authenticated.developer.form.button.create = Registrarse
 authenticated.developer.form.button.update = Actualizar
+
+
+authenticated.developer.form.error.link = La longitud del link debe estar entre 7 y 255 caracteres

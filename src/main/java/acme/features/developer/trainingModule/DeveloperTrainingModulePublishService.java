@@ -84,7 +84,7 @@ public class DeveloperTrainingModulePublishService extends AbstractService<Devel
 	public void validate(final TrainingModule object) {
 		assert object != null;
 
-		if (!super.getBuffer().getErrors().hasErrors("updateMoment") && object.getUpdateMoment() != null)
+		if (!super.getBuffer().getErrors().hasErrors("updateMoment") && object.getUpdateMoment() != null && object.getCreationMoment() != null)
 			super.state(MomentHelper.isAfter(object.getUpdateMoment(), object.getCreationMoment()), "updateMoment", "developer.Training-Modules.form.error.invalidUpdateMoment");
 
 		if (!super.getBuffer().getErrors().hasErrors("code")) {
@@ -93,6 +93,9 @@ public class DeveloperTrainingModulePublishService extends AbstractService<Devel
 			existing = this.repository.findOneTrainingModuleByCode(object.getCode());
 			super.state(existing == null || existing.equals(object), "code", "developer.Training-Modules.form.error.duplicated");
 		}
+
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "developer.Training-Modules.form.error.link");
 
 		Collection<TrainingSession> ts;
 		ts = this.repository.findTrainingSessionsByTrainingModuleId(object.getId());
