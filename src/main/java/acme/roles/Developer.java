@@ -37,6 +37,7 @@ public class Developer extends AbstractRole {
 
 	@Email
 	@NotBlank
+	@Length(min = 6, max = 254)
 	private String				email;
 
 	@URL

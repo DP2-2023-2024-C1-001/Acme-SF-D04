@@ -49,7 +49,9 @@ public class AuthenticatedDeveloperUpdateService extends AbstractService<Authent
 
 	@Override
 	public void validate(final Developer object) {
-		assert object != null;
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "authenticated.developer.form.error.link");
+
 	}
 
 	@Override
