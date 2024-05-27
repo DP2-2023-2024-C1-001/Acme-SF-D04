@@ -55,6 +55,12 @@ public class AuthenticatedSponsorCreateService extends AbstractService<Authentic
 	@Override
 	public void validate(final Sponsor object) {
 		assert object != null;
+
+		if (!super.getBuffer().getErrors().hasErrors("webPage") && object.getWebPage() != null)
+			super.state(object.getWebPage().length() >= 7 && object.getWebPage().length() <= 255 || object.getWebPage().length() == 0, "webPage", "authenticated.sponsor.form.error.webPage");
+
+		if (!super.getBuffer().getErrors().hasErrors("email") && object.getEmail() != null)
+			super.state(object.getEmail().length() >= 6 && object.getEmail().length() <= 254 || object.getEmail().length() == 0, "email", "authenticated.sponsor.form.error.email");
 	}
 
 	@Override

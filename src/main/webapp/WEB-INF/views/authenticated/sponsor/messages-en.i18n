@@ -15,5 +15,8 @@ authenticated.sponsor.form.label.benefits = Benefits
 authenticated.sponsor.form.label.webPage = Web Page (Optional)
 authenticated.sponsor.form.label.email= Email (Optional)
 
+authenticated.sponsor.form.error.email = The email length must be between 6 and 254 characters
+authenticated.sponsor.form.error.webPage = The link length must be between 7 and 255 characters
+
 authenticated.sponsor.form.button.create = Register
 authenticated.sponsor.form.button.update = Update
