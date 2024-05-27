@@ -15,8 +15,7 @@ auditor.audit-record.form.label.code = Código:
 auditor.audit-record.form.label.periodStart = Inicio del periodo:
 auditor.audit-record.form.label.periodEnd = Final del periodo:
 auditor.audit-record.form.label.mark = Calificación:
-auditor.audit-record.form.label.link = Link:
-auditor.audit-record.form.label.published = Publicado
+auditor.audit-record.form.label.link = Link (Opcional):
 
 
 auditor.audit-record.form.button.create = Crear
@@ -30,3 +29,5 @@ auditor.audit-record.list.label.mark = Calificación
 auditor.audit-record.form.error.duplicated = Este código ya esta en uso
 auditor.audit-record.form.error.invalidFinalPeriod = El final del periodo debe terminar al menos una hora despues del comienzo del periodo
 auditor.audit-record.form.error.mark = La calificación debe ser A+, A, B, C, F o F-
+auditor.code-audit.form.error.link = La longitud del link debe estar entre 7 y 255 caracteres
+auditor.audit-record.form.error.invalidInitialPeriod = El inicio del periodo debe ser despues de la fecha del comienzo de la auditoría de código

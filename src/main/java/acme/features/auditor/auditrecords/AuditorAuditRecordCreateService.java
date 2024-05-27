@@ -80,6 +80,8 @@ public class AuditorAuditRecordCreateService extends AbstractService<Auditor, Au
 			minimumPeriodEnd = MomentHelper.deltaFromMoment(object.getPeriodStart(), 1, ChronoUnit.HOURS);
 			super.state(MomentHelper.isAfterOrEqual(object.getPeriodEnd(), minimumPeriodEnd), "periodEnd", "auditor.audit-record.form.error.invalidFinalPeriod");
 		}
+		if (!super.getBuffer().getErrors().hasErrors("periodStart") && object.getCodeAudit() != null)
+			super.state(MomentHelper.isAfterOrEqual(object.getPeriodStart(), object.getCodeAudit().getExecution()), "periodStart", "auditor.audit-record.form.error.invalidInitialPeriod");
 		if (!super.getBuffer().getErrors().hasErrors("mark") && object.getMark() != null) {
 			Collection<String> marks = new ArrayList<>();
 			marks.add("A+");
@@ -91,6 +93,8 @@ public class AuditorAuditRecordCreateService extends AbstractService<Auditor, Au
 			super.state(marks.contains(object.getMark()), "mark", "auditor.audit-record.form.error.mark");
 
 		}
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "auditor.code-audit.form.error.link");
 	}
 
 	@Override

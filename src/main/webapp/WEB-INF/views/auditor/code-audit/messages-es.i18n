@@ -16,7 +16,7 @@ auditor.code-audit.form.label.execution = Comienzo:
 auditor.code-audit.form.label.type = Tipo de auditoría de código:
 auditor.code-audit.form.label.correctiveActions = Acciones correctivas:
 auditor.code-audit.form.label.mark = Calificación:
-auditor.code-audit.form.label.link = Link:
+auditor.code-audit.form.label.link = Link (Opcional):
 auditor.code-audit.form.label.project = Proyecto:
 
 
@@ -36,3 +36,4 @@ auditor.code-audit.list.button.create = Crear
 auditor.code-audit.form.error.duplicated = El código ya esta en uso
 auditor.code-audit.form.error.auditRecordsNotPublished = Los registros de auditoria deben estar publicadas
 auditor.code-audit.form.error.mark = La moda de las calificaciones debe ser mas alta que C
+auditor.code-audit.form.error.link = La longitud del link debe estar entre 7 y 255 caracteres

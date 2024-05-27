@@ -49,6 +49,8 @@ public class AuthenticatedAuditorUpdateService extends AbstractService<Authentic
 	@Override
 	public void validate(final Auditor object) {
 		assert object != null;
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "auditor.code-audit.form.error.link");
 
 	}
 

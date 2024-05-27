@@ -15,7 +15,7 @@ auditor.audit-record.form.label.code = Code:
 auditor.audit-record.form.label.periodStart = Period start:
 auditor.audit-record.form.label.periodEnd = Period end:
 auditor.audit-record.form.label.mark = Mark:
-auditor.audit-record.form.label.link = Link:
+auditor.audit-record.form.label.link = Link (Optional):
 
 
 auditor.audit-record.form.button.create = Create
@@ -29,3 +29,5 @@ auditor.audit-record.list.label.mark = Mark
 auditor.audit-record.form.error.duplicated = This code is taken
 auditor.audit-record.form.error.invalidFinalPeriod = Period end must finish at least one hour after the period start
 auditor.audit-record.form.error.mark = Mark must be A+, A, B, C, F or F-
+auditor.code-audit.form.error.link = The link length must be between 7 and 255 characters
+auditor.audit-record.form.error.invalidInitialPeriod = The initial period must be after execution moment of code audit
