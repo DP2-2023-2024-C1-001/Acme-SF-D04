@@ -1,0 +1,1196 @@
+[Logging to './logs/tester.log']
+[Logging to './logs/tester.trace']
+      .o.                                                   .oooooo..o oooooooooooo
+     .888.                                                 d8P'    `Y8 `888'     `8
+    .8"888.      .ooooo.  ooo. .oo.  .oo.    .ooooo.       Y88bo.       888        
+   .8' `888.    d88' `"Y8 `888P"Y88bP"Y88b  d88' `88b       `"Y8888o.   888oooo8   
+  .88ooo8888.   888        888   888   888  888ooo888           `"Y88b  888    "   
+ .8'     `888.  888   .o8  888   888   888  888    .o      oo     .d8P  888        
+o88o     o8888o `Y8bod8P' o888o o888o o888o `Y8bod8P'      8""88888P'  o888o       
+
+Application:          Acme-SF-D04
+Application endpoint: http://localhost:8082/Acme-SF-D04?debug=true&language=en
+Database endpoint:    jdbc:mariadb://localhost:3306/Acme-SF-D04-Test?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+Powered by:           Spring Boot 2.7.15, Acme Framework 24.4.0
+
+Starting Launcher using Java 20.0.2 on DESKTOP-J9IBLQC with PID 2256 (started by manue in C:\Users\manue\OneDrive\Escritorio\Workspace-24\Projects\Acme-SF-D04) 
+The following 2 profiles are active: "testing", "tester" 
+Started Launcher in 10.11 seconds (JVM running for 11.255) 
+Starting the Spring Framework up took 10.298 seconds. 
+Launching tester#analyser in your testing platform. Please, wait. 
+Launching tester#analyser took 0.0 seconds. Ready. 
+# BEGIN TEST CLASS "TestAnalyser" 
+Analysing trace 'C:\Users\manue\OneDrive\Escritorio\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\administrator\banner\create.hack'. 
+Analysing trace 'C:\Users\manue\OneDrive\Escritorio\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\administrator\banner\delete.hack'. 
+Analysing trace 'C:\Users\manue\OneDrive\Escritorio\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\administrator\banner\list.hack'. 
+Analysing trace 'C:\Users\manue\OneDrive\Escritorio\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\administrator\banner\show.hack'. 
+Analysing trace 'C:\Users\manue\OneDrive\Escritorio\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\administrator\banner\update.hack'. 
+** GET any/system/welcome (REQUEST) 
+[ ] 
+** GET any/system/welcome (RESPONSE) 
+┌──────┐
+│banner│
+├──────┤
+│85    │
+│92    │
+│95    │
+│96    │
+│85    │
+│92    │
+│95    │
+│96    │
+│85    │
+│92    │
+│95    │
+│96    │
+│85    │
+│92    │
+│95    │
+│96    │
+│85    │
+│92    │
+│95    │
+│96    │
+└──────┘ 
+** GET administrator/banner/create (REQUEST) 
+[ ] 
+** GET administrator/banner/create (RESPONSE) 
+┌──────┬──┬───────┐
+│banner│id│version│
+├──────┼──┼───────┤
+│86    │  │       │
+│89    │  │       │
+│90    │0 │0      │
+└──────┴──┴───────┘ 
+** GET anonymous/system/sign-in (REQUEST) 
+[ ] 
+** GET anonymous/system/sign-in (RESPONSE) 
+┌──────┬────────┬────────┬────────┐
+│banner│password│remember│username│
+├──────┼────────┼────────┼────────┤
+│84    │        │false   │        │
+│92    │        │false   │        │
+│84    │        │false   │        │
+│92    │        │false   │        │
+│84    │        │false   │        │
+│92    │        │false   │        │
+│84    │        │false   │        │
+│92    │        │false   │        │
+│84    │        │false   │        │
+│92    │        │false   │        │
+└──────┴────────┴────────┴────────┘ 
+** POST anonymous/system/sign-in (REQUEST) 
+┌──┬─────────────┬────────┬─────────────┬───────┐
+│id│password     │remember│username     │version│
+├──┼─────────────┼────────┼─────────────┼───────┤
+│  │developer1   │false   │developer1   │       │
+│  │administrator│false   │administrator│       │
+│  │developer1   │false   │developer1   │       │
+│  │administrator│false   │administrator│       │
+│  │developer1   │false   │developer1   │       │
+│  │administrator│false   │administrator│       │
+│  │developer1   │false   │developer1   │       │
+│  │administrator│false   │administrator│       │
+│  │developer1   │false   │developer1   │       │
+│  │administrator│false   │administrator│       │
+└──┴─────────────┴────────┴─────────────┴───────┘ 
+** POST anonymous/system/sign-in (RESPONSE) 
+[ ] 
+** GET authenticated/system/sign-out (REQUEST) 
+[ ] 
+** GET authenticated/system/sign-out (RESPONSE) 
+[ ] 
+** GET administrator/banner/delete (REQUEST) 
+┌──┐
+│id│
+├──┤
+│83│
+│83│
+│83│
+└──┘ 
+** GET administrator/banner/delete (RESPONSE) 
+┌──────┬──────────────────┬────────────────────┬──┬─────────────────────────┬──────────────────────────────┬───────────────────────────────┬────────────────────────┬───────┐
+│banner│displayPeriodFinal│displayPeriodInitial│id│instantiationUpdateMoment│link                          │picture                        │slogan                  │version│
+├──────┼──────────────────┼────────────────────┼──┼─────────────────────────┼──────────────────────────────┼───────────────────────────────┼────────────────────────┼───────┤
+│86    │                  │                    │  │                         │                              │                               │                        │       │
+│89    │                  │                    │  │                         │                              │                               │                        │       │
+│90    │2022/08/25 01:00  │2022/07/25 00:00    │83│2022/07/24 00:00         │https://www.worldwildlife.org/│https://i.imgur.com/8YcXhS0.png│Be the hero nature needs│0      │
+└──────┴──────────────────┴────────────────────┴──┴─────────────────────────┴──────────────────────────────┴───────────────────────────────┴────────────────────────┴───────┘ 
+** GET administrator/banner/list (REQUEST) 
+[ ] 
+** GET administrator/banner/list (RESPONSE) 
+┌──────┬──┬─────────────────────────┬──────────────────────────────────────────────────────────────────────────┬───────┐
+│banner│id│instantiationUpdateMoment│slogan                                                                    │version│
+├──────┼──┼─────────────────────────┼──────────────────────────────────────────────────────────────────────────┼───────┤
+│86    │  │                         │                                                                          │       │
+│89    │  │                         │                                                                          │       │
+│      │94│2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                        │0      │
+│      │95│2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                            │0      │
+│      │96│2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!           │0      │
+│      │97│2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                       │0      │
+│90    │  │                         │                                                                          │       │
+│      │83│2022/07/24 00:00         │Be the hero nature needs                                                  │0      │
+│      │84│2022/07/29 00:00         │Medical care where it's needed most                                       │0      │
+│      │85│2022/07/28 00:00         │The world’s platform for change                                           │0      │
+│      │86│2002/07/24 00:00         │El gancho que muchos menores necesitan                                    │0      │
+│      │87│1022/07/24 00:00         │Por un deporte inclusivo                                                  │0      │
+│      │88│0922/07/24 00:00         │Un futuro para ellos                                                      │0      │
+│      │89│2022/07/24 00:00         │Pulseras contra el cáncer                                                 │0      │
+│      │90│2022/07/24 00:00         │Ser diferentes nos hace únicos                                            │0      │
+│      │91│2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido│0      │
+│      │92│2022/07/24 00:00         │Para cada niño esperanza                                                  │0      │
+│      │93│2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                               │0      │
+└──────┴──┴─────────────────────────┴──────────────────────────────────────────────────────────────────────────┴───────┘ 
+** GET administrator/banner/show (REQUEST) 
+┌──┐
+│id│
+├──┤
+│83│
+│83│
+│83│
+└──┘ 
+** GET administrator/banner/show (RESPONSE) 
+┌──────┬──────────────────┬────────────────────┬──┬─────────────────────────┬──────────────────────────────┬───────────────────────────────┬────────────────────────┬───────┐
+│banner│displayPeriodFinal│displayPeriodInitial│id│instantiationUpdateMoment│link                          │picture                        │slogan                  │version│
+├──────┼──────────────────┼────────────────────┼──┼─────────────────────────┼──────────────────────────────┼───────────────────────────────┼────────────────────────┼───────┤
+│86    │                  │                    │  │                         │                              │                               │                        │       │
+│89    │                  │                    │  │                         │                              │                               │                        │       │
+│90    │2022/08/25 01:00  │2022/07/25 00:00    │83│2022/07/24 00:00         │https://www.worldwildlife.org/│https://i.imgur.com/8YcXhS0.png│Be the hero nature needs│0      │
+└──────┴──────────────────┴────────────────────┴──┴─────────────────────────┴──────────────────────────────┴───────────────────────────────┴────────────────────────┴───────┘ 
+** GET administrator/banner/update (REQUEST) 
+┌──┐
+│id│
+├──┤
+│83│
+│83│
+│83│
+└──┘ 
+** GET administrator/banner/update (RESPONSE) 
+┌──────┬──────────────────┬────────────────────┬──┬─────────────────────────┬──────────────────────────────┬───────────────────────────────┬────────────────────────┬───────┐
+│banner│displayPeriodFinal│displayPeriodInitial│id│instantiationUpdateMoment│link                          │picture                        │slogan                  │version│
+├──────┼──────────────────┼────────────────────┼──┼─────────────────────────┼──────────────────────────────┼───────────────────────────────┼────────────────────────┼───────┤
+│86    │                  │                    │  │                         │                              │                               │                        │       │
+│89    │                  │                    │  │                         │                              │                               │                        │       │
+│90    │2022/08/25 01:00  │2022/07/25 00:00    │83│2022/07/24 00:00         │https://www.worldwildlife.org/│https://i.imgur.com/8YcXhS0.png│Be the hero nature needs│0      │
+└──────┴──────────────────┴────────────────────┴──┴─────────────────────────┴──────────────────────────────┴───────────────────────────────┴────────────────────────┴───────┘ 
+Analysing trace 'C:\Users\manue\OneDrive\Escritorio\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\administrator\banner\create.safe'. 
+Analysing trace 'C:\Users\manue\OneDrive\Escritorio\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\administrator\banner\delete.safe'. 
+Analysing trace 'C:\Users\manue\OneDrive\Escritorio\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\administrator\banner\list.safe'. 
+Analysing trace 'C:\Users\manue\OneDrive\Escritorio\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\administrator\banner\show.safe'. 
+Analysing trace 'C:\Users\manue\OneDrive\Escritorio\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\administrator\banner\update.safe'. 
+** GET any/system/welcome (REQUEST) 
+[ ] 
+** GET any/system/welcome (RESPONSE) 
+┌──────┐
+│banner│
+├──────┤
+│85    │
+│95    │
+│85    │
+│95    │
+│85    │
+│95    │
+│83    │
+│93    │
+│85    │
+│95    │
+│90    │
+│87    │
+│85    │
+│95    │
+└──────┘ 
+** GET anonymous/system/sign-in (REQUEST) 
+[ ] 
+** GET anonymous/system/sign-in (RESPONSE) 
+┌──────┬────────┬────────┬────────┐
+│banner│password│remember│username│
+├──────┼────────┼────────┼────────┤
+│86    │        │false   │        │
+│86    │        │false   │        │
+│86    │        │false   │        │
+│94    │        │false   │        │
+│86    │        │false   │        │
+│88    │        │false   │        │
+│86    │        │false   │        │
+└──────┴────────┴────────┴────────┘ 
+** POST anonymous/system/sign-in (REQUEST) 
+┌──┬──────────────┬────────┬──────────────┬───────┐
+│id│password      │remember│username      │version│
+├──┼──────────────┼────────┼──────────────┼───────┤
+│  │administrator1│false   │administrator1│       │
+│  │administrator1│false   │administrator1│       │
+│  │administrator1│false   │administrator1│       │
+│  │administrator2│false   │administrator2│       │
+│  │administrator1│false   │administrator1│       │
+│  │administrator2│false   │administrator2│       │
+│  │administrator1│false   │administrator1│       │
+└──┴──────────────┴────────┴──────────────┴───────┘ 
+** POST anonymous/system/sign-in (RESPONSE) 
+[ ] 
+** GET administrator/banner/list (REQUEST) 
+[ ] 
+** GET administrator/banner/list (RESPONSE) 
+┌──────┬───┬─────────────────────────┬───────────────────────────────────────────────────────────────────────────┬───────┐
+│banner│id │instantiationUpdateMoment│slogan                                                                     │version│
+├──────┼───┼─────────────────────────┼───────────────────────────────────────────────────────────────────────────┼───────┤
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│94    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│      │330│2020/10/10 10:10         │Tester                                                                     │0      │
+│94    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│      │330│2020/10/10 10:10         │Tester                                                                     │0      │
+│      │331│2010/12/10 10:10         │Tester2                                                                    │0      │
+│94    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│      │330│2020/10/10 10:10         │Tester                                                                     │0      │
+│      │331│2010/12/10 10:10         │Tester2                                                                    │0      │
+│      │332│2020/01/05 10:45         │Tester3                                                                    │0      │
+│95    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│94    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│90    │   │                         │                                                                           │       │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│95    │   │                         │                                                                           │       │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│97    │   │                         │                                                                           │       │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│85    │   │                         │                                                                           │       │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│90    │   │                         │                                                                           │       │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│90    │   │                         │                                                                           │       │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│85    │   │                         │                                                                           │       │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│95    │   │                         │                                                                           │       │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│93    │   │                         │                                                                           │       │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│85    │   │                         │                                                                           │       │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│88    │   │                         │                                                                           │       │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│97    │   │                         │                                                                           │       │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│93    │   │                         │                                                                           │       │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│93    │   │                         │                                                                           │       │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│92    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│93    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│94    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│94    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│95    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│94    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│84    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│87    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│89    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│84    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│85    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│96    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│97    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│88    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│92    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│89    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│89    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│93    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│86    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│84    │   │                         │                                                                           │       │
+│      │83 │2022/07/24 00:00         │Be the hero nature needs                                                   │0      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│93    │   │                         │                                                                           │       │
+│      │83 │2020/10/10 10:10         │Tester                                                                     │1      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│90    │   │                         │                                                                           │       │
+│      │83 │2020/10/10 10:10         │Tester                                                                     │1      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│90    │   │                         │                                                                           │       │
+│      │83 │2020/10/10 10:10         │Tester                                                                     │1      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│84    │   │                         │                                                                           │       │
+│      │83 │2020/10/10 10:10         │Tester                                                                     │1      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│85    │   │                         │                                                                           │       │
+│      │83 │2020/10/10 10:10         │Tester                                                                     │1      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│93    │   │                         │                                                                           │       │
+│      │83 │2020/10/10 10:10         │Tester                                                                     │2      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │Pulseras contra el cáncer                                                  │0      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│85    │   │                         │                                                                           │       │
+│      │83 │2020/10/10 10:10         │Tester                                                                     │2      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │TesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTeste│1      │
+│      │90 │2022/07/24 00:00         │Ser diferentes nos hace únicos                                             │0      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+│      │94 │2022/07/24 00:00         │Destapa la felicidad con Coca-Cola                                         │0      │
+│      │95 │2022/07/24 00:00         │Refresca tu día con el sabor natural de Nestea                             │0      │
+│      │96 │2022/07/24 00:00         │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!            │0      │
+│      │97 │2022/07/24 00:00         │¡Saborea la alegría en cada bocado!                                        │0      │
+│97    │   │                         │                                                                           │       │
+│      │83 │2020/10/10 10:10         │Tester                                                                     │2      │
+│      │84 │2022/07/29 00:00         │Medical care where it's needed most                                        │0      │
+│      │85 │2022/07/28 00:00         │The world’s platform for change                                            │0      │
+│      │86 │2002/07/24 00:00         │El gancho que muchos menores necesitan                                     │0      │
+│      │87 │1022/07/24 00:00         │Por un deporte inclusivo                                                   │0      │
+│      │88 │0922/07/24 00:00         │Un futuro para ellos                                                       │0      │
+│      │89 │2022/07/24 00:00         │TesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTeste│1      │
+│      │90 │2022/07/24 00:00         │Tester23                                                                   │1      │
+│      │91 │2022/07/24 00:00         │Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido │0      │
+│      │92 │2022/07/24 00:00         │Para cada niño esperanza                                                   │0      │
+│      │93 │2022/07/24 00:00         │¡Siente la burbujeante diversión con Fanta!                                │0      │
+└──────┴───┴─────────────────────────┴───────────────────────────────────────────────────────────────────────────┴───────┘ 
+** GET administrator/banner/create (REQUEST) 
+[ ] 
+** GET administrator/banner/create (RESPONSE) 
+┌──────┬──┬───────┐
+│banner│id│version│
+├──────┼──┼───────┤
+│84    │0 │0      │
+│97    │0 │0      │
+│86    │0 │0      │
+└──────┴──┴───────┘ 
+** POST administrator/banner/create (REQUEST) 
+┌──────────────────┬────────────────────┬──┬─────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────┐
+│displayPeriodFinal│displayPeriodInitial│id│instantiationUpdateMoment│link                                                                                                                     │picture                                                                                                                  │slogan                                                                                                                   │version│
+├──────────────────┼────────────────────┼──┼─────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────┤
+│                  │                    │0 │                         │                                                                                                                         │                                                                                                                         │                                                                                                                         │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │2020/10/10 10:10         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │                                                                                                                         │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │2020/10/10 10:10         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │TesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTester…│0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │2020/10/10 10:10         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │TesteTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterr                               │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │                         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │TesteTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTester                                │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │2020/10/10 10:10         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │TesteTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTester                                │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │                         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │TesteTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTeste                                 │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │                         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │TesteTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTest                                  │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │                         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │TesteTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTester                                      │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │                         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │TesteTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTester                                            │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │                         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │TesteTesterTesterTesterTesterTesterTesterTesterTesterTester                                                              │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │                         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │Tester                                                                                                                   │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │tester                   │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │Tester                                                                                                                   │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │2220/10/10 10:10         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │Tester                                                                                                                   │0      │
+│2020/10/17 10:11  │                    │0 │2020/10/10 10:10         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │Tester                                                                                                                   │0      │
+│2020/10/17 10:11  │tester              │0 │2020/10/10 10:10         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │Tester                                                                                                                   │0      │
+│2020/10/17 10:11  │2020/10/10 10:00    │0 │2020/10/10 10:10         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │Tester                                                                                                                   │0      │
+│                  │2020/10/10 10:11    │0 │2020/10/10 10:10         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │Tester                                                                                                                   │0      │
+│tester            │2020/10/10 10:11    │0 │2020/10/10 10:10         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │Tester                                                                                                                   │0      │
+│2020/10/15 10:11  │2020/10/10 10:11    │0 │2020/10/10 10:10         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │Tester                                                                                                                   │0      │
+│2020/10/16 10:11  │2020/10/10 10:11    │0 │2020/10/10 10:10         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │Tester                                                                                                                   │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │2020/10/10 10:10         │http://BienFormado.com                                                                                                   │                                                                                                                         │Tester                                                                                                                   │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │2020/10/10 10:10         │http://BienFormado.com                                                                                                   │http:                                                                                                                    │Tester                                                                                                                   │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │2020/10/10 10:10         │http://BienFormado.com                                                                                                   │tester                                                                                                                   │Tester                                                                                                                   │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │2020/10/10 10:10         │                                                                                                                         │http://BienFormado.com                                                                                                   │Tester                                                                                                                   │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │2020/10/10 10:10         │tester                                                                                                                   │http://BienFormado.com                                                                                                   │Tester                                                                                                                   │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │2020/10/10 10:10         │http:/                                                                                                                   │http://BienFormado.com                                                                                                   │Tester                                                                                                                   │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │2020/10/10 10:10         │http://BienFormado.com                                                                                                   │http://BienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBie…│Tester                                                                                                                   │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │2020/10/10 10:10         │http://BienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBie…│http://BienFormado.com                                                                                                   │Tester                                                                                                                   │0      │
+│2020/10/17 10:11  │2020/10/10 10:11    │0 │2020/10/10 10:10         │http://BienFormado.com                                                                                                   │http://BienFormado.com                                                                                                   │Tester                                                                                                                   │0      │
+│2013/01/07 10:10  │2010/12/13 10:10    │0 │2010/12/10 10:10         │http://bienFormado.com                                                                                                   │http://bienFormado.com                                                                                                   │Tester2                                                                                                                  │0      │
+│2020/03/05 10:45  │2020/02/05 10:45    │0 │2020/01/05 10:45         │http://link23.com                                                                                                        │http://link.com                                                                                                          │Tester3                                                                                                                  │0      │
+└──────────────────┴────────────────────┴──┴─────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────┘ 
+** POST administrator/banner/create (RESPONSE) 
+┌──────┬──────────────────┬───────────────────────────────────────────────┬────────────────────┬──────────────────────────────────────────────────────────────────────────────────────┬──┬─────────────────────────┬───────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬────────────────────────────────┬───────┐
+│banner│displayPeriodFinal│displayPeriodFinal$error                       │displayPeriodInitial│displayPeriodInitial$error                                                            │id│instantiationUpdateMoment│instantiationUpdateMoment$error│link                                                                                                                     │link$error                                              │picture                                                                                                                  │picture$error                                           │slogan                                                                                                                   │slogan$error                    │version│
+├──────┼──────────────────┼───────────────────────────────────────────────┼────────────────────┼──────────────────────────────────────────────────────────────────────────────────────┼──┼─────────────────────────┼───────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────┼───────┤
+│94    │                  │May not be null.                               │                    │May not be null.                                                                      │0 │                         │May not be null.               │                                                                                                                         │Length must be between 7 and 255. Must not be blank.    │                                                                                                                         │Length must be between 7 and 255. Must not be blank.    │                                                                                                                         │Must not be blank.              │0      │
+│85    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │2020/10/10 10:10         │                               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │                                                                                                                         │Must not be blank.              │0      │
+│91    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │2020/10/10 10:10         │                               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │TesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTester…│Length must be between 0 and 75.│0      │
+│84    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │2020/10/10 10:10         │                               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │TesteTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterr                               │Length must be between 0 and 75.│0      │
+│91    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │                         │May not be null.               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │TesteTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTester                                │Length must be between 0 and 75.│0      │
+│97    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │2020/10/10 10:10         │                               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │TesteTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTester                                │Length must be between 0 and 75.│0      │
+│90    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │                         │May not be null.               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │TesteTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTeste                                 │Length must be between 0 and 75.│0      │
+│87    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │                         │May not be null.               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │TesteTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTest                                  │Length must be between 0 and 75.│0      │
+│84    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │                         │May not be null.               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │TesteTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTester                                      │Length must be between 0 and 75.│0      │
+│83    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │                         │May not be null.               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │TesteTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTesterTester                                            │Length must be between 0 and 75.│0      │
+│83    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │                         │May not be null.               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │TesteTesterTesterTesterTesterTesterTesterTesterTesterTester                                                              │                                │0      │
+│83    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │                         │May not be null.               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │Tester                                                                                                                   │                                │0      │
+│83    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │                         │Invalid value. May not be null.│http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │Tester                                                                                                                   │                                │0      │
+│88    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │Display period initial must start at any moment after the instantiation/update moment.│0 │2220/10/10 10:10         │Must be in the past.           │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │Tester                                                                                                                   │                                │0      │
+│96    │2020/10/17 10:11  │                                               │                    │May not be null.                                                                      │0 │2020/10/10 10:10         │                               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │Tester                                                                                                                   │                                │0      │
+│92    │2020/10/17 10:11  │                                               │                    │Invalid value. May not be null.                                                       │0 │2020/10/10 10:10         │                               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │Tester                                                                                                                   │                                │0      │
+│89    │2020/10/17 10:11  │                                               │2020/10/10 10:00    │Display period initial must start at any moment after the instantiation/update moment.│0 │2020/10/10 10:10         │                               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │Tester                                                                                                                   │                                │0      │
+│95    │                  │May not be null.                               │2020/10/10 10:11    │                                                                                      │0 │2020/10/10 10:10         │                               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │Tester                                                                                                                   │                                │0      │
+│96    │                  │Invalid value. May not be null.                │2020/10/10 10:11    │                                                                                      │0 │2020/10/10 10:10         │                               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │Tester                                                                                                                   │                                │0      │
+│90    │2020/10/15 10:11  │Display period must last for at least one week.│2020/10/10 10:11    │                                                                                      │0 │2020/10/10 10:10         │                               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │Tester                                                                                                                   │                                │0      │
+│83    │2020/10/16 10:11  │Display period must last for at least one week.│2020/10/10 10:11    │                                                                                      │0 │2020/10/10 10:10         │                               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormado.com                                                                                                   │                                                        │Tester                                                                                                                   │                                │0      │
+│97    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │2020/10/10 10:10         │                               │http://BienFormado.com                                                                                                   │                                                        │                                                                                                                         │Length must be between 7 and 255. Must not be blank.    │Tester                                                                                                                   │                                │0      │
+│96    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │2020/10/10 10:10         │                               │http://BienFormado.com                                                                                                   │                                                        │http:                                                                                                                    │Length must be between 7 and 255.                       │Tester                                                                                                                   │                                │0      │
+│85    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │2020/10/10 10:10         │                               │http://BienFormado.com                                                                                                   │                                                        │tester                                                                                                                   │Length must be between 7 and 255. Not a well-formed URL.│Tester                                                                                                                   │                                │0      │
+│96    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │2020/10/10 10:10         │                               │                                                                                                                         │Length must be between 7 and 255. Must not be blank.    │http://BienFormado.com                                                                                                   │                                                        │Tester                                                                                                                   │                                │0      │
+│84    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │2020/10/10 10:10         │                               │tester                                                                                                                   │Length must be between 7 and 255. Not a well-formed URL.│http://BienFormado.com                                                                                                   │                                                        │Tester                                                                                                                   │                                │0      │
+│90    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │2020/10/10 10:10         │                               │http:/                                                                                                                   │Length must be between 7 and 255.                       │http://BienFormado.com                                                                                                   │                                                        │Tester                                                                                                                   │                                │0      │
+│95    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │2020/10/10 10:10         │                               │http://BienFormado.com                                                                                                   │                                                        │http://BienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBie…│Length must be between 7 and 255.                       │Tester                                                                                                                   │                                │0      │
+│84    │2020/10/17 10:11  │                                               │2020/10/10 10:11    │                                                                                      │0 │2020/10/10 10:10         │                               │http://BienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBienFormadoBie…│Length must be between 7 and 255.                       │http://BienFormado.com                                                                                                   │                                                        │Tester                                                                                                                   │                                │0      │
+│90    │                  │                                               │                    │                                                                                      │  │                         │                               │                                                                                                                         │                                                        │                                                                                                                         │                                                        │                                                                                                                         │                                │       │
+│89    │                  │                                               │                    │                                                                                      │  │                         │                               │                                                                                                                         │                                                        │                                                                                                                         │                                                        │                                                                                                                         │                                │       │
+│92    │                  │                                               │                    │                                                                                      │  │                         │                               │                                                                                                                         │                                                        │                                                                                                                         │                                                        │                                                                                                                         │                                │       │
+└──────┴──────────────────┴───────────────────────────────────────────────┴────────────────────┴──────────────────────────────────────────────────────────────────────────────────────┴──┴─────────────────────────┴───────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴────────────────────────────────┴───────┘ 
+** GET administrator/banner/show (REQUEST) 
+┌──┐
+│id│
+├──┤
+│83│
+│94│
+│86│
+│84│
+│92│
+│91│
+│87│
+│89│
+│95│
+│90│
+│85│
+│88│
+│96│
+│97│
+│93│
+│83│
+│94│
+│86│
+│84│
+│92│
+│91│
+│87│
+│89│
+│95│
+│90│
+│85│
+│88│
+│96│
+│97│
+│93│
+│83│
+│94│
+│84│
+│86│
+│91│
+│83│
+│89│
+│90│
+└──┘ 
+** GET administrator/banner/show (RESPONSE) 
+┌──────┬──────────────────┬────────────────────┬──┬─────────────────────────┬───────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬──────────────────────────────────────────────────────────────────────────┬───────┐
+│banner│displayPeriodFinal│displayPeriodInitial│id│instantiationUpdateMoment│link                                           │picture                                                                                                          │slogan                                                                    │version│
+├──────┼──────────────────┼────────────────────┼──┼─────────────────────────┼───────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────────────────┼───────┤
+│84    │2022/08/25 01:00  │2022/07/25 00:00    │83│2022/07/24 00:00         │https://www.worldwildlife.org/                 │https://i.imgur.com/8YcXhS0.png                                                                                  │Be the hero nature needs                                                  │0      │
+│89    │2022/08/25 01:00  │2022/07/25 00:00    │94│2022/07/24 00:00         │https://www.coca-cola.com/es/es                │https://i.imgur.com/PrIdz05.png                                                                                  │Destapa la felicidad con Coca-Cola                                        │0      │
+│85    │2022/08/25 01:00  │2003/07/25 01:00    │86│2002/07/24 00:00         │https://fundacionelgancho.org/                 │https://i.imgur.com/fihihcF.png                                                                                  │El gancho que muchos menores necesitan                                    │0      │
+│95    │2022/08/08 01:00  │2022/07/29 01:00    │84│2022/07/29 00:00         │https://www.doctorswithoutborders.org/         │https://i.imgur.com/MtBRoNP.png                                                                                  │Medical care where it's needed most                                       │0      │
+│91    │2022/08/25 01:00  │2022/07/25 00:00    │92│2022/07/24 00:00         │https://www.unicef.es/                         │https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Logo_of_UNICEF.svg/2560px-Logo_of_UNICEF.svg.png       │Para cada niño esperanza                                                  │0      │
+│90    │2022/08/25 01:00  │2022/07/25 00:00    │91│2022/07/24 00:00         │https://www.savethechildren.es/                │https://www.beyondtheboardroom.com.au/assets/cache/images/600x400/sca-fundraiser_logo-600x400-e4d-600x400-2d6.jpg│Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido│0      │
+│90    │2022/08/25 01:00  │1022/07/25 01:00    │87│1022/07/24 00:00         │https://www.afoprodei.com/                     │https://i.imgur.com/2eVF1HG.png                                                                                  │Por un deporte inclusivo                                                  │0      │
+│93    │2022/08/25 01:00  │2022/07/25 00:00    │89│2022/07/24 00:00         │https://www.pulserasrosas.com/                 │https://i.imgur.com/sgx1bFo.png                                                                                  │Pulseras contra el cáncer                                                 │0      │
+│90    │2022/08/25 01:00  │2022/07/25 00:00    │95│2022/07/24 00:00         │https://www.coca-cola.com/es/es/brands/nestea  │https://i.imgur.com/MQezK9g.jpeg                                                                                 │Refresca tu día con el sabor natural de Nestea                            │0      │
+│93    │2022/08/25 01:00  │2022/07/25 00:00    │90│2022/07/24 00:00         │https://www.adefisal.org/                      │https://i.imgur.com/qu5SrLN.png                                                                                  │Ser diferentes nos hace únicos                                            │0      │
+│85    │2023/08/25 01:00  │2022/07/28 01:00    │85│2022/07/28 00:00         │https://www.change.org/                        │https://i.imgur.com/NGLSjk6.png                                                                                  │The world’s platform for change                                           │0      │
+│97    │2022/08/25 01:00  │0922/07/25 00:00    │88│0922/07/24 00:00         │https://fundacionmornese.com/                  │https://i.imgur.com/CqtMSmM.png                                                                                  │Un futuro para ellos                                                      │0      │
+│97    │2022/08/25 01:00  │2022/07/25 00:00    │96│2022/07/24 00:00         │https://www.trina.com/                         │https://i.imgur.com/jW2qOG4.png                                                                                  │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!           │0      │
+│93    │2022/08/25 01:00  │2022/07/25 00:00    │97│2022/07/24 00:00         │https://mcdonalds.es/                          │https://i.imgur.com/0w0eMPe.png                                                                                  │¡Saborea la alegría en cada bocado!                                       │0      │
+│93    │2022/08/25 01:00  │2022/07/25 00:00    │93│2022/07/24 00:00         │https://www.coca-cola.com/es/es/offerings/fanta│https://i.imgur.com/fnuMIO1.jpeg                                                                                 │¡Siente la burbujeante diversión con Fanta!                               │0      │
+│84    │2022/08/25 01:00  │2022/07/25 00:00    │83│2022/07/24 00:00         │https://www.worldwildlife.org/                 │https://i.imgur.com/8YcXhS0.png                                                                                  │Be the hero nature needs                                                  │0      │
+│92    │2022/08/25 01:00  │2022/07/25 00:00    │94│2022/07/24 00:00         │https://www.coca-cola.com/es/es                │https://i.imgur.com/PrIdz05.png                                                                                  │Destapa la felicidad con Coca-Cola                                        │0      │
+│94    │2022/08/25 01:00  │2003/07/25 01:00    │86│2002/07/24 00:00         │https://fundacionelgancho.org/                 │https://i.imgur.com/fihihcF.png                                                                                  │El gancho que muchos menores necesitan                                    │0      │
+│86    │2022/08/08 01:00  │2022/07/29 01:00    │84│2022/07/29 00:00         │https://www.doctorswithoutborders.org/         │https://i.imgur.com/MtBRoNP.png                                                                                  │Medical care where it's needed most                                       │0      │
+│85    │2022/08/25 01:00  │2022/07/25 00:00    │92│2022/07/24 00:00         │https://www.unicef.es/                         │https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Logo_of_UNICEF.svg/2560px-Logo_of_UNICEF.svg.png       │Para cada niño esperanza                                                  │0      │
+│90    │2022/08/25 01:00  │2022/07/25 00:00    │91│2022/07/24 00:00         │https://www.savethechildren.es/                │https://www.beyondtheboardroom.com.au/assets/cache/images/600x400/sca-fundraiser_logo-600x400-e4d-600x400-2d6.jpg│Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido│0      │
+│96    │2022/08/25 01:00  │1022/07/25 01:00    │87│1022/07/24 00:00         │https://www.afoprodei.com/                     │https://i.imgur.com/2eVF1HG.png                                                                                  │Por un deporte inclusivo                                                  │0      │
+│97    │2022/08/25 01:00  │2022/07/25 00:00    │89│2022/07/24 00:00         │https://www.pulserasrosas.com/                 │https://i.imgur.com/sgx1bFo.png                                                                                  │Pulseras contra el cáncer                                                 │0      │
+│91    │2022/08/25 01:00  │2022/07/25 00:00    │95│2022/07/24 00:00         │https://www.coca-cola.com/es/es/brands/nestea  │https://i.imgur.com/MQezK9g.jpeg                                                                                 │Refresca tu día con el sabor natural de Nestea                            │0      │
+│92    │2022/08/25 01:00  │2022/07/25 00:00    │90│2022/07/24 00:00         │https://www.adefisal.org/                      │https://i.imgur.com/qu5SrLN.png                                                                                  │Ser diferentes nos hace únicos                                            │0      │
+│96    │2023/08/25 01:00  │2022/07/28 01:00    │85│2022/07/28 00:00         │https://www.change.org/                        │https://i.imgur.com/NGLSjk6.png                                                                                  │The world’s platform for change                                           │0      │
+│84    │2022/08/25 01:00  │0922/07/25 00:00    │88│0922/07/24 00:00         │https://fundacionmornese.com/                  │https://i.imgur.com/CqtMSmM.png                                                                                  │Un futuro para ellos                                                      │0      │
+│88    │2022/08/25 01:00  │2022/07/25 00:00    │96│2022/07/24 00:00         │https://www.trina.com/                         │https://i.imgur.com/jW2qOG4.png                                                                                  │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!           │0      │
+│88    │2022/08/25 01:00  │2022/07/25 00:00    │97│2022/07/24 00:00         │https://mcdonalds.es/                          │https://i.imgur.com/0w0eMPe.png                                                                                  │¡Saborea la alegría en cada bocado!                                       │0      │
+│91    │2022/08/25 01:00  │2022/07/25 00:00    │93│2022/07/24 00:00         │https://www.coca-cola.com/es/es/offerings/fanta│https://i.imgur.com/fnuMIO1.jpeg                                                                                 │¡Siente la burbujeante diversión con Fanta!                               │0      │
+│91    │2022/08/25 01:00  │2022/07/25 00:00    │83│2022/07/24 00:00         │https://www.worldwildlife.org/                 │https://i.imgur.com/8YcXhS0.png                                                                                  │Be the hero nature needs                                                  │0      │
+│97    │2022/08/25 01:00  │2022/07/25 00:00    │94│2022/07/24 00:00         │https://www.coca-cola.com/es/es                │https://i.imgur.com/PrIdz05.png                                                                                  │Destapa la felicidad con Coca-Cola                                        │0      │
+│84    │2022/08/08 01:00  │2022/07/29 01:00    │84│2022/07/29 00:00         │https://www.doctorswithoutborders.org/         │https://i.imgur.com/MtBRoNP.png                                                                                  │Medical care where it's needed most                                       │0      │
+│95    │2022/08/25 01:00  │2003/07/25 01:00    │86│2002/07/24 00:00         │https://fundacionelgancho.org/                 │https://i.imgur.com/fihihcF.png                                                                                  │El gancho que muchos menores necesitan                                    │0      │
+│85    │2022/08/25 01:00  │2022/07/25 00:00    │91│2022/07/24 00:00         │https://www.savethechildren.es/                │https://www.beyondtheboardroom.com.au/assets/cache/images/600x400/sca-fundraiser_logo-600x400-e4d-600x400-2d6.jpg│Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido│0      │
+│93    │2020/10/18 10:10  │2020/10/11 10:10    │83│2020/10/10 10:10         │https:/                                        │https://www.worldwildlife.org/                                                                                   │Tester                                                                    │1      │
+│97    │2022/08/25 01:00  │2022/07/25 00:00    │89│2022/07/24 00:00         │https://www.pulserasrosas.com/                 │https://i.imgur.com/sgx1bFo.png                                                                                  │Pulseras contra el cáncer                                                 │0      │
+│87    │2022/08/25 01:00  │2022/07/25 00:00    │90│2022/07/24 00:00         │https://www.adefisal.org/                      │https://i.imgur.com/qu5SrLN.png                                                                                  │Ser diferentes nos hace únicos                                            │0      │
+└──────┴──────────────────┴────────────────────┴──┴─────────────────────────┴───────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────┴───────┘ 
+** POST administrator/banner/delete (REQUEST) 
+┌──────────────────┬────────────────────┬──┬─────────────────────────┬───────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬──────────────────────────────────────────────────────────────────────────┬───────┐
+│displayPeriodFinal│displayPeriodInitial│id│instantiationUpdateMoment│link                                           │picture                                                                                                          │slogan                                                                    │version│
+├──────────────────┼────────────────────┼──┼─────────────────────────┼───────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────────────────┼───────┤
+│2022/08/25 01:00  │2022/07/25 00:00    │83│tester                   │https://www.worldwildlife.org/                 │https://i.imgur.com/8YcXhS0.png                                                                                  │Be the hero nature needs                                                  │0      │
+│2022/08/25 01:00  │2022/07/25 00:00    │83│2022/07/24 00:00         │https://www.worldwildlife.org/                 │https://i.imgur.com/8YcXhS0.png                                                                                  │Be the hero nature needs                                                  │0      │
+│2022/08/25 01:00  │2022/07/25 00:00    │94│2022/07/24 00:00         │https://www.coca-cola.com/es/es                │https://i.imgur.com/PrIdz05.png                                                                                  │Destapa la felicidad con Coca-Cola                                        │0      │
+│2022/08/25 01:00  │2003/07/25 01:00    │86│2002/07/24 00:00         │https://fundacionelgancho.org/                 │https://i.imgur.com/fihihcF.png                                                                                  │El gancho que muchos menores necesitan                                    │0      │
+│2022/08/08 01:00  │2022/07/29 01:00    │84│2022/07/29 00:00         │https://www.doctorswithoutborders.org/         │https://i.imgur.com/MtBRoNP.png                                                                                  │Medical care where it's needed most                                       │0      │
+│2022/08/25 01:00  │2022/07/25 00:00    │92│2022/07/24 00:00         │https://www.unicef.es/                         │https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Logo_of_UNICEF.svg/2560px-Logo_of_UNICEF.svg.png       │Para cada niño esperanza                                                  │0      │
+│2022/08/25 01:00  │2022/07/25 00:00    │91│2022/07/24 00:00         │https://www.savethechildren.es/                │https://www.beyondtheboardroom.com.au/assets/cache/images/600x400/sca-fundraiser_logo-600x400-e4d-600x400-2d6.jpg│Por el derecho de cada niño y niña a sobrevivir aprender y estar protegido│0      │
+│2022/08/25 01:00  │1022/07/25 01:00    │87│1022/07/24 00:00         │https://www.afoprodei.com/                     │https://i.imgur.com/2eVF1HG.png                                                                                  │Por un deporte inclusivo                                                  │0      │
+│2022/08/25 01:00  │2022/07/25 00:00    │89│2022/07/24 00:00         │https://www.pulserasrosas.com/                 │https://i.imgur.com/sgx1bFo.png                                                                                  │Pulseras contra el cáncer                                                 │0      │
+│2022/08/25 01:00  │2022/07/25 00:00    │95│2022/07/24 00:00         │https://www.coca-cola.com/es/es/brands/nestea  │https://i.imgur.com/MQezK9g.jpeg                                                                                 │Refresca tu día con el sabor natural de Nestea                            │0      │
+│2022/08/25 01:00  │2022/07/25 00:00    │90│2022/07/24 00:00         │https://www.adefisal.org/                      │https://i.imgur.com/qu5SrLN.png                                                                                  │Ser diferentes nos hace únicos                                            │0      │
+│2023/08/25 01:00  │2022/07/28 01:00    │85│2022/07/28 00:00         │https://www.change.org/                        │https://i.imgur.com/NGLSjk6.png                                                                                  │The world’s platform for change                                           │0      │
+│2022/08/25 01:00  │0922/07/25 00:00    │88│0922/07/24 00:00         │https://fundacionmornese.com/                  │https://i.imgur.com/CqtMSmM.png                                                                                  │Un futuro para ellos                                                      │0      │
+│2022/08/25 01:00  │2022/07/25 00:00    │96│2022/07/24 00:00         │https://www.trina.com/                         │https://i.imgur.com/jW2qOG4.png                                                                                  │Vive el sabor explosivo con Trina: ¡Refresca tu vida al máximo!           │0      │
+│2022/08/25 01:00  │2022/07/25 00:00    │97│2022/07/24 00:00         │https://mcdonalds.es/                          │https://i.imgur.com/0w0eMPe.png                                                                                  │¡Saborea la alegría en cada bocado!                                       │0      │
+│2022/08/25 01:00  │2022/07/25 00:00    │93│2022/07/24 00:00         │https://www.coca-cola.com/es/es/offerings/fanta│https://i.imgur.com/fnuMIO1.jpeg                                                                                 │¡Siente la burbujeante diversión con Fanta!                               │0      │
+└──────────────────┴────────────────────┴──┴─────────────────────────┴───────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────┴───────┘ 
+** POST administrator/banner/delete (RESPONSE) 
+┌──────┬──────────────────┬────────────────────┬──┬─────────────────────────┬───────────────────────────────┬──────────────────────────────┬───────────────────────────────┬────────────────────────┬───────┐
+│banner│displayPeriodFinal│displayPeriodInitial│id│instantiationUpdateMoment│instantiationUpdateMoment$error│link                          │picture                        │slogan                  │version│
+├──────┼──────────────────┼────────────────────┼──┼─────────────────────────┼───────────────────────────────┼──────────────────────────────┼───────────────────────────────┼────────────────────────┼───────┤
+│94    │2022/08/25 01:00  │2022/07/25 00:00    │83│2022/07/24 00:00         │Invalid value.                 │https://www.worldwildlife.org/│https://i.imgur.com/8YcXhS0.png│Be the hero nature needs│0      │
+│85    │                  │                    │  │                         │                               │                              │                               │                        │       │
+│90    │                  │                    │  │                         │                               │                              │                               │                        │       │
+│95    │                  │                    │  │                         │                               │                              │                               │                        │       │
+│88    │                  │                    │  │                         │                               │                              │                               │                        │       │
+│97    │                  │                    │  │                         │                               │                              │                               │                        │       │
+│93    │                  │                    │  │                         │                               │                              │                               │                        │       │
+│90    │                  │                    │  │                         │                               │                              │                               │                        │       │
+│88    │                  │                    │  │                         │                               │                              │                               │                        │       │
+│90    │                  │                    │  │                         │                               │                              │                               │                        │       │
+│96    │                  │                    │  │                         │                               │                              │                               │                        │       │
+│97    │                  │                    │  │                         │                               │                              │                               │                        │       │
+│93    │                  │                    │  │                         │                               │                              │                               │                        │       │
+│97    │                  │                    │  │                         │                               │                              │                               │                        │       │
+│93    │                  │                    │  │                         │                               │                              │                               │                        │       │
+│93    │                  │                    │  │                         │                               │                              │                               │                        │       │
+└──────┴──────────────────┴────────────────────┴──┴─────────────────────────┴───────────────────────────────┴──────────────────────────────┴───────────────────────────────┴────────────────────────┴───────┘ 
+** GET authenticated/system/sign-out (REQUEST) 
+[ ] 
+** GET authenticated/system/sign-out (RESPONSE) 
+[ ] 
+** GET administrator/user-account/list (REQUEST) 
+[ ] 
+** GET administrator/user-account/list (RESPONSE) 
+┌──────┬──┬───────────────────────┬─────────────┬──────────────────────┬─────────────┬──────┬──────────────┬───────┐
+│banner│id│identity.email         │identity.name│identity.surname      │roleList     │status│username      │version│
+├──────┼──┼───────────────────────┼─────────────┼──────────────────────┼─────────────┼──────┼──────────────┼───────┤
+│      │12│administrator2@acme.com│Administrator│administrator2        │Administrator│true  │administrator2│0      │
+│      │13│client1@acme.com       │Client1      │client1               │Client       │true  │client1       │0      │
+│      │14│client2@acme.com       │Client2      │client2               │Client       │true  │client2       │0      │
+│      │15│sponsor1@acme.com      │Sponsor1     │sponsor1              │Sponsor      │true  │sponsor1      │0      │
+│      │16│sponsor2@acme.com      │Sponsor2     │sponsor2              │Sponsor      │true  │sponsor2      │0      │
+│      │17│auditor1@acme.com      │Auditor      │auditor1              │Auditor      │true  │auditor1      │0      │
+│      │18│auditor2@acme.com      │Auditor      │auditor2              │Auditor      │true  │auditor2      │0      │
+│94    │  │                       │             │                      │             │      │              │       │
+│      │1 │john.doe@acme.com      │John         │Doe                   │Anonymous    │false │anonymous     │0      │
+│      │2 │administrator@acme.com │Administrator│Acme                  │Administrator│true  │administrator │0      │
+│      │3 │peter@acme.com         │Peter        │Consumer              │Consumer     │true  │consumer1     │0      │
+│      │4 │mary@acme.com          │Mary         │貸んい建濯よ芝弾テソ Λορεμ ιπσθμ│Consumer     │true  │consumer2     │0      │
+│      │5 │laurel@acme.com        │Laurel       │Provider              │Provider     │true  │provider1     │0      │
+│      │6 │martina@acme.com       │Martina      │коза თხა              │Provider     │true  │provider2     │0      │
+│      │7 │luisa@acme.com         │Luisa        │Japon                 │Manager      │true  │manager1      │0      │
+│      │8 │guillermo@acme.com     │Guillermo    │សញ្ញាបត្រ             │Manager      │true  │manager2      │0      │
+│      │9 │developer1@acme.com    │Developer    │developer1            │Developer    │true  │developer1    │0      │
+│      │10│developer2@acme.com    │Developer    │developer2            │Developer    │true  │developer2    │0      │
+│      │11│administrator1@acme.com│Administrator│administrator1        │Administrator│true  │administrator1│0      │
+└──────┴──┴───────────────────────┴─────────────┴──────────────────────┴─────────────┴──────┴──────────────┴───────┘ 
+** POST administrator/banner/update (REQUEST) 
+┌──────────────────┬────────────────────┬──┬─────────────────────────┬──────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────┐
+│displayPeriodFinal│displayPeriodInitial│id│instantiationUpdateMoment│link                          │picture                                                                                                                  │slogan                                                                                                                   │version│
+├──────────────────┼────────────────────┼──┼─────────────────────────┼──────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────┤
+│                  │                    │83│                         │                              │                                                                                                                         │                                                                                                                         │0      │
+│2020/10/18 10:10  │2020/10/11 10:10    │83│2020/10/10 10:10         │https://www.worldwildlife.org/│https://www.worldwildlife.org/                                                                                           │                                                                                                                         │0      │
+│2020/10/18 10:10  │2020/10/11 10:10    │83│2020/10/10 10:10         │https://www.worldwildlife.org/│https://www.worldwildlife.org/                                                                                           │Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1T…│0      │
+│2020/10/18 10:10  │2020/10/11 10:10    │83│2020/10/10 10:10         │https://www.worldwildlife.org/│https://www.worldwildlife.org/                                                                                           │TesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTester                                             │0      │
+│2020/10/18 10:10  │2020/10/11 10:10    │83│                         │https://www.worldwildlife.org/│https://www.worldwildlife.org/                                                                                           │Tester                                                                                                                   │0      │
+│2020/10/18 10:10  │                    │83│2020/10/10 10:10         │https://www.worldwildlife.org/│https://www.worldwildlife.org/                                                                                           │Tester                                                                                                                   │0      │
+│2020/10/18 10:10  │2020/10/11 10:10    │83│tester                   │https://www.worldwildlife.org/│https://www.worldwildlife.org/                                                                                           │Tester                                                                                                                   │0      │
+│2020/10/18 10:10  │2020/10/11 10:10    │83│2220/10/10 10:10         │https://www.worldwildlife.org/│https://www.worldwildlife.org/                                                                                           │Tester                                                                                                                   │0      │
+│2020/10/18 10:10  │                    │83│2020/10/10 10:10         │https://www.worldwildlife.org/│https://www.worldwildlife.org/                                                                                           │Tester                                                                                                                   │0      │
+│2020/10/18 10:10  │tester              │83│2020/10/10 10:10         │https://www.worldwildlife.org/│https://www.worldwildlife.org/                                                                                           │Tester                                                                                                                   │0      │
+│2020/10/18 10:10  │2020/09/11 10:10    │83│2020/10/10 10:10         │https://www.worldwildlife.org/│https://www.worldwildlife.org/                                                                                           │Tester                                                                                                                   │0      │
+│tester            │2020/10/11 10:10    │83│2020/10/10 10:10         │https://www.worldwildlife.org/│https://www.worldwildlife.org/                                                                                           │Tester                                                                                                                   │0      │
+│2019/10/18 10:10  │2020/10/11 10:10    │83│2020/10/10 10:10         │https://www.worldwildlife.org/│https://www.worldwildlife.org/                                                                                           │Tester                                                                                                                   │0      │
+│2020/10/18 10:10  │2020/10/11 10:10    │83│2020/10/10 10:10         │https://www.worldwildlife.org/│https:                                                                                                                   │Tester                                                                                                                   │0      │
+│2020/10/18 10:10  │2020/10/11 10:10    │83│2020/10/10 10:10         │https://www.worldwildlife.org/│https://www.worldwildlifeworldwildlifeworldwildlifeworldwildlifeworldwildlifeworldwildlifeworldwildlifeworldwildlifeworl…│Tester                                                                                                                   │0      │
+│2020/10/18 10:10  │2020/10/11 10:10    │83│2020/10/10 10:10         │https://www.worldwildlife.org/│                                                                                                                         │Tester                                                                                                                   │0      │
+│2020/10/18 10:10  │2020/10/11 10:10    │83│2020/10/10 10:10         │https://www.worldwildlife.org/│tester                                                                                                                   │Tester                                                                                                                   │0      │
+│2020/10/18 10:10  │2020/10/11 10:10    │83│2020/10/10 10:10         │                              │https://www.worldwildlife.org/                                                                                           │Tester                                                                                                                   │0      │
+│2020/10/18 10:10  │2020/10/11 10:10    │83│2020/10/10 10:10         │https:/                       │https://www.worldwildlife.org/                                                                                           │Tester                                                                                                                   │0      │
+│2020/10/18 10:10  │2020/10/11 10:10    │83│2020/10/10 10:10         │                              │https://www.worldwildlife.org/                                                                                           │Tester                                                                                                                   │1      │
+│2020/10/18 10:10  │2020/10/11 10:10    │83│2020/10/10 10:10         │https://www.worldwildlife.org/│https://www.worldwildlife.org/                                                                                           │Tester                                                                                                                   │1      │
+│2022/08/25 01:00  │                    │89│2022/07/24 00:00         │https://www.pulserasrosas.com/│https://i.imgur.com/sgx1bFo.png                                                                                          │Pulseras contra el cáncer                                                                                                │0      │
+│                  │2022/07/25 00:00    │89│2022/07/24 00:00         │https://www.pulserasrosas.com/│https://i.imgur.com/sgx1bFo.png                                                                                          │Pulseras contra el cáncer                                                                                                │0      │
+│2022/08/25 01:00  │2022/07/25 00:00    │89│                         │https://www.pulserasrosas.com/│https://i.imgur.com/sgx1bFo.png                                                                                          │Pulseras contra el cáncer                                                                                                │0      │
+│2022/08/25 01:00  │2022/07/25 00:00    │89│2022/07/24 00:00         │https://www.pulserasrosas.com/│https://i.imgur.com/sgx1bFo.png                                                                                          │TesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTeste                                              │0      │
+│2022/08/25 01:00  │2022/07/25 00:00    │90│2022/07/24 00:00         │https://BienFormado           │http://BienFormado                                                                                                       │Tester23                                                                                                                 │0      │
+└──────────────────┴────────────────────┴──┴─────────────────────────┴──────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────┘ 
+** POST administrator/banner/update (RESPONSE) 
+┌──────┬──────────────────┬───────────────────────────────────────────────┬────────────────────┬──────────────────────────────────────────────────────────────────────────────────────┬──┬─────────────────────────┬───────────────────────────────┬──────────────────────────────┬────────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬────────────────────────────────┬───────┐
+│banner│displayPeriodFinal│displayPeriodFinal$error                       │displayPeriodInitial│displayPeriodInitial$error                                                            │id│instantiationUpdateMoment│instantiationUpdateMoment$error│link                          │link$error                                          │picture                                                                                                                  │picture$error                                           │slogan                                                                                                                   │slogan$error                    │version│
+├──────┼──────────────────┼───────────────────────────────────────────────┼────────────────────┼──────────────────────────────────────────────────────────────────────────────────────┼──┼─────────────────────────┼───────────────────────────────┼──────────────────────────────┼────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────┼───────┤
+│92    │                  │May not be null.                               │                    │May not be null.                                                                      │83│                         │May not be null.               │                              │Length must be between 7 and 255. Must not be blank.│                                                                                                                         │Length must be between 7 and 255. Must not be blank.    │                                                                                                                         │Must not be blank.              │0      │
+│95    │2020/10/18 10:10  │                                               │2020/10/11 10:10    │                                                                                      │83│2020/10/10 10:10         │                               │https://www.worldwildlife.org/│                                                    │https://www.worldwildlife.org/                                                                                           │                                                        │                                                                                                                         │Must not be blank.              │0      │
+│96    │2020/10/18 10:10  │                                               │2020/10/11 10:10    │                                                                                      │83│2020/10/10 10:10         │                               │https://www.worldwildlife.org/│                                                    │https://www.worldwildlife.org/                                                                                           │                                                        │Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1Tester1T…│Length must be between 0 and 75.│0      │
+│95    │2020/10/18 10:10  │                                               │2020/10/11 10:10    │                                                                                      │83│2020/10/10 10:10         │                               │https://www.worldwildlife.org/│                                                    │https://www.worldwildlife.org/                                                                                           │                                                        │TesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTester                                             │Length must be between 0 and 75.│0      │
+│91    │2020/10/18 10:10  │                                               │2020/10/11 10:10    │                                                                                      │83│                         │May not be null.               │https://www.worldwildlife.org/│                                                    │https://www.worldwildlife.org/                                                                                           │                                                        │Tester                                                                                                                   │                                │0      │
+│97    │2020/10/18 10:10  │                                               │                    │May not be null.                                                                      │83│2020/10/10 10:10         │                               │https://www.worldwildlife.org/│                                                    │https://www.worldwildlife.org/                                                                                           │                                                        │Tester                                                                                                                   │                                │0      │
+│90    │2020/10/18 10:10  │                                               │2020/10/11 10:10    │Display period initial must start at any moment after the instantiation/update moment.│83│2022/07/24 00:00         │Invalid value.                 │https://www.worldwildlife.org/│                                                    │https://www.worldwildlife.org/                                                                                           │                                                        │Tester                                                                                                                   │                                │0      │
+│91    │2020/10/18 10:10  │                                               │2020/10/11 10:10    │Display period initial must start at any moment after the instantiation/update moment.│83│2220/10/10 10:10         │Must be in the past.           │https://www.worldwildlife.org/│                                                    │https://www.worldwildlife.org/                                                                                           │                                                        │Tester                                                                                                                   │                                │0      │
+│91    │2020/10/18 10:10  │                                               │                    │May not be null.                                                                      │83│2020/10/10 10:10         │                               │https://www.worldwildlife.org/│                                                    │https://www.worldwildlife.org/                                                                                           │                                                        │Tester                                                                                                                   │                                │0      │
+│97    │2020/10/18 10:10  │Display period must last for at least one week.│2022/07/25 00:00    │Invalid value.                                                                        │83│2020/10/10 10:10         │                               │https://www.worldwildlife.org/│                                                    │https://www.worldwildlife.org/                                                                                           │                                                        │Tester                                                                                                                   │                                │0      │
+│96    │2020/10/18 10:10  │                                               │2020/09/11 10:10    │Display period initial must start at any moment after the instantiation/update moment.│83│2020/10/10 10:10         │                               │https://www.worldwildlife.org/│                                                    │https://www.worldwildlife.org/                                                                                           │                                                        │Tester                                                                                                                   │                                │0      │
+│90    │2022/08/25 01:00  │Invalid value.                                 │2020/10/11 10:10    │                                                                                      │83│2020/10/10 10:10         │                               │https://www.worldwildlife.org/│                                                    │https://www.worldwildlife.org/                                                                                           │                                                        │Tester                                                                                                                   │                                │0      │
+│89    │2019/10/18 10:10  │Display period must last for at least one week.│2020/10/11 10:10    │                                                                                      │83│2020/10/10 10:10         │                               │https://www.worldwildlife.org/│                                                    │https://www.worldwildlife.org/                                                                                           │                                                        │Tester                                                                                                                   │                                │0      │
+│86    │2020/10/18 10:10  │                                               │2020/10/11 10:10    │                                                                                      │83│2020/10/10 10:10         │                               │https://www.worldwildlife.org/│                                                    │https:                                                                                                                   │Length must be between 7 and 255.                       │Tester                                                                                                                   │                                │0      │
+│96    │2020/10/18 10:10  │                                               │2020/10/11 10:10    │                                                                                      │83│2020/10/10 10:10         │                               │https://www.worldwildlife.org/│                                                    │https://www.worldwildlifeworldwildlifeworldwildlifeworldwildlifeworldwildlifeworldwildlifeworldwildlifeworldwildlifeworl…│Length must be between 7 and 255.                       │Tester                                                                                                                   │                                │0      │
+│85    │2020/10/18 10:10  │                                               │2020/10/11 10:10    │                                                                                      │83│2020/10/10 10:10         │                               │https://www.worldwildlife.org/│                                                    │                                                                                                                         │Length must be between 7 and 255. Must not be blank.    │Tester                                                                                                                   │                                │0      │
+│91    │2020/10/18 10:10  │                                               │2020/10/11 10:10    │                                                                                      │83│2020/10/10 10:10         │                               │https://www.worldwildlife.org/│                                                    │tester                                                                                                                   │Length must be between 7 and 255. Not a well-formed URL.│Tester                                                                                                                   │                                │0      │
+│89    │2020/10/18 10:10  │                                               │2020/10/11 10:10    │                                                                                      │83│2020/10/10 10:10         │                               │                              │Length must be between 7 and 255. Must not be blank.│https://www.worldwildlife.org/                                                                                           │                                                        │Tester                                                                                                                   │                                │0      │
+│97    │                  │                                               │                    │                                                                                      │  │                         │                               │                              │                                                    │                                                                                                                         │                                                        │                                                                                                                         │                                │       │
+│97    │2020/10/18 10:10  │                                               │2020/10/11 10:10    │                                                                                      │83│2020/10/10 10:10         │                               │                              │Length must be between 7 and 255. Must not be blank.│https://www.worldwildlife.org/                                                                                           │                                                        │Tester                                                                                                                   │                                │1      │
+│94    │                  │                                               │                    │                                                                                      │  │                         │                               │                              │                                                    │                                                                                                                         │                                                        │                                                                                                                         │                                │       │
+│92    │2022/08/25 01:00  │                                               │                    │May not be null.                                                                      │89│2022/07/24 00:00         │                               │https://www.pulserasrosas.com/│                                                    │https://i.imgur.com/sgx1bFo.png                                                                                          │                                                        │Pulseras contra el cáncer                                                                                                │                                │0      │
+│96    │                  │May not be null.                               │2022/07/25 00:00    │                                                                                      │89│2022/07/24 00:00         │                               │https://www.pulserasrosas.com/│                                                    │https://i.imgur.com/sgx1bFo.png                                                                                          │                                                        │Pulseras contra el cáncer                                                                                                │                                │0      │
+│97    │2022/08/25 01:00  │                                               │2022/07/25 00:00    │                                                                                      │89│                         │May not be null.               │https://www.pulserasrosas.com/│                                                    │https://i.imgur.com/sgx1bFo.png                                                                                          │                                                        │Pulseras contra el cáncer                                                                                                │                                │0      │
+│84    │                  │                                               │                    │                                                                                      │  │                         │                               │                              │                                                    │                                                                                                                         │                                                        │                                                                                                                         │                                │       │
+│97    │                  │                                               │                    │                                                                                      │  │                         │                               │                              │                                                    │                                                                                                                         │                                                        │                                                                                                                         │                                │       │
+└──────┴──────────────────┴───────────────────────────────────────────────┴────────────────────┴──────────────────────────────────────────────────────────────────────────────────────┴──┴─────────────────────────┴───────────────────────────────┴──────────────────────────────┴────────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴────────────────────────────────┴───────┘ 
+> test 
+# END TEST CLASS "TestAnalyser" 
+The system is shutting down... 

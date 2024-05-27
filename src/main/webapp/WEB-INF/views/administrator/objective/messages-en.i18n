@@ -18,12 +18,15 @@ administrator.objective.form.label.priority = Priority:
 administrator.objective.form.label.status = Status
 administrator.objective.form.label.initialPeriod = Initial Period: 
 administrator.objective.form.label.finalPeriod = Final Period:
+administrator.objective.form.label.link = Link(Optional):
 
 administrator.objective.form.label.confirmation = Confirm
 administrator.objective.form.button.create = Create
 
 administrator.objective.form.error.invalidInitialPeriod = Initial period must start at any moment after the instantiation/update moment 
 administrator.objective.form.error.invalidFinalPeriod = Final period must finish at any moment after the initial period
+
+administrator.objective.form.error.link = The link length must be between 7 and 255 characters
 
 administrator.objective.list.label.instantiationMoment = Instantiation Moment
 administrator.objective.list.label.title = Title

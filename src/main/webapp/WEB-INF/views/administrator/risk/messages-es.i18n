@@ -31,3 +31,4 @@ administrator.risk.form.button.delete = Eliminar
 administrator.risk.form.error.invalid-probability = La probabilidad debe estar entre 0 y 100
 administrator.risk.form.error.negative-value = El impacto no puede ser negativo
 administrator.risk.form.error.duplicated = Este código ya está en uso
+administrator.risk.form.error.link =La longitud del link debe estar entre 7 y 255 caracteres

@@ -68,6 +68,11 @@ public class AnyClaimCreateService extends AbstractService<Any, Claim> {
 			super.state(existing == null, "code", "administrator.claim.form.error.duplicated");
 
 		}
+		if (!super.getBuffer().getErrors().hasErrors("link") && object.getLink() != null)
+			super.state(object.getLink().length() >= 7 && object.getLink().length() <= 255 || object.getLink().length() == 0, "link", "any.claim.form.error.link");
+
+		if (!super.getBuffer().getErrors().hasErrors("emailAddress") && object.getEmailAddress() != null)
+			super.state(object.getEmailAddress().length() >= 6 && object.getEmailAddress().length() <= 254 || object.getEmailAddress().length() == 0, "emailAddress", "any.claim.form.error.emailAddress");
 
 	}
 

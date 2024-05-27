@@ -18,12 +18,15 @@ administrator.objective.form.label.priority = Prioridad:
 administrator.objective.form.label.status = Estado
 administrator.objective.form.label.initialPeriod = Comienzo del periodo: 
 administrator.objective.form.label.finalPeriod = Final del periodo:
+administrator.objective.form.label.link = Link(Opcional):
 
 administrator.objective.form.label.confirmation = Confirmar
 administrator.objective.form.button.create = Crear
 
 administrator.objective.form.error.invalidInitialPeriod = El inicio de periodo de visualización debe comenzar en cualquier momento posterior al Momento de Instanciación/Actualización
 administrator.objective.form.error.invalidFinalPeriod = El final de periodo de visualización debe terminar en cualquier momento posterior al del inicio de periodo
+
+administrator.objective.form.error.link = La longitud del link debe estar entre 7 y 255 caracteres
 
 administrator.objective.list.label.instantiationMoment = Momento de instanciación
 administrator.objective.list.label.title = Título

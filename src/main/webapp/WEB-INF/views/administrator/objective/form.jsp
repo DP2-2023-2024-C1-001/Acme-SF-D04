@@ -22,6 +22,7 @@
 	<acme:input-checkbox code="administrator.objective.form.label.status" path="status"/>
 	<acme:input-moment code="administrator.objective.form.label.initialPeriod" path="initialPeriod"/>
 	<acme:input-moment code="administrator.objective.form.label.finalPeriod" path="finalPeriod"/>
+	<acme:input-url code="administrator.objective.form.label.link" path="link"/>
 	
 	<jstl:if test="${_command == 'create'}">
 		<acme:input-checkbox code="administrator.objective.form.label.confirmation" path="confirmation"/>

@@ -22,4 +22,5 @@
 	<acme:input-checkbox code="authenticated.objective.form.label.status" path="status"/>
 	<acme:input-moment code="authenticated.objective.form.label.initialPeriod" path="initialPeriod"/>
 	<acme:input-moment code="authenticated.objective.form.label.finalPeriod" path="finalPeriod"/>
+	<acme:input-url code="authenticated.objective.form.label.link" path="link"/>
 </acme:form>

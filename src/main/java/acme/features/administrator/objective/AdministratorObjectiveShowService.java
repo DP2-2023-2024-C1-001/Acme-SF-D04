@@ -46,7 +46,7 @@ public class AdministratorObjectiveShowService extends AbstractService<Administr
 
 		choicesPriority = SelectChoices.from(Priority.class, object.getPriority());
 
-		dataset = super.unbind(object, "instantiationMoment", "title", "description", "priority", "status", "initialPeriod", "finalPeriod");
+		dataset = super.unbind(object, "instantiationMoment", "title", "description", "priority", "status", "initialPeriod", "finalPeriod", "link");
 		dataset.put("priorities", choicesPriority);
 
 		super.getResponse().addData(dataset);
