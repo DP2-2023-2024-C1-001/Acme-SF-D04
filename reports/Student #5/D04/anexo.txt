@@ -1,0 +1,1127 @@
+[Logging to './logs/tester.log']
+[Logging to './logs/tester.trace']
+      .o.                                                   .oooooo..o oooooooooooo
+     .888.                                                 d8P'    `Y8 `888'     `8
+    .8"888.      .ooooo.  ooo. .oo.  .oo.    .ooooo.       Y88bo.       888        
+   .8' `888.    d88' `"Y8 `888P"Y88bP"Y88b  d88' `88b       `"Y8888o.   888oooo8   
+  .88ooo8888.   888        888   888   888  888ooo888           `"Y88b  888    "   
+ .8'     `888.  888   .o8  888   888   888  888    .o      oo     .d8P  888        
+o88o     o8888o `Y8bod8P' o888o o888o o888o `Y8bod8P'      8""88888P'  o888o       
+
+Application:          Acme-SF-D04
+Application endpoint: http://localhost:8082/Acme-SF-D04?debug=true&language=en
+Database endpoint:    jdbc:mariadb://localhost:3306/Acme-SF-D04-Test?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+Powered by:           Spring Boot 2.7.15, Acme Framework 24.4.0
+
+Starting Launcher using Java 20.0.2 on DESKTOP-LEI6T08 with PID 14596 (started by Pedro Pablo in C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04) 
+The following 2 profiles are active: "testing", "tester" 
+Started Launcher in 11.088 seconds (JVM running for 12.434) 
+Starting the Spring Framework up took 11.348 seconds. 
+Launching tester#analyser in your testing platform. Please, wait. 
+Launching tester#analyser took 0.0 seconds. Ready. 
+# BEGIN TEST CLASS "TestAnalyser" 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\audit-record\create.hack'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\audit-record\delete.hack'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\audit-record\list.hack'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\audit-record\publish.hack'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\audit-record\show.hack'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\audit-record\update.hack'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\code-audit\create.hack'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\code-audit\delete.hack'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\code-audit\list.hack'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\code-audit\publish.hack'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\code-audit\show.hack'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\code-audit\update.hack'. 
+** GET any/system/welcome (REQUEST) 
+[ ] 
+** GET any/system/welcome (RESPONSE) 
+┌──────┐
+│banner│
+├──────┤
+│85    │
+│91    │
+│85    │
+│90    │
+│85    │
+│92    │
+│85    │
+│90    │
+│85    │
+│94    │
+│85    │
+│90    │
+│85    │
+│90    │
+│85    │
+│94    │
+│92    │
+│85    │
+│92    │
+│85    │
+│87    │
+│97    │
+│85    │
+│84    │
+│83    │
+└──────┘ 
+** GET auditor/audit-record/create (REQUEST) 
+┌────────┐
+│masterId│
+├────────┤
+│44      │
+│44      │
+└────────┘ 
+** GET auditor/audit-record/create (RESPONSE) 
+┌──────┐
+│banner│
+├──────┤
+│97    │
+│90    │
+└──────┘ 
+** GET anonymous/system/sign-in (REQUEST) 
+[ ] 
+** GET anonymous/system/sign-in (RESPONSE) 
+┌──────┬────────┬────────┬────────┐
+│banner│password│remember│username│
+├──────┼────────┼────────┼────────┤
+│90    │        │false   │        │
+│87    │        │false   │        │
+│93    │        │false   │        │
+│87    │        │false   │        │
+│93    │        │false   │        │
+│87    │        │false   │        │
+│87    │        │false   │        │
+│93    │        │false   │        │
+│86    │        │false   │        │
+│93    │        │false   │        │
+│      │        │false   │        │
+│97    │        │false   │        │
+│95    │        │false   │        │
+│      │        │false   │        │
+│84    │        │false   │        │
+└──────┴────────┴────────┴────────┘ 
+** POST anonymous/system/sign-in (REQUEST) 
+┌──┬────────┬────────┬────────┬───────┐
+│id│password│remember│username│version│
+├──┼────────┼────────┼────────┼───────┤
+│  │auditor2│false   │auditor2│       │
+│  │auditor2│false   │auditor2│       │
+│  │auditor2│false   │auditor2│       │
+│  │auditor2│false   │auditor2│       │
+│  │auditor2│false   │auditor2│       │
+│  │auditor2│false   │auditor2│       │
+│  │auditor2│false   │auditor2│       │
+│  │auditor2│false   │auditor2│       │
+│  │auditor2│false   │auditor2│       │
+│  │auditor2│false   │auditor2│       │
+│  │auditor2│false   │auditor2│       │
+│  │auditor2│false   │auditor2│       │
+└──┴────────┴────────┴────────┴───────┘ 
+** POST anonymous/system/sign-in (RESPONSE) 
+[ ] 
+** GET auditor/audit-record/delete (REQUEST) 
+┌──┐
+│id│
+├──┤
+│63│
+│63│
+└──┘ 
+** GET auditor/audit-record/delete (RESPONSE) 
+┌──────┐
+│banner│
+├──────┤
+│90    │
+│89    │
+└──────┘ 
+** GET auditor/audit-record/list (REQUEST) 
+┌────────┐
+│masterId│
+├────────┤
+│44      │
+│44      │
+└────────┘ 
+** GET auditor/audit-record/list (RESPONSE) 
+┌──────┐
+│banner│
+├──────┤
+│88    │
+│94    │
+└──────┘ 
+** GET auditor/audit-record/publish (REQUEST) 
+┌──┐
+│id│
+├──┤
+│63│
+│63│
+└──┘ 
+** GET auditor/audit-record/publish (RESPONSE) 
+┌──────┐
+│banner│
+├──────┤
+│90    │
+│97    │
+└──────┘ 
+** GET auditor/audit-record/show (REQUEST) 
+┌──┐
+│id│
+├──┤
+│63│
+│63│
+└──┘ 
+** GET auditor/audit-record/show (RESPONSE) 
+┌──────┐
+│banner│
+├──────┤
+│88    │
+│96    │
+└──────┘ 
+** GET auditor/audit-record/update (REQUEST) 
+┌──┐
+│id│
+├──┤
+│63│
+│63│
+└──┘ 
+** GET auditor/audit-record/update (RESPONSE) 
+┌──────┐
+│banner│
+├──────┤
+│90    │
+│89    │
+└──────┘ 
+** GET auditor/code-audit/create (REQUEST) 
+[ ] 
+** GET auditor/code-audit/create (RESPONSE) 
+┌──────┬──┬───────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────┐
+│banner│id│project│projects                                                                                                                 │published│types                                                                                                                    │version│
+├──────┼──┼───────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────┤
+│90    │  │       │                                                                                                                         │         │                                                                                                                         │       │
+│89    │0 │0      │[{"key":"0","label":"----","selected":true,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true}…│false    │[{"key":"0","label":"----","selected":true,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tru…│0      │
+└──────┴──┴───────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────┘ 
+** GET auditor/code-audit/delete (REQUEST) 
+┌──┐
+│id│
+├──┤
+│44│
+│44│
+└──┘ 
+** GET auditor/code-audit/delete (RESPONSE) 
+┌──────┐
+│banner│
+├──────┤
+│86    │
+│96    │
+└──────┘ 
+** GET auditor/code-audit/list (REQUEST) 
+[ ] 
+** GET auditor/code-audit/list (RESPONSE) 
+┌──────┬───────┬───────────────────────────────────────────────────────────────────────────┬────────────────┬──┬───────┬───────┐
+│banner│code   │correctiveActions                                                          │execution       │id│type   │version│
+├──────┼───────┼───────────────────────────────────────────────────────────────────────────┼────────────────┼──┼───────┼───────┤
+│97    │       │                                                                           │                │  │       │       │
+│      │AHS-049│Implementar una revisión de procedimientos para prevenir futuros errores.  │2003/06/23 00:00│43│STATIC │0      │
+│      │Z-000  │Realizar una auditoría de cumplimiento regulatorio.                        │1990/10/03 20:30│46│DYNAMIC│0      │
+│      │Z-999  │Revisar y mejorar el sistema de gestión de calidad wdddddddddd.            │2022/07/24 00:00│47│STATIC │0      │
+│      │AA-999 │Realizar una auditoría interna para identificar deficiencias.              │2022/07/24 00:00│50│STATIC │0      │
+│      │ZZ-000 │Implementar controles adicionales para protección de datos.                │2022/07/24 00:00│51│DYNAMIC│0      │
+│      │YF-437 │Modificar los procedimientos para garantizar la trazabilidad.              │2022/07/24 00:00│53│DYNAMIC│0      │
+│      │AAA-000│Εφαρμογή αναθεώρησης των διαδικασιών για την αποφυγή μελλοντικών σφαλμάτων.│2022/07/24 00:00│54│DYNAMIC│0      │
+│      │ZZZ-000│Revisar y mejorar los protocolos de comunicación interna.                  │2022/07/24 00:00│56│DYNAMIC│0      │
+│      │AHA-098│Modificar los procedimientos para garantizar la trazabilidad.              │2022/07/24 00:00│59│STATIC │0      │
+│      │ASS-327│Implementar controles adicionales para protección de datos.                │2022/07/24 00:00│61│DYNAMIC│0      │
+│91    │       │                                                                           │                │  │       │       │
+└──────┴───────┴───────────────────────────────────────────────────────────────────────────┴────────────────┴──┴───────┴───────┘ 
+** GET auditor/code-audit/publish (REQUEST) 
+┌──┐
+│id│
+├──┤
+│44│
+│44│
+└──┘ 
+** GET auditor/code-audit/publish (RESPONSE) 
+┌──────┐
+│banner│
+├──────┤
+│88    │
+│94    │
+└──────┘ 
+** GET auditor/code-audit/show (REQUEST) 
+┌──┐
+│id│
+├──┤
+│44│
+│44│
+└──┘ 
+** GET auditor/code-audit/show (RESPONSE) 
+┌──────┐
+│banner│
+├──────┤
+│97    │
+│87    │
+└──────┘ 
+** GET auditor/code-audit/update (REQUEST) 
+┌──┐
+│id│
+├──┤
+│44│
+│44│
+└──┘ 
+** GET auditor/code-audit/update (RESPONSE) 
+┌──────┐
+│banner│
+├──────┤
+│87    │
+│92    │
+└──────┘ 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\audit-record\create.safe'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\audit-record\delete.safe'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\audit-record\list.safe'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\audit-record\publish.safe'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\audit-record\show.safe'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\audit-record\update.safe'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\code-audit\create.safe'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\code-audit\delete.safe'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\code-audit\list.safe'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\code-audit\publish.safe'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\code-audit\show.safe'. 
+Analysing trace 'C:\Users\Pedro Pablo\Desktop\Workspace-24\Projects\Acme-SF-D04\.\src\test\resources\auditor\code-audit\update.safe'. 
+** GET any/system/welcome (REQUEST) 
+[ ] 
+** GET any/system/welcome (RESPONSE) 
+┌──────┐
+│banner│
+├──────┤
+│85    │
+│88    │
+│85    │
+│88    │
+│85    │
+│95    │
+│85    │
+│97    │
+│85    │
+│88    │
+│85    │
+│97    │
+│85    │
+│95    │
+│85    │
+│88    │
+│85    │
+│88    │
+│85    │
+│90    │
+│85    │
+│97    │
+│85    │
+│88    │
+└──────┘ 
+** GET anonymous/system/sign-in (REQUEST) 
+[ ] 
+** GET anonymous/system/sign-in (RESPONSE) 
+┌──────┬────────┬────────┬────────┐
+│banner│password│remember│username│
+├──────┼────────┼────────┼────────┤
+│90    │        │false   │        │
+│90    │        │false   │        │
+│86    │        │false   │        │
+│88    │        │false   │        │
+│90    │        │false   │        │
+│88    │        │false   │        │
+│86    │        │false   │        │
+│90    │        │false   │        │
+│90    │        │false   │        │
+│88    │        │false   │        │
+│88    │        │false   │        │
+│90    │        │false   │        │
+└──────┴────────┴────────┴────────┘ 
+** POST anonymous/system/sign-in (REQUEST) 
+┌──┬────────┬────────┬────────┬───────┐
+│id│password│remember│username│version│
+├──┼────────┼────────┼────────┼───────┤
+│  │auditor1│false   │auditor1│       │
+│  │auditor1│false   │auditor1│       │
+│  │auditor1│false   │auditor1│       │
+│  │auditor1│false   │auditor1│       │
+│  │auditor1│false   │auditor1│       │
+│  │auditor1│false   │auditor1│       │
+│  │auditor1│false   │auditor1│       │
+│  │auditor1│false   │auditor1│       │
+│  │auditor1│false   │auditor1│       │
+│  │auditor1│false   │auditor1│       │
+│  │auditor1│false   │auditor1│       │
+│  │auditor1│false   │auditor1│       │
+└──┴────────┴────────┴────────┴───────┘ 
+** POST anonymous/system/sign-in (RESPONSE) 
+[ ] 
+** GET auditor/code-audit/list (REQUEST) 
+[ ] 
+** GET auditor/code-audit/list (RESPONSE) 
+┌──────┬───────┬────────────────────────────────────────────────────────────────────────┬────────────────┬───┬───────┬───────┐
+│banner│code   │correctiveActions                                                       │execution       │id │type   │version│
+├──────┼───────┼────────────────────────────────────────────────────────────────────────┼────────────────┼───┼───────┼───────┤
+│      │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44 │DYNAMIC│0      │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│87    │       │                                                                        │                │   │       │       │
+│      │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44 │DYNAMIC│0      │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│87    │       │                                                                        │                │   │       │       │
+│      │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44 │DYNAMIC│0      │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│94    │       │                                                                        │                │   │       │       │
+│      │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44 │DYNAMIC│0      │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│90    │       │                                                                        │                │   │       │       │
+│      │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44 │DYNAMIC│0      │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│87    │       │                                                                        │                │   │       │       │
+│      │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44 │DYNAMIC│0      │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│90    │       │                                                                        │                │   │       │       │
+│      │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44 │DYNAMIC│0      │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│94    │       │                                                                        │                │   │       │       │
+│      │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44 │DYNAMIC│0      │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│84    │       │                                                                        │                │   │       │       │
+│      │A-459  │Lorem ipsum                                                             │2022/07/23 12:45│330│STATIC │0      │
+│      │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44 │DYNAMIC│0      │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│87    │       │                                                                        │                │   │       │       │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│91    │       │                                                                        │                │   │       │       │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│86    │       │                                                                        │                │   │       │       │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│85    │       │                                                                        │                │   │       │       │
+│      │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44 │DYNAMIC│0      │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│87    │       │                                                                        │                │   │       │       │
+│      │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44 │DYNAMIC│0      │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│94    │       │                                                                        │                │   │       │       │
+│      │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44 │DYNAMIC│0      │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│84    │       │                                                                        │                │   │       │       │
+│      │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44 │DYNAMIC│0      │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│86    │       │                                                                        │                │   │       │       │
+│      │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44 │DYNAMIC│0      │
+│      │AAA-203│Realizar una revisión de seguridad física en el sitio.                  │2021/01/12 13:00│45 │STATIC │1      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│96    │       │                                                                        │                │   │       │       │
+│      │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44 │DYNAMIC│0      │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│90    │       │                                                                        │                │   │       │       │
+│      │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44 │DYNAMIC│0      │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│95    │       │                                                                        │                │   │       │       │
+│      │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44 │DYNAMIC│0      │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│95    │       │                                                                        │                │   │       │       │
+│      │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44 │DYNAMIC│0      │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│87    │       │                                                                        │                │   │       │       │
+│      │AAA-987│Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2021/07/24 07:39│44 │STATIC │1      │
+│      │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45 │DYNAMIC│0      │
+│      │R-049  │E hoʻokō i kahi ʻōnaehana hoʻokele maikaʻi i hōʻoia ʻia.                │2012/07/24 12:00│48 │STATIC │0      │
+│      │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49 │DYNAMIC│0      │
+│      │ZZ-999 │Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│52 │STATIC │0      │
+│      │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55 │DYNAMIC│0      │
+│      │ZZZ-999│Implementar un sistema de gestión de calidad certificado.               │2022/07/24 00:00│57 │STATIC │0      │
+│      │GKL-568│Realizar una revisión de seguridad física en el sitio.                  │2022/07/24 00:00│58 │DYNAMIC│0      │
+│      │YYU-898│Realizar una revisión exhaustiva de registros y documentación.          │2022/07/24 00:00│60 │STATIC │0      │
+│      │VJF-777│Realizar una auditoría de cumplimiento regulatorio.                     │2022/07/24 00:00│62 │STATIC │0      │
+│87    │       │                                                                        │                │   │       │       │
+└──────┴───────┴────────────────────────────────────────────────────────────────────────┴────────────────┴───┴───────┴───────┘ 
+** GET auditor/code-audit/show (REQUEST) 
+┌──┐
+│id│
+├──┤
+│44│
+│44│
+│44│
+│44│
+│44│
+│44│
+│44│
+│49│
+│55│
+│45│
+│45│
+│45│
+│44│
+│49│
+│44│
+└──┘ 
+** GET auditor/code-audit/show (RESPONSE) 
+┌──────┬───────┬────────────────────────────────────────────────────────────────────────┬────────────────┬──┬────────────────────────────────────────┬────┬───────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────┬───────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────┐
+│banner│code   │correctiveActions                                                       │execution       │id│link                                    │mark│project│projects                                                                                                                 │published│type   │types                                                                                                                    │version│
+├──────┼───────┼────────────────────────────────────────────────────────────────────────┼────────────────┼──┼────────────────────────────────────────┼────┼───────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────┼───────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────┤
+│96    │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44│                                        │F-  │31     │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│96    │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44│                                        │F-  │31     │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│84    │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44│                                        │F-  │31     │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│89    │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44│                                        │F-  │31     │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│96    │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44│                                        │F-  │31     │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│89    │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44│                                        │F-  │31     │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│96    │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44│                                        │F-  │31     │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│96    │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49│                                        │    │29     │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│94    │AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55│                                        │    │28     │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │DYNAMIC│[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│91    │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45│https://auditrecordexample.com/not-found│F   │34     │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│93    │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45│https://auditrecordexample.com/not-found│B   │34     │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│89    │A-999  │Realizar una revisión de seguridad física en el sitio.                  │2021/01/10 13:00│45│https://auditrecordexample.com/not-found│B   │34     │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│89    │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44│                                        │F-  │31     │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│90    │AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49│                                        │    │29     │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│96    │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44│                                        │F-  │31     │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+└──────┴───────┴────────────────────────────────────────────────────────────────────────┴────────────────┴──┴────────────────────────────────────────┴────┴───────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────┴───────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────┘ 
+** GET auditor/audit-record/list (REQUEST) 
+┌────────┐
+│masterId│
+├────────┤
+│44      │
+│44      │
+│44      │
+│44      │
+│44      │
+│44      │
+│44      │
+│44      │
+│44      │
+│44      │
+│44      │
+│44      │
+│44      │
+│44      │
+│44      │
+│45      │
+│45      │
+│45      │
+│45      │
+│45      │
+└────────┘ 
+** GET auditor/audit-record/list (RESPONSE) 
+┌──────┬───────────┬───┬────┬────────┬──────────┬───────┐
+│banner│code       │id │mark│masterId│showCreate│version│
+├──────┼───────────┼───┼────┼────────┼──────────┼───────┤
+│      │AU-0000-049│63 │B   │        │          │0      │
+│      │AU-0099-000│69 │A   │        │          │0      │
+│      │AU-4827-000│76 │F-  │        │          │0      │
+│      │AU-2483-327│81 │F-  │        │          │0      │
+│97    │           │   │    │44      │true      │       │
+│      │AU-0000-049│63 │B   │        │          │0      │
+│      │AU-0099-000│69 │A   │        │          │0      │
+│      │AU-4827-000│76 │F-  │        │          │0      │
+│      │AU-2483-327│81 │F-  │        │          │0      │
+│      │AU-0099-039│330│B   │        │          │0      │
+│90    │           │   │    │44      │true      │       │
+│      │AU-0000-049│63 │B   │        │          │0      │
+│      │AU-0099-000│69 │A   │        │          │0      │
+│      │AU-4827-000│76 │F-  │        │          │0      │
+│      │AU-2483-327│81 │F-  │        │          │0      │
+│97    │           │   │    │44      │true      │       │
+│      │AU-0099-000│69 │A   │        │          │0      │
+│      │AU-4827-000│76 │F-  │        │          │0      │
+│      │AU-2483-327│81 │F-  │        │          │0      │
+│83    │           │   │    │44      │true      │       │
+│      │AU-0099-000│69 │A   │        │          │0      │
+│      │AU-4827-000│76 │F-  │        │          │0      │
+│89    │           │   │    │44      │true      │       │
+│      │AU-4827-000│76 │F-  │        │          │0      │
+│87    │           │   │    │44      │true      │       │
+│87    │           │   │    │44      │true      │       │
+│      │AU-0000-049│63 │B   │        │          │0      │
+│      │AU-0099-000│69 │A   │        │          │0      │
+│      │AU-4827-000│76 │F-  │        │          │0      │
+│      │AU-2483-327│81 │F-  │        │          │0      │
+│94    │           │   │    │44      │true      │       │
+│      │AU-0000-049│63 │B   │        │          │0      │
+│      │AU-0099-000│69 │A   │        │          │0      │
+│      │AU-4827-000│76 │F-  │        │          │0      │
+│      │AU-2483-327│81 │F-  │        │          │0      │
+│95    │           │   │    │44      │true      │       │
+│      │AU-4985-095│63 │A   │        │          │1      │
+│      │AU-0099-000│69 │A   │        │          │0      │
+│      │AU-4827-000│76 │F-  │        │          │0      │
+│      │AU-2483-327│81 │F-  │        │          │0      │
+│89    │           │   │    │44      │true      │       │
+│      │AU-0000-049│63 │B   │        │          │0      │
+│      │AU-0099-000│69 │A   │        │          │0      │
+│      │AU-4827-000│76 │F-  │        │          │0      │
+│      │AU-2483-327│81 │F-  │        │          │0      │
+│97    │           │   │    │44      │true      │       │
+│      │AU-0000-049│63 │B   │        │          │0      │
+│      │AU-0099-000│69 │A   │        │          │0      │
+│      │AU-4827-000│76 │F-  │        │          │0      │
+│      │AU-2483-327│81 │F-  │        │          │0      │
+│93    │           │   │    │44      │true      │       │
+│      │AU-0000-049│63 │B   │        │          │0      │
+│      │AU-0099-000│69 │A   │        │          │0      │
+│      │AU-4827-000│76 │F-  │        │          │0      │
+│      │AU-2483-327│81 │F-  │        │          │0      │
+│86    │           │   │    │44      │true      │       │
+│      │AU-0000-049│63 │B   │        │          │0      │
+│      │AU-0099-000│69 │A   │        │          │0      │
+│      │AU-4827-000│76 │F-  │        │          │0      │
+│      │AU-2483-327│81 │F-  │        │          │0      │
+│95    │           │   │    │44      │true      │       │
+│      │AU-0099-001│63 │A   │        │          │1      │
+│      │AU-0099-000│69 │A   │        │          │0      │
+│      │AU-4827-000│76 │F-  │        │          │0      │
+│      │AU-2483-327│81 │F-  │        │          │0      │
+│88    │           │   │    │44      │true      │       │
+│      │AU-0000-999│67 │F   │        │          │0      │
+│      │AU-9989-999│75 │B   │        │          │0      │
+│      │AU-0329-568│78 │F   │        │          │0      │
+│      │AU-2384-898│80 │B   │        │          │0      │
+│      │AU-3284-777│82 │F   │        │          │0      │
+│88    │           │   │    │45      │true      │       │
+│      │AU-0000-999│67 │F   │        │          │0      │
+│      │AU-9989-999│75 │B   │        │          │0      │
+│      │AU-2384-898│80 │B   │        │          │0      │
+│      │AU-3284-777│82 │F   │        │          │0      │
+│95    │           │   │    │45      │true      │       │
+│      │AU-9989-999│75 │B   │        │          │0      │
+│      │AU-2384-898│80 │B   │        │          │0      │
+│      │AU-3284-777│82 │F   │        │          │0      │
+│90    │           │   │    │45      │true      │       │
+│      │AU-9989-999│75 │B   │        │          │0      │
+│      │AU-2384-898│80 │B   │        │          │0      │
+│      │AU-3284-777│82 │F   │        │          │0      │
+│84    │           │   │    │45      │true      │       │
+│      │AU-9989-999│75 │B   │        │          │0      │
+│      │AU-2384-898│80 │B   │        │          │0      │
+│      │AU-3284-777│82 │F   │        │          │1      │
+│90    │           │   │    │45      │true      │       │
+└──────┴───────────┴───┴────┴────────┴──────────┴───────┘ 
+** GET auditor/audit-record/create (REQUEST) 
+┌────────┐
+│masterId│
+├────────┤
+│44      │
+└────────┘ 
+** GET auditor/audit-record/create (RESPONSE) 
+┌──────┬──┬────────┬─────────┬───────┐
+│banner│id│masterId│published│version│
+├──────┼──┼────────┼─────────┼───────┤
+│93    │0 │44      │false    │0      │
+└──────┴──┴────────┴─────────┴───────┘ 
+** POST auditor/audit-record/create (REQUEST) 
+┌───────────┬──┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────┬────────┬────────────────┬────────────────┬───────┐
+│code       │id│link                                                                                                                     │mark │masterId│periodEnd       │periodStart     │version│
+├───────────┼──┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────┼────────┼────────────────┼────────────────┼───────┤
+│           │0 │                                                                                                                         │     │44      │                │                │0      │
+│AU-0430    │0 │                                                                                                                         │A    │44      │2022/09/26 19:34│2022/09/26 15:34│0      │
+│           │0 │                                                                                                                         │A    │44      │2022/09/26 19:34│2022/09/26 15:34│0      │
+│AU-000     │0 │                                                                                                                         │A    │44      │2022/09/26 19:34│2022/09/26 15:34│0      │
+│AU-0099-000│0 │                                                                                                                         │A    │44      │2022/09/26 19:34│2022/09/26 15:34│0      │
+│AU-0099-039│0 │                                                                                                                         │A    │44      │2022/09/26 19:34│                │0      │
+│AU-0099-039│0 │                                                                                                                         │A    │44      │2022/09/26 19:34│2009/09/26 15:34│0      │
+│AU-0099-039│0 │                                                                                                                         │A    │44      │2022/09/26 19:34│2022/09/26      │0      │
+│AU-0099-039│0 │                                                                                                                         │A    │44      │                │2022/09/26 15:34│0      │
+│AU-0099-039│0 │                                                                                                                         │A    │44      │2021/09/26 19:34│2022/09/26 15:34│0      │
+│AU-0099-039│0 │                                                                                                                         │A    │44      │2021/09/26      │2022/09/26 15:34│0      │
+│AU-0099-039│0 │                                                                                                                         │     │44      │2022/09/26 19:34│2022/09/26 15:34│0      │
+│AU-0099-039│0 │                                                                                                                         │BVAEV│44      │2022/09/26 19:34│2022/09/26 15:34│0      │
+│AU-0099-039│0 │ftp://                                                                                                                   │B    │44      │2022/09/26 19:34│2022/09/26 15:34│0      │
+│AU-0099-039│0 │http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/do…│B    │44      │2022/09/26 19:34│2022/09/26 15:34│0      │
+│AU-0099-039│0 │ftp://www.lorem-ipsum.org                                                                                                │B    │44      │2022/09/26 19:34│2022/09/26 15:34│0      │
+└───────────┴──┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────┴────────┴────────────────┴────────────────┴───────┘ 
+** POST auditor/audit-record/create (RESPONSE) 
+┌──────┬───────────┬─────────────────────────────────────────────────────────────┬──┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────┬─────┬──────────────────────────────────┬────────┬────────────────┬────────────────────────────────────────────────────────────────┬────────────────┬────────────────────────────────────────────────────────────────┬─────────┬───────┐
+│banner│code       │code$error                                                   │id│link                                                                                                                     │link$error                                           │mark │mark$error                        │masterId│periodEnd       │periodEnd$error                                                 │periodStart     │periodStart$error                                               │published│version│
+├──────┼───────────┼─────────────────────────────────────────────────────────────┼──┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────┼─────┼──────────────────────────────────┼────────┼────────────────┼────────────────────────────────────────────────────────────────┼────────────────┼────────────────────────────────────────────────────────────────┼─────────┼───────┤
+│93    │           │Must match pattern "AU-[0-9]{4}-[0-9]{3}". Must not be blank.│0 │                                                                                                                         │                                                     │     │Mark must be A+, A, B, C, F or F-.│44      │                │May not be null.                                                │                │May not be null.                                                │false    │0      │
+│88    │AU-0430    │Must match pattern "AU-[0-9]{4}-[0-9]{3}".                   │0 │                                                                                                                         │                                                     │A    │                                  │44      │2022/09/26 19:34│                                                                │2022/09/26 15:34│                                                                │false    │0      │
+│89    │           │Must match pattern "AU-[0-9]{4}-[0-9]{3}". Must not be blank.│0 │                                                                                                                         │                                                     │A    │                                  │44      │2022/09/26 19:34│                                                                │2022/09/26 15:34│                                                                │false    │0      │
+│97    │AU-000     │Must match pattern "AU-[0-9]{4}-[0-9]{3}".                   │0 │                                                                                                                         │                                                     │A    │                                  │44      │2022/09/26 19:34│                                                                │2022/09/26 15:34│                                                                │false    │0      │
+│88    │AU-0099-000│This code is taken.                                          │0 │                                                                                                                         │                                                     │A    │                                  │44      │2022/09/26 19:34│                                                                │2022/09/26 15:34│                                                                │false    │0      │
+│87    │AU-0099-039│                                                             │0 │                                                                                                                         │                                                     │A    │                                  │44      │2022/09/26 19:34│                                                                │                │May not be null.                                                │false    │0      │
+│96    │AU-0099-039│                                                             │0 │                                                                                                                         │                                                     │A    │                                  │44      │2022/09/26 19:34│                                                                │2009/09/26 15:34│The initial period must be after execution moment of code audit.│false    │0      │
+│91    │AU-0099-039│                                                             │0 │                                                                                                                         │                                                     │A    │                                  │44      │2022/09/26 19:34│                                                                │                │Invalid value. May not be null.                                 │false    │0      │
+│96    │AU-0099-039│                                                             │0 │                                                                                                                         │                                                     │A    │                                  │44      │                │May not be null.                                                │2022/09/26 15:34│                                                                │false    │0      │
+│84    │AU-0099-039│                                                             │0 │                                                                                                                         │                                                     │A    │                                  │44      │2021/09/26 19:34│Period end must finish at least one hour after the period start.│2022/09/26 15:34│                                                                │false    │0      │
+│85    │AU-0099-039│                                                             │0 │                                                                                                                         │                                                     │A    │                                  │44      │                │Invalid value. May not be null.                                 │2022/09/26 15:34│                                                                │false    │0      │
+│95    │AU-0099-039│                                                             │0 │                                                                                                                         │                                                     │     │Mark must be A+, A, B, C, F or F-.│44      │2022/09/26 19:34│                                                                │2022/09/26 15:34│                                                                │false    │0      │
+│88    │AU-0099-039│                                                             │0 │                                                                                                                         │                                                     │BVAEV│Mark must be A+, A, B, C, F or F-.│44      │2022/09/26 19:34│                                                                │2022/09/26 15:34│                                                                │false    │0      │
+│84    │AU-0099-039│                                                             │0 │ftp://                                                                                                                   │The link length must be between 7 and 255 characters.│B    │                                  │44      │2022/09/26 19:34│                                                                │2022/09/26 15:34│                                                                │false    │0      │
+│89    │AU-0099-039│                                                             │0 │http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/do…│The link length must be between 7 and 255 characters.│B    │                                  │44      │2022/09/26 19:34│                                                                │2022/09/26 15:34│                                                                │false    │0      │
+│95    │           │                                                             │  │                                                                                                                         │                                                     │     │                                  │        │                │                                                                │                │                                                                │         │       │
+└──────┴───────────┴─────────────────────────────────────────────────────────────┴──┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────┴─────┴──────────────────────────────────┴────────┴────────────────┴────────────────────────────────────────────────────────────────┴────────────────┴────────────────────────────────────────────────────────────────┴─────────┴───────┘ 
+** GET auditor/audit-record/show (REQUEST) 
+┌──┐
+│id│
+├──┤
+│63│
+│81│
+│69│
+│76│
+│63│
+│63│
+│69│
+│63│
+│78│
+│67│
+│82│
+└──┘ 
+** GET auditor/audit-record/show (RESPONSE) 
+┌──────┬───────────┬──┬────┬────┬────────┬────────────────┬────────────────┬─────────┬───────┐
+│banner│code       │id│link│mark│masterId│periodEnd       │periodStart     │published│version│
+├──────┼───────────┼──┼────┼────┼────────┼────────────────┼────────────────┼─────────┼───────┤
+│93    │AU-0000-049│63│    │B   │44      │2023/06/23 04:47│2023/06/23 00:00│false    │0      │
+│97    │AU-2483-327│81│    │F-  │44      │2022/07/24 14:47│2022/07/24 12:00│false    │0      │
+│91    │AU-0099-000│69│    │A   │44      │2023/09/06 20:48│2023/09/06 17:12│false    │0      │
+│85    │AU-4827-000│76│    │F-  │44      │2022/07/25 21:47│2022/07/24 23:00│false    │0      │
+│90    │AU-0000-049│63│    │B   │44      │2023/06/23 04:47│2023/06/23 00:00│false    │0      │
+│93    │AU-0000-049│63│    │B   │44      │2023/06/23 04:47│2023/06/23 00:00│false    │0      │
+│84    │AU-0099-000│69│    │A   │44      │2023/09/06 20:48│2023/09/06 17:12│false    │0      │
+│90    │AU-0000-049│63│    │B   │44      │2023/06/23 04:47│2023/06/23 00:00│false    │0      │
+│88    │AU-0329-568│78│    │F   │45      │2022/07/24 09:30│2022/07/24 06:00│false    │0      │
+│93    │AU-0000-999│67│    │F   │45      │2022/07/24 02:47│2022/07/24 00:00│false    │0      │
+│89    │AU-3284-777│82│    │F   │45      │2022/07/24 13:47│2022/07/24 11:00│false    │0      │
+└──────┴───────────┴──┴────┴────┴────────┴────────────────┴────────────────┴─────────┴───────┘ 
+** POST auditor/audit-record/delete (REQUEST) 
+┌───────────┬──┬────┬────┬────────────────┬────────────────┬───────┐
+│code       │id│link│mark│periodEnd       │periodStart     │version│
+├───────────┼──┼────┼────┼────────────────┼────────────────┼───────┤
+│AU-0000-049│63│    │B   │2023/06/23 04:47│tester          │0      │
+│AU-0000-049│63│    │B   │2023/06/23 04:47│2023/06/23 00:00│0      │
+│AU-2483-327│81│    │F-  │tester          │2022/07/24 12:00│0      │
+│AU-2483-327│81│    │F-  │2022/07/24 14:47│2022/07/24 12:00│0      │
+│AU-0099-000│69│    │A   │2023/09/06 20:48│2023/09/06 17:12│0      │
+│AU-4827-000│76│    │F-  │tester          │tester          │0      │
+│AU-4827-000│76│    │F-  │2022/07/25 21:47│2022/07/24 23:00│0      │
+│AU-0329-568│78│    │F   │2022/07/24 09:30│2022/07/24 06:00│0      │
+│AU-0000-999│67│    │F   │2022/07/24 02:47│2022/07/24 00:00│0      │
+└───────────┴──┴────┴────┴────────────────┴────────────────┴───────┘ 
+** POST auditor/audit-record/delete (RESPONSE) 
+┌──────┬───────────┬──┬────┬────┬────────┬────────────────┬───────────────┬────────────────┬─────────────────┬─────────┬───────┐
+│banner│code       │id│link│mark│masterId│periodEnd       │periodEnd$error│periodStart     │periodStart$error│published│version│
+├──────┼───────────┼──┼────┼────┼────────┼────────────────┼───────────────┼────────────────┼─────────────────┼─────────┼───────┤
+│93    │AU-0000-049│63│    │B   │44      │2023/06/23 04:47│               │2023/06/23 00:00│Invalid value.   │false    │0      │
+│88    │           │  │    │    │        │                │               │                │                 │         │       │
+│88    │AU-2483-327│81│    │F-  │44      │2022/07/24 14:47│Invalid value. │2022/07/24 12:00│                 │false    │0      │
+│87    │           │  │    │    │        │                │               │                │                 │         │       │
+│96    │           │  │    │    │        │                │               │                │                 │         │       │
+│95    │AU-4827-000│76│    │F-  │44      │2022/07/25 21:47│Invalid value. │2022/07/24 23:00│Invalid value.   │false    │0      │
+│88    │           │  │    │    │        │                │               │                │                 │         │       │
+│93    │           │  │    │    │        │                │               │                │                 │         │       │
+│95    │           │  │    │    │        │                │               │                │                 │         │       │
+└──────┴───────────┴──┴────┴────┴────────┴────────────────┴───────────────┴────────────────┴─────────────────┴─────────┴───────┘ 
+** POST auditor/audit-record/publish (REQUEST) 
+┌────────────┬──┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────┬────────────────┬────────────────┬───────┐
+│code        │id│link                                                                                                                     │mark     │periodEnd       │periodStart     │version│
+├────────────┼──┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────┼────────────────┼────────────────┼───────┤
+│            │63│                                                                                                                         │B        │2023/06/23 04:47│2023/06/23 00:00│0      │
+│AU-0099-000 │63│                                                                                                                         │B        │2023/06/23 04:47│2023/06/23 00:00│0      │
+│AU-0099-3244│63│                                                                                                                         │B        │2023/06/23 04:47│2023/06/23 00:00│0      │
+│AU-009-324  │63│                                                                                                                         │B        │2023/06/23 04:47│2023/06/23 00:00│0      │
+│AJCNWOC     │63│                                                                                                                         │B        │2023/06/23 04:47│2023/06/23 00:00│0      │
+│AU-4985-095 │63│                                                                                                                         │B        │2023/06/23 04:47│                │0      │
+│AU-4985-095 │63│                                                                                                                         │B        │2023/06/23 04:47│SAIJBCEQ C      │0      │
+│AU-4985-095 │63│                                                                                                                         │B        │2023/06/23 04:47│2012/06/23 00:00│0      │
+│AU-4985-095 │63│                                                                                                                         │B        │2023/06/23 04:47│2023/06/23      │0      │
+│AU-4985-095 │63│                                                                                                                         │B        │                │2023/06/23 05:00│0      │
+│AU-4985-095 │63│                                                                                                                         │B        │2023/06/23 04:47│2023/06/23 05:00│0      │
+│AU-4985-095 │63│                                                                                                                         │B        │2022/06/23 04:47│2023/06/23 05:00│0      │
+│AU-4985-095 │63│                                                                                                                         │B        │ACJQNWECWQC     │2023/06/23 05:00│0      │
+│AU-4985-095 │63│                                                                                                                         │         │2023/06/24 04:47│2023/06/23 05:00│0      │
+│AU-4985-095 │63│                                                                                                                         │D        │2023/06/24 04:47│2023/06/23 05:00│0      │
+│AU-4985-095 │63│                                                                                                                         │acnsjcewc│2023/06/24 04:47│2023/06/23 05:00│0      │
+│AU-4985-095 │63│ftp://                                                                                                                   │A        │2023/06/24 04:47│2023/06/23 05:00│0      │
+│AU-4985-095 │63│http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/do…│A        │2023/06/24 04:47│2023/06/23 05:00│0      │
+│AU-4985-095 │63│http://example.org?                                                                                                      │A        │2023/06/24 04:47│2023/06/23 05:00│0      │
+│AU-3284-777 │82│                                                                                                                         │F        │2022/07/24 13:47│2022/07/24 11:00│0      │
+└────────────┴──┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────┴────────────────┴────────────────┴───────┘ 
+** POST auditor/audit-record/publish (RESPONSE) 
+┌──────┬────────────┬─────────────────────────────────────────────────────────────┬──┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────┬─────────┬──────────────────────────────────┬────────┬────────────────┬────────────────────────────────────────────────────────────────┬────────────────┬────────────────────────────────────────────────────────────────┬─────────┬───────┐
+│banner│code        │code$error                                                   │id│link                                                                                                                     │link$error                                           │mark     │mark$error                        │masterId│periodEnd       │periodEnd$error                                                 │periodStart     │periodStart$error                                               │published│version│
+├──────┼────────────┼─────────────────────────────────────────────────────────────┼──┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────┼─────────┼──────────────────────────────────┼────────┼────────────────┼────────────────────────────────────────────────────────────────┼────────────────┼────────────────────────────────────────────────────────────────┼─────────┼───────┤
+│95    │            │Must match pattern "AU-[0-9]{4}-[0-9]{3}". Must not be blank.│63│                                                                                                                         │                                                     │B        │                                  │44      │2023/06/23 04:47│                                                                │2023/06/23 00:00│                                                                │false    │0      │
+│84    │AU-0099-000 │This code is taken.                                          │63│                                                                                                                         │                                                     │B        │                                  │44      │2023/06/23 04:47│                                                                │2023/06/23 00:00│                                                                │false    │0      │
+│86    │AU-0099-3244│Must match pattern "AU-[0-9]{4}-[0-9]{3}".                   │63│                                                                                                                         │                                                     │B        │                                  │44      │2023/06/23 04:47│                                                                │2023/06/23 00:00│                                                                │false    │0      │
+│94    │AU-009-324  │Must match pattern "AU-[0-9]{4}-[0-9]{3}".                   │63│                                                                                                                         │                                                     │B        │                                  │44      │2023/06/23 04:47│                                                                │2023/06/23 00:00│                                                                │false    │0      │
+│88    │AJCNWOC     │Must match pattern "AU-[0-9]{4}-[0-9]{3}".                   │63│                                                                                                                         │                                                     │B        │                                  │44      │2023/06/23 04:47│                                                                │2023/06/23 00:00│                                                                │false    │0      │
+│92    │AU-4985-095 │                                                             │63│                                                                                                                         │                                                     │B        │                                  │44      │2023/06/23 04:47│                                                                │                │May not be null.                                                │false    │0      │
+│94    │AU-4985-095 │                                                             │63│                                                                                                                         │                                                     │B        │                                  │44      │2023/06/23 04:47│                                                                │2023/06/23 00:00│Invalid value.                                                  │false    │0      │
+│97    │AU-4985-095 │                                                             │63│                                                                                                                         │                                                     │B        │                                  │44      │2023/06/23 04:47│                                                                │2012/06/23 00:00│The initial period must be after execution moment of code audit.│false    │0      │
+│87    │AU-4985-095 │                                                             │63│                                                                                                                         │                                                     │B        │                                  │44      │2023/06/23 04:47│                                                                │2023/06/23 00:00│Invalid value.                                                  │false    │0      │
+│85    │AU-4985-095 │                                                             │63│                                                                                                                         │                                                     │B        │                                  │44      │                │May not be null.                                                │2023/06/23 05:00│                                                                │false    │0      │
+│94    │AU-4985-095 │                                                             │63│                                                                                                                         │                                                     │B        │                                  │44      │2023/06/23 04:47│Period end must finish at least one hour after the period start.│2023/06/23 05:00│                                                                │false    │0      │
+│84    │AU-4985-095 │                                                             │63│                                                                                                                         │                                                     │B        │                                  │44      │2022/06/23 04:47│Period end must finish at least one hour after the period start.│2023/06/23 05:00│                                                                │false    │0      │
+│97    │AU-4985-095 │                                                             │63│                                                                                                                         │                                                     │B        │                                  │44      │2023/06/23 04:47│Invalid value.                                                  │2023/06/23 05:00│                                                                │false    │0      │
+│95    │AU-4985-095 │                                                             │63│                                                                                                                         │                                                     │         │Mark must be A+, A, B, C, F or F-.│44      │2023/06/24 04:47│                                                                │2023/06/23 05:00│                                                                │false    │0      │
+│96    │AU-4985-095 │                                                             │63│                                                                                                                         │                                                     │D        │Mark must be A+, A, B, C, F or F-.│44      │2023/06/24 04:47│                                                                │2023/06/23 05:00│                                                                │false    │0      │
+│84    │AU-4985-095 │                                                             │63│                                                                                                                         │                                                     │acnsjcewc│Mark must be A+, A, B, C, F or F-.│44      │2023/06/24 04:47│                                                                │2023/06/23 05:00│                                                                │false    │0      │
+│94    │AU-4985-095 │                                                             │63│ftp://                                                                                                                   │The link length must be between 7 and 255 characters.│A        │                                  │44      │2023/06/24 04:47│                                                                │2023/06/23 05:00│                                                                │false    │0      │
+│83    │AU-4985-095 │                                                             │63│http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/do…│The link length must be between 7 and 255 characters.│A        │                                  │44      │2023/06/24 04:47│                                                                │2023/06/23 05:00│                                                                │false    │0      │
+│84    │            │                                                             │  │                                                                                                                         │                                                     │         │                                  │        │                │                                                                │                │                                                                │         │       │
+│88    │            │                                                             │  │                                                                                                                         │                                                     │         │                                  │        │                │                                                                │                │                                                                │         │       │
+└──────┴────────────┴─────────────────────────────────────────────────────────────┴──┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────┴─────────┴──────────────────────────────────┴────────┴────────────────┴────────────────────────────────────────────────────────────────┴────────────────┴────────────────────────────────────────────────────────────────┴─────────┴───────┘ 
+** POST auditor/audit-record/update (REQUEST) 
+┌───────────┬──┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬──────────┬────────────────┬────────────────┬───────┐
+│code       │id│link                                                                                                                     │mark      │periodEnd       │periodStart     │version│
+├───────────┼──┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────┼────────────────┼────────────────┼───────┤
+│           │63│                                                                                                                         │          │                │                │0      │
+│           │63│                                                                                                                         │B         │2023/06/23 04:47│2023/06/22 04:47│0      │
+│AU-0099-000│63│                                                                                                                         │B         │2023/06/23 04:47│2023/06/22 04:47│0      │
+│AU-0099    │63│                                                                                                                         │B         │2023/06/23 04:47│2023/06/22 04:47│0      │
+│AU-0099-001│63│                                                                                                                         │B         │2023/06/23 04:47│2009/06/22 04:47│0      │
+│AU-0099-001│63│                                                                                                                         │B         │2023/06/23 04:47│                │0      │
+│AU-0099-001│63│                                                                                                                         │B         │2023/06/23 04:47│sajdvenv c      │0      │
+│AU-0099-001│63│                                                                                                                         │B         │                │2023/06/23 00:00│0      │
+│AU-0099-001│63│                                                                                                                         │B         │dsjcnevce       │2023/06/23 00:00│0      │
+│AU-0099-001│63│                                                                                                                         │B         │2022/06/23 04:47│2023/06/23 00:00│0      │
+│AU-0099-001│63│                                                                                                                         │          │2023/06/23 04:54│2023/06/23 00:00│0      │
+│AU-0099-001│63│                                                                                                                         │efvearvcew│2023/06/23 04:54│2023/06/23 00:00│0      │
+│AU-0099-001│63│                                                                                                                         │BA        │2023/06/23 04:54│2023/06/23 00:00│0      │
+│AU-0099-001│63│ftp://                                                                                                                   │A         │2023/06/23 04:54│2023/06/23 00:00│0      │
+│AU-0099-001│63│http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/do…│A         │2023/06/23 04:54│2023/06/23 00:00│0      │
+│AU-0099-001│63│ftp://www.lorem-ipsum.org                                                                                                │A         │2023/06/23 04:54│2023/06/23 00:00│0      │
+└───────────┴──┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴──────────┴────────────────┴────────────────┴───────┘ 
+** POST auditor/audit-record/update (RESPONSE) 
+┌──────┬───────────┬─────────────────────────────────────────────────────────────┬──┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────┬──────────┬──────────────────────────────────┬────────┬────────────────┬────────────────────────────────────────────────────────────────┬────────────────┬────────────────────────────────────────────────────────────────┬─────────┬───────┐
+│banner│code       │code$error                                                   │id│link                                                                                                                     │link$error                                           │mark      │mark$error                        │masterId│periodEnd       │periodEnd$error                                                 │periodStart     │periodStart$error                                               │published│version│
+├──────┼───────────┼─────────────────────────────────────────────────────────────┼──┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────┼──────────┼──────────────────────────────────┼────────┼────────────────┼────────────────────────────────────────────────────────────────┼────────────────┼────────────────────────────────────────────────────────────────┼─────────┼───────┤
+│95    │           │Must match pattern "AU-[0-9]{4}-[0-9]{3}". Must not be blank.│63│                                                                                                                         │                                                     │          │Mark must be A+, A, B, C, F or F-.│44      │                │May not be null.                                                │                │May not be null.                                                │false    │0      │
+│84    │           │Must match pattern "AU-[0-9]{4}-[0-9]{3}". Must not be blank.│63│                                                                                                                         │                                                     │B         │                                  │44      │2023/06/23 04:47│                                                                │2023/06/22 04:47│                                                                │false    │0      │
+│86    │AU-0099-000│This code is taken.                                          │63│                                                                                                                         │                                                     │B         │                                  │44      │2023/06/23 04:47│                                                                │2023/06/22 04:47│                                                                │false    │0      │
+│94    │AU-0099    │Must match pattern "AU-[0-9]{4}-[0-9]{3}".                   │63│                                                                                                                         │                                                     │B         │                                  │44      │2023/06/23 04:47│                                                                │2023/06/22 04:47│                                                                │false    │0      │
+│88    │AU-0099-001│                                                             │63│                                                                                                                         │                                                     │B         │                                  │44      │2023/06/23 04:47│                                                                │2009/06/22 04:47│The initial period must be after execution moment of code audit.│false    │0      │
+│92    │AU-0099-001│                                                             │63│                                                                                                                         │                                                     │B         │                                  │44      │2023/06/23 04:47│                                                                │                │May not be null.                                                │false    │0      │
+│94    │AU-0099-001│                                                             │63│                                                                                                                         │                                                     │B         │                                  │44      │2023/06/23 04:47│                                                                │2023/06/23 00:00│Invalid value.                                                  │false    │0      │
+│97    │AU-0099-001│                                                             │63│                                                                                                                         │                                                     │B         │                                  │44      │                │May not be null.                                                │2023/06/23 00:00│                                                                │false    │0      │
+│87    │AU-0099-001│                                                             │63│                                                                                                                         │                                                     │B         │                                  │44      │2023/06/23 04:47│Invalid value.                                                  │2023/06/23 00:00│                                                                │false    │0      │
+│85    │AU-0099-001│                                                             │63│                                                                                                                         │                                                     │B         │                                  │44      │2022/06/23 04:47│Period end must finish at least one hour after the period start.│2023/06/23 00:00│                                                                │false    │0      │
+│83    │AU-0099-001│                                                             │63│                                                                                                                         │                                                     │          │Mark must be A+, A, B, C, F or F-.│44      │2023/06/23 04:54│                                                                │2023/06/23 00:00│                                                                │false    │0      │
+│89    │AU-0099-001│                                                             │63│                                                                                                                         │                                                     │efvearvcew│Mark must be A+, A, B, C, F or F-.│44      │2023/06/23 04:54│                                                                │2023/06/23 00:00│                                                                │false    │0      │
+│95    │AU-0099-001│                                                             │63│                                                                                                                         │                                                     │BA        │Mark must be A+, A, B, C, F or F-.│44      │2023/06/23 04:54│                                                                │2023/06/23 00:00│                                                                │false    │0      │
+│83    │AU-0099-001│                                                             │63│ftp://                                                                                                                   │The link length must be between 7 and 255 characters.│A         │                                  │44      │2023/06/23 04:54│                                                                │2023/06/23 00:00│                                                                │false    │0      │
+│93    │AU-0099-001│                                                             │63│http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/do…│The link length must be between 7 and 255 characters.│A         │                                  │44      │2023/06/23 04:54│                                                                │2023/06/23 00:00│                                                                │false    │0      │
+│95    │           │                                                             │  │                                                                                                                         │                                                     │          │                                  │        │                │                                                                │                │                                                                │         │       │
+└──────┴───────────┴─────────────────────────────────────────────────────────────┴──┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────┴──────────┴──────────────────────────────────┴────────┴────────────────┴────────────────────────────────────────────────────────────────┴────────────────┴────────────────────────────────────────────────────────────────┴─────────┴───────┘ 
+** GET auditor/code-audit/create (REQUEST) 
+[ ] 
+** GET auditor/code-audit/create (RESPONSE) 
+┌──────┬──┬───────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────┐
+│banner│id│project│projects                                                                                                                 │published│types                                                                                                                    │version│
+├──────┼──┼───────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────┤
+│84    │0 │0      │[{"key":"0","label":"----","selected":true,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true}…│false    │[{"key":"0","label":"----","selected":true,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tru…│0      │
+└──────┴──┴───────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────┘ 
+** POST auditor/code-audit/create (REQUEST) 
+┌───────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬────────────────┬──┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬────┬───────┬──────┬───────┐
+│code   │correctiveActions                                                                                                        │execution       │id│link                                                                                                                     │mark│project│type  │version│
+├───────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼────────────────┼──┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼────┼───────┼──────┼───────┤
+│       │                                                                                                                         │                │0 │                                                                                                                         │    │0      │0     │0      │
+│       │Lorem ipsum                                                                                                              │2021/05/24 19:40│0 │                                                                                                                         │    │28     │STATIC│0      │
+│A-2598 │Lorem ipsum                                                                                                              │2021/05/24 19:40│0 │                                                                                                                         │    │28     │STATIC│0      │
+│A-2    │Lorem ipsum                                                                                                              │2021/05/24 19:40│0 │                                                                                                                         │    │28     │STATIC│0      │
+│A12-234│Lorem ipsum                                                                                                              │2021/05/24 19:40│0 │                                                                                                                         │    │28     │STATIC│0      │
+│AS-23  │Lorem ipsum                                                                                                              │2021/05/24 19:40│0 │                                                                                                                         │    │28     │STATIC│0      │
+│adheir │Lorem ipsum                                                                                                              │2021/05/24 19:40│0 │                                                                                                                         │    │28     │STATIC│0      │
+│A-000  │Lorem ipsum                                                                                                              │2021/05/24 19:40│0 │                                                                                                                         │    │28     │STATIC│0      │
+│A-459  │Lorem ipsum                                                                                                              │2022/07/30 00:01│0 │                                                                                                                         │    │28     │STATIC│0      │
+│A-459  │Lorem ipsum                                                                                                              │2021/07/30      │0 │                                                                                                                         │    │28     │STATIC│0      │
+│A-459  │Lorem ipsum                                                                                                              │                │0 │                                                                                                                         │    │28     │STATIC│0      │
+│A-459  │Lorem ipsum                                                                                                              │2021/23 19:10   │0 │                                                                                                                         │    │28     │STATIC│0      │
+│A-459  │Lorem ipsum                                                                                                              │2022/07/23 12:45│0 │                                                                                                                         │    │28     │0     │0      │
+│A-459  │                                                                                                                         │2022/07/23 12:45│0 │                                                                                                                         │    │28     │STATIC│0      │
+│A-459  │Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempaosicoqwecunqwwJCNKAJdvcsakvb cdhsbcxsaDNJAD…│2022/07/23 12:45│0 │                                                                                                                         │    │28     │STATIC│0      │
+│A-459  │Lorem ipsum                                                                                                              │2022/07/23 12:45│0 │                                                                                                                         │    │0      │STATIC│0      │
+│A-459  │Lorem ipsum                                                                                                              │2022/07/23 12:45│0 │ftp://                                                                                                                   │    │28     │STATIC│0      │
+│A-459  │Lorem ipsum                                                                                                              │2022/07/23 12:45│0 │http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/do…│    │28     │STATIC│0      │
+│A-459  │Lorem ipsum                                                                                                              │2022/07/23 12:45│0 │http://example.org/a/b?a&b                                                                                               │    │0      │STATIC│0      │
+│A-459  │Lorem ipsum                                                                                                              │2022/07/23 12:45│0 │http://example.org/a/b?a&b                                                                                               │    │29     │STATIC│0      │
+└───────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴────────────────┴──┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴────┴───────┴──────┴───────┘ 
+** POST auditor/code-audit/create (RESPONSE) 
+┌──────┬───────┬────────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────┬────────────────┬───────────────────────────────┬──┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────┬───────┬────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────┬──────┬────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────┐
+│banner│code   │code$error                                                  │correctiveActions                                                                                                        │correctiveActions$error          │execution       │execution$error                │id│link                                                                                                                     │link$error                                           │project│project$error   │projects                                                                                                                 │published│type  │type$error      │types                                                                                                                    │version│
+├──────┼───────┼────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────┼────────────────┼───────────────────────────────┼──┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────┼───────┼────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────┼──────┼────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────┤
+│94    │       │Must match pattern "[A-Z]{1,3}-[0-9]{3}". Must not be blank.│                                                                                                                         │Must not be blank.               │                │May not be null.               │0 │                                                                                                                         │                                                     │0      │May not be null.│[{"key":"0","label":"----","selected":true,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true}…│false    │      │May not be null.│[{"key":"0","label":"----","selected":true,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tru…│0      │
+│85    │       │Must match pattern "[A-Z]{1,3}-[0-9]{3}". Must not be blank.│Lorem ipsum                                                                                                              │                                 │2021/05/24 19:40│                               │0 │                                                                                                                         │                                                     │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│91    │A-2598 │Must match pattern "[A-Z]{1,3}-[0-9]{3}".                   │Lorem ipsum                                                                                                              │                                 │2021/05/24 19:40│                               │0 │                                                                                                                         │                                                     │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│84    │A-2    │Must match pattern "[A-Z]{1,3}-[0-9]{3}".                   │Lorem ipsum                                                                                                              │                                 │2021/05/24 19:40│                               │0 │                                                                                                                         │                                                     │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│91    │A12-234│Must match pattern "[A-Z]{1,3}-[0-9]{3}".                   │Lorem ipsum                                                                                                              │                                 │2021/05/24 19:40│                               │0 │                                                                                                                         │                                                     │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│97    │AS-23  │Must match pattern "[A-Z]{1,3}-[0-9]{3}".                   │Lorem ipsum                                                                                                              │                                 │2021/05/24 19:40│                               │0 │                                                                                                                         │                                                     │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│90    │adheir │Must match pattern "[A-Z]{1,3}-[0-9]{3}".                   │Lorem ipsum                                                                                                              │                                 │2021/05/24 19:40│                               │0 │                                                                                                                         │                                                     │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│87    │A-000  │The code is taken.                                          │Lorem ipsum                                                                                                              │                                 │2021/05/24 19:40│                               │0 │                                                                                                                         │                                                     │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│84    │A-459  │                                                            │Lorem ipsum                                                                                                              │                                 │2022/07/30 00:01│Must be in the past.           │0 │                                                                                                                         │                                                     │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│83    │A-459  │                                                            │Lorem ipsum                                                                                                              │                                 │                │Invalid value. May not be null.│0 │                                                                                                                         │                                                     │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│83    │A-459  │                                                            │Lorem ipsum                                                                                                              │                                 │                │May not be null.               │0 │                                                                                                                         │                                                     │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│83    │A-459  │                                                            │Lorem ipsum                                                                                                              │                                 │                │Invalid value. May not be null.│0 │                                                                                                                         │                                                     │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│83    │A-459  │                                                            │Lorem ipsum                                                                                                              │                                 │2022/07/23 12:45│                               │0 │                                                                                                                         │                                                     │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │      │May not be null.│[{"key":"0","label":"----","selected":true,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tru…│0      │
+│88    │A-459  │                                                            │                                                                                                                         │Must not be blank.               │2022/07/23 12:45│                               │0 │                                                                                                                         │                                                     │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│96    │A-459  │                                                            │Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempaosicoqwecunqwwJCNKAJdvcsakvb cdhsbcxsaDNJAD…│Length must be between 0 and 100.│2022/07/23 12:45│                               │0 │                                                                                                                         │                                                     │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│92    │A-459  │                                                            │Lorem ipsum                                                                                                              │                                 │2022/07/23 12:45│                               │0 │                                                                                                                         │                                                     │0      │May not be null.│[{"key":"0","label":"----","selected":true,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│89    │A-459  │                                                            │Lorem ipsum                                                                                                              │                                 │2022/07/23 12:45│                               │0 │ftp://                                                                                                                   │The link length must be between 7 and 255 characters.│28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│95    │A-459  │                                                            │Lorem ipsum                                                                                                              │                                 │2022/07/23 12:45│                               │0 │http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/do…│The link length must be between 7 and 255 characters.│28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│96    │A-459  │                                                            │Lorem ipsum                                                                                                              │                                 │2022/07/23 12:45│                               │0 │http://example.org/a/b?a&b                                                                                               │                                                     │0      │May not be null.│[{"key":"0","label":"----","selected":true,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│90    │       │                                                            │                                                                                                                         │                                 │                │                               │  │                                                                                                                         │                                                     │       │                │                                                                                                                         │         │      │                │                                                                                                                         │       │
+└──────┴───────┴────────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────┴────────────────┴───────────────────────────────┴──┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────┴───────┴────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────┴──────┴────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────┘ 
+** POST auditor/code-audit/delete (REQUEST) 
+┌───────┬────────────────────────────────────────────────────────────────────────┬────────────────┬──┬────┬────┬───────┬───────┬───────┐
+│code   │correctiveActions                                                       │execution       │id│link│mark│project│type   │version│
+├───────┼────────────────────────────────────────────────────────────────────────┼────────────────┼──┼────┼────┼───────┼───────┼───────┤
+│A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │tester          │44│    │F-  │31     │DYNAMIC│0      │
+│A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.     │2022/07/24 07:39│44│    │F-  │31     │DYNAMIC│0      │
+│AA-000 │Realizar una revisión exhaustiva de registros y documentaciónnnnnnnnnnn.│2021/09/06 17:12│49│    │    │29     │DYNAMIC│0      │
+│AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │tester          │55│    │    │28     │DYNAMIC│0      │
+│AAA-999│Realizar capacitación adicional sobre manejo de datos.                  │2022/07/24 00:00│55│    │    │28     │DYNAMIC│0      │
+└───────┴────────────────────────────────────────────────────────────────────────┴────────────────┴──┴────┴────┴───────┴───────┴───────┘ 
+** POST auditor/code-audit/delete (RESPONSE) 
+┌──────┬───────┬───────────────────────────────────────────────────────────────────┬────────────────┬───────────────┬──┬────┬────┬───────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────┬───────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────┐
+│banner│code   │correctiveActions                                                  │execution       │execution$error│id│link│mark│project│projects                                                                                                                 │published│type   │types                                                                                                                    │version│
+├──────┼───────┼───────────────────────────────────────────────────────────────────┼────────────────┼───────────────┼──┼────┼────┼───────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────┼───────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────┤
+│97    │A-000  │Capacitar al personal en el uso adecuado de herramientas dinámicas.│2022/07/24 07:39│Invalid value. │44│    │F-  │31     │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│87    │       │                                                                   │                │               │  │    │    │       │                                                                                                                         │         │       │                                                                                                                         │       │
+│83    │       │                                                                   │                │               │  │    │    │       │                                                                                                                         │         │       │                                                                                                                         │       │
+│88    │AAA-999│Realizar capacitación adicional sobre manejo de datos.             │2022/07/24 00:00│Invalid value. │55│    │    │28     │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │DYNAMIC│[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│89    │       │                                                                   │                │               │  │    │    │       │                                                                                                                         │         │       │                                                                                                                         │       │
+└──────┴───────┴───────────────────────────────────────────────────────────────────┴────────────────┴───────────────┴──┴────┴────┴───────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────┴───────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────┘ 
+** POST auditor/code-audit/publish (REQUEST) 
+┌───────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬────────────────┬──┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬────┬───────┬───────┬───────┐
+│code   │correctiveActions                                                                                                        │execution       │id│link                                                                                                                     │mark│project│type   │version│
+├───────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼────────────────┼──┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼────┼───────┼───────┼───────┤
+│       │                                                                                                                         │                │45│                                                                                                                         │F   │0      │0      │0      │
+│A-999  │tester                                                                                                                   │2021/09/12 17:10│45│                                                                                                                         │F   │28     │STATIC │0      │
+│A-999  │Realizar una revisión de seguridad física en el sitio.                                                                   │2021/01/10 13:00│45│https://auditrecordexample.com/not-found                                                                                 │B   │34     │DYNAMIC│0      │
+│       │Realizar una revisión de seguridad física en el sitio.                                                                   │2021/01/10 13:00│45│https://auditrecordexample.com/not-found                                                                                 │B   │34     │DYNAMIC│0      │
+│AAA-000│Realizar una revisión de seguridad física en el sitio.                                                                   │2021/01/10 13:00│45│https://auditrecordexample.com/not-found                                                                                 │B   │34     │DYNAMIC│0      │
+│AAA    │Realizar una revisión de seguridad física en el sitio.                                                                   │2021/01/10 13:00│45│https://auditrecordexample.com/not-found                                                                                 │B   │34     │DYNAMIC│0      │
+│AAA-203│Realizar una revisión de seguridad física en el sitio.                                                                   │2023/01/10 13:00│45│https://auditrecordexample.com/not-found                                                                                 │B   │34     │DYNAMIC│0      │
+│AAA-203│Realizar una revisión de seguridad física en el sitio.                                                                   │2023/01/10      │45│https://auditrecordexample.com/not-found                                                                                 │B   │34     │DYNAMIC│0      │
+│AAA-203│Realizar una revisión de seguridad física en el sitio.                                                                   │AJSCNWVSCNO     │45│https://auditrecordexample.com/not-found                                                                                 │B   │34     │DYNAMIC│0      │
+│AAA-203│Realizar una revisión de seguridad física en el sitio.                                                                   │2021/01/12 13:00│45│https://auditrecordexample.com/not-found                                                                                 │B   │34     │0      │0      │
+│AAA-203│                                                                                                                         │2021/01/12 13:00│45│https://auditrecordexample.com/not-found                                                                                 │B   │34     │STATIC │0      │
+│AAA-203│Realizar una revisión de seguridad física en el sitio.Realizar una revisión de seguridad física en el sitio.Realizar una…│2021/01/12 13:00│45│https://auditrecordexample.com/not-found                                                                                 │B   │34     │STATIC │0      │
+│AAA-203│Realizar una revisión de seguridad física en el sitio.                                                                   │2021/01/12 13:00│45│https://auditrecordexample.com/not-found                                                                                 │B   │0      │STATIC │0      │
+│AAA-203│Realizar una revisión de seguridad física en el sitio.                                                                   │2021/01/12 13:00│45│ftp://                                                                                                                   │B   │28     │STATIC │0      │
+│AAA-203│Realizar una revisión de seguridad física en el sitio.                                                                   │2021/01/12 13:00│45│http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/do…│B   │28     │STATIC │0      │
+│AAA-203│Realizar una revisión de seguridad física en el sitio.                                                                   │2021/01/12 13:00│45│ftp://www.lorem-ipsum.org                                                                                                │B   │28     │STATIC │0      │
+└───────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴────────────────┴──┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴────┴───────┴───────┴───────┘ 
+** POST auditor/code-audit/publish (RESPONSE) 
+┌──────┬───────┬────────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────┬────────────────┬────────────────────┬──┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────┬────┬────────────────────────────────────────┬───────┬────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────┬───────┬────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────┐
+│banner│code   │code$error                                                  │correctiveActions                                                                                                        │correctiveActions$error          │execution       │execution$error     │id│link                                                                                                                     │link$error                                           │mark│mark$error                              │project│project$error   │projects                                                                                                                 │published│type   │type$error      │types                                                                                                                    │version│
+├──────┼───────┼────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────┼────────────────┼────────────────────┼──┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────┼────┼────────────────────────────────────────┼───────┼────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────┼───────┼────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────┤
+│91    │       │Must match pattern "[A-Z]{1,3}-[0-9]{3}". Must not be blank.│                                                                                                                         │Must not be blank.               │                │May not be null.    │45│                                                                                                                         │                                                     │F   │The mode of marks must be higher than C.│0      │May not be null.│[{"key":"0","label":"----","selected":true,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true}…│false    │       │May not be null.│[{"key":"0","label":"----","selected":true,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tru…│0      │
+│85    │A-999  │                                                            │tester                                                                                                                   │                                 │2021/09/12 17:10│                    │45│                                                                                                                         │                                                     │F   │The mode of marks must be higher than C.│28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│90    │A-999  │                                                            │Realizar una revisión de seguridad física en el sitio.                                                                   │                                 │2021/01/10 13:00│                    │45│https://auditrecordexample.com/not-found                                                                                 │                                                     │B   │                                        │34     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│91    │       │Must match pattern "[A-Z]{1,3}-[0-9]{3}". Must not be blank.│Realizar una revisión de seguridad física en el sitio.                                                                   │                                 │2021/01/10 13:00│                    │45│https://auditrecordexample.com/not-found                                                                                 │                                                     │B   │                                        │34     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│86    │AAA-000│The code is taken.                                          │Realizar una revisión de seguridad física en el sitio.                                                                   │                                 │2021/01/10 13:00│                    │45│https://auditrecordexample.com/not-found                                                                                 │                                                     │B   │                                        │34     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│97    │AAA    │Must match pattern "[A-Z]{1,3}-[0-9]{3}".                   │Realizar una revisión de seguridad física en el sitio.                                                                   │                                 │2021/01/10 13:00│                    │45│https://auditrecordexample.com/not-found                                                                                 │                                                     │B   │                                        │34     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│86    │AAA-203│                                                            │Realizar una revisión de seguridad física en el sitio.                                                                   │                                 │2023/01/10 13:00│Must be in the past.│45│https://auditrecordexample.com/not-found                                                                                 │                                                     │B   │                                        │34     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│91    │AAA-203│                                                            │Realizar una revisión de seguridad física en el sitio.                                                                   │                                 │2021/01/10 13:00│Invalid value.      │45│https://auditrecordexample.com/not-found                                                                                 │                                                     │B   │                                        │34     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│87    │AAA-203│                                                            │Realizar una revisión de seguridad física en el sitio.                                                                   │                                 │2021/01/10 13:00│Invalid value.      │45│https://auditrecordexample.com/not-found                                                                                 │                                                     │B   │                                        │34     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │DYNAMIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tr…│0      │
+│86    │AAA-203│                                                            │Realizar una revisión de seguridad física en el sitio.                                                                   │                                 │2021/01/12 13:00│                    │45│https://auditrecordexample.com/not-found                                                                                 │                                                     │B   │                                        │34     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │       │May not be null.│[{"key":"0","label":"----","selected":true,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tru…│0      │
+│85    │AAA-203│                                                            │                                                                                                                         │Must not be blank.               │2021/01/12 13:00│                    │45│https://auditrecordexample.com/not-found                                                                                 │                                                     │B   │                                        │34     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │STATIC │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│93    │AAA-203│                                                            │Realizar una revisión de seguridad física en el sitio.Realizar una revisión de seguridad física en el sitio.Realizar una…│Length must be between 0 and 100.│2021/01/12 13:00│                    │45│https://auditrecordexample.com/not-found                                                                                 │                                                     │B   │                                        │34     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true…│false    │STATIC │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│84    │AAA-203│                                                            │Realizar una revisión de seguridad física en el sitio.                                                                   │                                 │2021/01/12 13:00│                    │45│https://auditrecordexample.com/not-found                                                                                 │                                                     │B   │                                        │0      │May not be null.│[{"key":"0","label":"----","selected":true,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true}…│false    │STATIC │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│83    │AAA-203│                                                            │Realizar una revisión de seguridad física en el sitio.                                                                   │                                 │2021/01/12 13:00│                    │45│ftp://                                                                                                                   │The link length must be between 7 and 255 characters.│B   │                                        │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│97    │AAA-203│                                                            │Realizar una revisión de seguridad física en el sitio.                                                                   │                                 │2021/01/12 13:00│                    │45│http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/do…│The link length must be between 7 and 255 characters.│B   │                                        │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│95    │       │                                                            │                                                                                                                         │                                 │                │                    │  │                                                                                                                         │                                                     │    │                                        │       │                │                                                                                                                         │         │       │                │                                                                                                                         │       │
+└──────┴───────┴────────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────┴────────────────┴────────────────────┴──┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────┴────┴────────────────────────────────────────┴───────┴────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────┴───────┴────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────┘ 
+** POST auditor/code-audit/update (REQUEST) 
+┌───────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬────────────────┬──┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬────┬───────┬──────┬───────┐
+│code   │correctiveActions                                                                                                        │execution       │id│link                                                                                                                     │mark│project│type  │version│
+├───────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼────────────────┼──┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼────┼───────┼──────┼───────┤
+│       │                                                                                                                         │                │44│                                                                                                                         │F-  │0      │0     │0      │
+│       │Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │2021/07/24 15:29│44│                                                                                                                         │F-  │28     │STATIC│0      │
+│AAA-000│Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │2021/07/24 15:29│44│                                                                                                                         │F-  │28     │STATIC│0      │
+│AAA-00 │Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │2021/07/24 15:29│44│                                                                                                                         │F-  │28     │STATIC│0      │
+│AAA    │Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │2021/07/24 15:29│44│                                                                                                                         │F-  │28     │STATIC│0      │
+│AAA-987│Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │                │44│                                                                                                                         │F-  │28     │STATIC│0      │
+│AAA-987│Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │2023/07/24 15:29│44│                                                                                                                         │F-  │28     │STATIC│0      │
+│AAA-987│Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │2023/07/24      │44│                                                                                                                         │F-  │28     │STATIC│0      │
+│AAA-987│Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │2021/07/24 07:39│44│                                                                                                                         │F-  │28     │0     │0      │
+│AAA-987│                                                                                                                         │2021/07/24 07:39│44│                                                                                                                         │F-  │28     │STATIC│0      │
+│AAA-987│Capacitar al personal en el uso adecuado de herramientas dinámicas.Capacitar al personal en el uso adecuado de herramien…│2021/07/24 07:39│44│                                                                                                                         │F-  │28     │STATIC│0      │
+│AAA-987│Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │2021/07/24 07:39│44│                                                                                                                         │F-  │0      │STATIC│0      │
+│AAA-987│Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │2021/07/24 07:39│44│ftp://                                                                                                                   │F-  │28     │STATIC│0      │
+│AAA-987│Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │2021/07/24 07:39│44│http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/do…│F-  │28     │STATIC│0      │
+│AAA-987│Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │2021/07/24 07:39│44│ftp://www.lorem-ipsum.org                                                                                                │F-  │28     │STATIC│0      │
+└───────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴────────────────┴──┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴────┴───────┴──────┴───────┘ 
+** POST auditor/code-audit/update (RESPONSE) 
+┌──────┬───────┬────────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────┬────────────────┬────────────────────┬──┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────┬────┬───────┬────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────┬──────┬────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────┐
+│banner│code   │code$error                                                  │correctiveActions                                                                                                        │correctiveActions$error          │execution       │execution$error     │id│link                                                                                                                     │link$error                                           │mark│project│project$error   │projects                                                                                                                 │published│type  │type$error      │types                                                                                                                    │version│
+├──────┼───────┼────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────┼────────────────┼────────────────────┼──┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────┼────┼───────┼────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────┼──────┼────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────┤
+│97    │       │Must match pattern "[A-Z]{1,3}-[0-9]{3}". Must not be blank.│                                                                                                                         │Must not be blank.               │                │May not be null.    │44│                                                                                                                         │                                                     │F-  │0      │May not be null.│[{"key":"0","label":"----","selected":true,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true}…│false    │      │May not be null.│[{"key":"0","label":"----","selected":true,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tru…│0      │
+│87    │       │Must match pattern "[A-Z]{1,3}-[0-9]{3}". Must not be blank.│Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │                                 │2021/07/24 15:29│                    │44│                                                                                                                         │                                                     │F-  │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│83    │AAA-000│The code is taken.                                          │Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │                                 │2021/07/24 15:29│                    │44│                                                                                                                         │                                                     │F-  │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│96    │AAA-00 │Must match pattern "[A-Z]{1,3}-[0-9]{3}".                   │Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │                                 │2021/07/24 15:29│                    │44│                                                                                                                         │                                                     │F-  │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│83    │AAA    │Must match pattern "[A-Z]{1,3}-[0-9]{3}".                   │Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │                                 │2021/07/24 15:29│                    │44│                                                                                                                         │                                                     │F-  │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│88    │AAA-987│                                                            │Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │                                 │                │May not be null.    │44│                                                                                                                         │                                                     │F-  │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│94    │AAA-987│                                                            │Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │                                 │2023/07/24 15:29│Must be in the past.│44│                                                                                                                         │                                                     │F-  │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│88    │AAA-987│                                                            │Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │                                 │2022/07/24 07:39│Invalid value.      │44│                                                                                                                         │                                                     │F-  │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│89    │AAA-987│                                                            │Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │                                 │2021/07/24 07:39│                    │44│                                                                                                                         │                                                     │F-  │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │      │May not be null.│[{"key":"0","label":"----","selected":true,"sealed":true},{"key":"STATIC","label":"STATIC","selected":false,"sealed":tru…│0      │
+│87    │AAA-987│                                                            │                                                                                                                         │Must not be blank.               │2021/07/24 07:39│                    │44│                                                                                                                         │                                                     │F-  │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│91    │AAA-987│                                                            │Capacitar al personal en el uso adecuado de herramientas dinámicas.Capacitar al personal en el uso adecuado de herramien…│Length must be between 0 and 100.│2021/07/24 07:39│                    │44│                                                                                                                         │                                                     │F-  │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│87    │AAA-987│                                                            │Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │                                 │2021/07/24 07:39│                    │44│                                                                                                                         │                                                     │F-  │0      │May not be null.│[{"key":"0","label":"----","selected":true,"sealed":true},{"key":"28","label":"ABC-1234","selected":false,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│87    │AAA-987│                                                            │Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │                                 │2021/07/24 07:39│                    │44│ftp://                                                                                                                   │The link length must be between 7 and 255 characters.│F-  │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│95    │AAA-987│                                                            │Capacitar al personal en el uso adecuado de herramientas dinámicas.                                                      │                                 │2021/07/24 07:39│                    │44│http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/do…│The link length must be between 7 and 255 characters.│F-  │28     │                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"28","label":"ABC-1234","selected":true,"sealed":true}…│false    │STATIC│                │[{"key":"0","label":"----","selected":false,"sealed":true},{"key":"STATIC","label":"STATIC","selected":true,"sealed":tru…│0      │
+│88    │       │                                                            │                                                                                                                         │                                 │                │                    │  │                                                                                                                         │                                                     │    │       │                │                                                                                                                         │         │      │                │                                                                                                                         │       │
+└──────┴───────┴────────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────┴────────────────┴────────────────────┴──┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────┴────┴───────┴────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────┴──────┴────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────┘ 
+> test 
+# END TEST CLASS "TestAnalyser" 
