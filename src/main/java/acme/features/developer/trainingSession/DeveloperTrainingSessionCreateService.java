@@ -84,7 +84,7 @@ public class DeveloperTrainingSessionCreateService extends AbstractService<Devel
 
 		}
 
-		if (!super.getBuffer().getErrors().hasErrors("finalPeriod") && object.getInitialPeriod() != null && object.getFinalPeriod() != null) {
+		if (!super.getBuffer().getErrors().hasErrors("finalPeriod") && object.getInitialPeriod() != null) {
 			Date minimumInitialPeriod;
 
 			minimumInitialPeriod = MomentHelper.deltaFromMoment(object.getInitialPeriod(), 7, ChronoUnit.DAYS);
